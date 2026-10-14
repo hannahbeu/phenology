@@ -2,3 +2,5 @@
 oldcache/
 .ipynb_checkpoints/
 __pycache__/
+cache/climate/
+*.part
