@@ -1,0 +1,44 @@
+{
+ "aoi_path": "C:\\Users\\hanna\\OneDrive\\Desktop\\Documents\\Uni\\HS 26\\GIS Exkursion\\project\\Larch_Classification_2017_multidate_aspect_improved_threshold099.tif",
+ "aoi_raster_values": null,
+ "aoi_raster_band": 1,
+ "scl_keep": [
+  4,
+  5
+ ],
+ "scl_groups": {
+  "nodata": [
+   0,
+   1
+  ],
+  "dark": [
+   2
+  ],
+  "shadow": [
+   3
+  ],
+  "water": [
+   6
+  ],
+  "unclassified": [
+   7
+  ],
+  "cloud": [
+   8,
+   9
+  ],
+  "cirrus": [
+   10
+  ],
+  "snow": [
+   11
+  ]
+ },
+ "resolution": 10,
+ "inner_buffer": 0,
+ "all_scenes": true,
+ "dem": "cop-dem-glo-30",
+ "elev_step": 200,
+ "flat_slope": 5,
+ "min_zone_pixels": 200
+}

@@ -1,0 +1,5 @@
+response,n_zone_years,n_zones,days_per_100m,elev_ci_low,elev_ci_high,elev_p,north_minus_south_days,ns_ci_low,ns_ci_high,ns_p,r2
+NDVI logistic mid,7,6,-5.357,-16.398,5.684,0.22,-7.202,-43.753,29.348,0.575,0.649
+GRVI logistic mid,8,6,0.641,-4.214,5.495,0.733,-0.671,-19.68,18.339,0.927,0.284
+PSRI logistic mid,7,6,0.112,-2.592,2.815,0.904,-6.124,-15.915,3.668,0.141,0.985
+NDVI EOS midpoint,13,7,-3.001,-4.362,-1.64,0.001,-7.241,-11.514,-2.969,0.004,0.856
