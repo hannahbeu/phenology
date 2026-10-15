@@ -1,4 +1,5 @@
 """Settings shared by all notebooks. The year range and the AOI are set here only."""
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -15,7 +16,8 @@ START, END = f"{FIRST_YEAR}-01-01", f"{LAST_YEAR}-12-31"
 # vector file (.geojson/.shp/.gpkg) in AOI_FOLDER. Other mask in the folder:
 # "Larch_Classification_2017_multidate_aspect_improved_threshold099.tif"
 AOI_FOLDER = Path(r"C:\Users\hanna\OneDrive\Desktop\Documents\Uni\HS 26\GIS Exkursion\project")
-AOI_FILE = "Larch_Classification_2017_threshold099.tif"
+# The environment variable PHENOLOGY_AOI_FILE overrides AOI_FILE (for running another AOI in the background)
+AOI_FILE = os.environ.get("PHENOLOGY_AOI_FILE", "Larch_Classification_2017_threshold099.tif")
 AOI_RASTER_VALUES = None
 AOI_RASTER_BAND = 1
 
