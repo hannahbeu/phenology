@@ -9,7 +9,7 @@ import xarray as xr
 from pyproj import Transformer
 
 from config import (CACHE_DIR, END, GRID_BUFFER, MAX_SCENE_CLOUD, MAX_SCL_FRACTION, MIN_VALID_FRACTION,
-                    SCL_GROUPS, START, TEMPERATURE_VARS, YEARS)
+                    SCL_GROUPS, SEASON_COMPLETE_DOY, START, TEMPERATURE_VARS, YEARS)
 
 QUALITY_COLS = ["scene_cloud_cover"] + [f"scl_{g}_fraction" for g in SCL_GROUPS]
 
@@ -28,6 +28,12 @@ def load_stats():
     frames = [pd.read_csv(CACHE_DIR / f"stats_{y}.csv", index_col="date", parse_dates=["date"])
               for y in cached_years() if y not in missing]
     return pd.concat([f for f in frames if not f.empty]).sort_index(kind="stable").loc[START:END]
+
+
+def incomplete_years(stats):
+    # Years whose cache ends before SEASON_COMPLETE_DOY (downloaded while the autumn was still in progress)
+    last = stats.index.to_series().groupby(stats.index.year).max()
+    return [int(year) for year, day in last.items() if day.dayofyear < SEASON_COMPLETE_DOY]
 
 
 def load_zone_table():

@@ -65,6 +65,12 @@ EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False}   # PSRI rises wit
 MIN_OBS_SIDE = 2           # clear observations needed on each side of the logistic mid point
 ALPHA = 0.05
 FORECAST_YEARS = 2
+# A year counts only once its cache reaches this DOY (1 Dec); earlier = autumn still in progress at download time
+SEASON_COMPLETE_DOY = 335
+# Diagnostic panel: DOY range, zones ("all" = whole AOI; zones the AOI lacks are skipped), gaps worth shading
+PANEL_WINDOW = (230, 330)
+PANEL_ZONES = ["all", "2000_N", "2000_S"]
+GAP_DAYS = 15              # days without a clear observation
 
 # ---------------------------------------------------------------- climate data (02)
 # MeteoSwiss gridded observations (1 km, LV95): variable -> product
