@@ -1,0 +1,29 @@
+source,feature,description,unit,in_scenarios
+grid,T_spring,mean temperature Mar-May,°C,True
+grid,GDD5_JanJul,"growing degree-days above 5 °C, Jan-Jul",°C d,True
+grid,T_summer,mean temperature Jun-Aug,°C,True
+grid,T_Sep,mean temperature Sep,°C,True
+grid,T_Oct1,mean temperature 1-15 Oct,°C,True
+grid,Tmin_Sep,mean minimum temperature Sep,°C,True
+grid,frost_days,"days with Tmin < 0 °C, 15 Aug-15 Oct",days,True
+grid,CDD10_AugSep,"cold degree-days below 10 °C, Aug-Sep",°C d,True
+grid,P_winter,precipitation Nov-Apr (snowpack proxy),mm,True
+grid,P_summer,precipitation Jun-Aug,mm,True
+grid,P_AugSep,precipitation Aug-Sep,mm,True
+grid,CWB_summer,"climatic water balance P - PET (Hargreaves), Jun-Sep",mm,True
+grid,sunshine_AugSep,relative sunshine duration Aug-Sep,%,False
+station,T_spring,mean temperature Mar-May,°C,True
+station,GDD5_JanJul,"growing degree-days above 5 °C, Jan-Jul",°C d,True
+station,T_summer,mean temperature Jun-Aug,°C,True
+station,T_Sep,mean temperature Sep,°C,True
+station,T_Oct1,mean temperature 1-15 Oct,°C,True
+station,Tmin_Sep,mean minimum temperature Sep,°C,True
+station,frost_days,"days with Tmin < 0 °C, 15 Aug-15 Oct",days,True
+station,CDD10_AugSep,"cold degree-days below 10 °C, Aug-Sep",°C d,True
+station,P_winter,precipitation Nov-Apr (snowpack proxy),mm,True
+station,P_summer,precipitation Jun-Aug,mm,True
+station,P_AugSep,precipitation Aug-Sep,mm,True
+station,CWB_summer,"climatic water balance P - PET (Hargreaves), Jun-Sep",mm,True
+station,radiation_AugSep,global radiation Aug-Sep,W/m²,False
+station,VPD_summer,vapour pressure deficit Jul-Sep,hPa,True
+station,ET0_summer,FAO reference evaporation Jun-Sep,mm,False

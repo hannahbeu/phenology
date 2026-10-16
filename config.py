@@ -61,14 +61,14 @@ FLAT_SLOPE = 5             # degrees
 MIN_ZONE_PIXELS = 200
 
 # ---------------------------------------------------------------- phenology metrics (03)
-# GCC, RCC and NDYI (colour indices) are only in caches downloaded since they were added; 03 skips indices the
-# cache lacks, 01 re-downloads years whose CSV lacks one
-INDICES = ["NDVI", "GRVI", "PSRI", "GCC", "RCC", "NDYI"]
+# RCC (red chromatic coordinate) is only in caches downloaded since it was added; 03 skips indices the cache
+# lacks, 01 re-downloads years whose CSV lacks one
+INDICES = ["NDVI", "GRVI", "PSRI", "RCC"]
 SMOOTH_WINDOW = 7          # 5-day steps -> centred 35-day moving average
 AUTUMN_START_DOY = 182     # 1 Jul: autumn observations run from here to the end of POST_WINDOW
 MIN_OBS_PER_YEAR = 6       # weighted autumn observations needed for a double-logistic fit
-# Direction of the autumn change: greenness drops, PSRI / RCC / NDYI rise with yellowing
-EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False, "GCC": True, "RCC": False, "NDYI": False}
+# Direction of the autumn change: greenness drops, PSRI / RCC rise with yellowing
+EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False, "RCC": False}
 ALPHA = 0.05
 # A year counts only once its cache reaches this DOY (1 Dec); earlier = autumn still in progress at download time
 SEASON_COMPLETE_DOY = 335
