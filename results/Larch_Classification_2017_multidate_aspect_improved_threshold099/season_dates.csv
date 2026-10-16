@@ -30,6 +30,12 @@ NDVI,2200_N,2025,MA fixed threshold,end,295.0,,,,,,inf,False,False,2025-10-22
 NDVI,all,2022,MA fixed threshold,end,286.0,,,,,,10.0,True,False,2022-10-13
 NDVI,all,2023,MA fixed threshold,end,311.0,,,,,,inf,False,False,2023-11-07
 NDVI,all,2025,MA fixed threshold,end,300.0,,,,,,15.0,True,False,2025-10-27
+GCC,1600_N,2017,Whittaker,end,309.0,medium,False,14.0,,,inf,False,False,2017-11-05
+GCC,1600_S,2017,Whittaker,end,300.0,medium,False,20.0,,,10.0,True,False,2017-10-27
+GCC,1800_S,2017,Whittaker,end,307.0,medium,False,19.0,,,inf,False,False,2017-11-03
+GCC,2000_S,2017,Whittaker,end,300.0,medium,False,19.0,,,15.0,True,False,2017-10-27
+GCC,2200_N,2017,Whittaker,end,331.0,low,False,18.0,,,inf,False,False,2017-11-27
+GCC,all,2017,Whittaker,end,295.0,medium,False,25.0,,,15.0,True,False,2017-10-22
 GRVI,1600_N,2017,Whittaker,end,284.0,low,False,14.0,,,5.0,False,False,2017-10-11
 GRVI,1600_N,2018,Whittaker,end,294.0,medium,False,21.0,,,inf,False,False,2018-10-21
 GRVI,1600_N,2019,Whittaker,end,301.0,low,False,13.0,,,inf,False,False,2019-10-28
@@ -180,6 +186,11 @@ NDVI,all,2023,Whittaker,end,313.0,medium,False,26.0,,,inf,False,False,2023-11-09
 NDVI,all,2024,Whittaker,end,321.0,medium,False,30.0,,,inf,False,False,2024-11-16
 NDVI,all,2025,Whittaker,end,300.0,high,False,43.0,,,15.0,True,False,2025-10-27
 NDVI,all,2026,Whittaker,end,336.0,medium,False,46.0,,,inf,False,True,2026-12-02
+NDYI,1600_N,2017,Whittaker,end,332.0,medium,False,14.0,,,inf,False,False,2017-11-28
+NDYI,1800_N,2017,Whittaker,end,288.0,medium,False,21.0,,,inf,False,False,2017-10-15
+NDYI,2000_N,2017,Whittaker,end,296.0,medium,False,19.0,,,inf,False,False,2017-10-23
+NDYI,2200_N,2017,Whittaker,end,320.0,medium,False,18.0,,,inf,False,False,2017-11-16
+NDYI,all,2017,Whittaker,end,334.0,medium,False,25.0,,,inf,False,False,2017-11-30
 PSRI,1600_N,2017,Whittaker,end,260.0,medium,False,14.0,,,30.0,False,False,2017-09-17
 PSRI,1600_N,2018,Whittaker,end,279.0,high,False,21.0,,,5.0,True,False,2018-10-06
 PSRI,1600_N,2019,Whittaker,end,276.0,low,False,13.0,,,15.0,False,False,2019-10-03
@@ -257,6 +268,22 @@ PSRI,all,2023,Whittaker,end,286.0,medium,False,26.0,,,15.0,True,False,2023-10-13
 PSRI,all,2024,Whittaker,end,287.0,medium,False,30.0,,,15.0,True,False,2024-10-13
 PSRI,all,2025,Whittaker,end,282.0,high,False,43.0,,,4.0,True,False,2025-10-09
 PSRI,all,2026,Whittaker,end,311.0,medium,False,46.0,,,inf,False,True,2026-11-07
+RCC,1600_N,2017,Whittaker,end,280.0,medium,False,14.0,,,5.0,True,False,2017-10-07
+RCC,1600_S,2017,Whittaker,end,309.0,medium,False,20.0,,,inf,False,False,2017-11-05
+RCC,1800_N,2017,Whittaker,end,264.0,medium,False,21.0,,,13.0,True,False,2017-09-21
+RCC,1800_S,2017,Whittaker,end,307.0,medium,False,19.0,,,inf,False,False,2017-11-03
+RCC,2000_N,2017,Whittaker,end,302.0,medium,False,19.0,,,inf,False,False,2017-10-29
+RCC,2000_S,2017,Whittaker,end,300.0,medium,False,19.0,,,15.0,True,False,2017-10-27
+RCC,2200_N,2017,Whittaker,end,287.0,medium,False,18.0,,,inf,False,False,2017-10-14
+RCC,all,2017,Whittaker,end,307.0,medium,False,24.0,,,inf,False,False,2017-11-03
+GCC,1600_N,2017,double logistic,end,292.1692155197198,medium,False,14.0,,,inf,False,False,2017-10-19
+GCC,1600_S,2017,double logistic,end,286.7710522435157,high,False,19.0,,,5.0,True,False,2017-10-14
+GCC,1800_N,2017,double logistic,end,285.8984106628736,filled,False,21.0,,,inf,False,False,2017-10-13
+GCC,1800_S,2017,double logistic,end,295.0925752021036,high,False,18.0,,,5.0,True,False,2017-10-22
+GCC,2000_N,2017,double logistic,end,315.7169516170177,low,False,19.0,,,inf,False,False,2017-11-12
+GCC,2000_S,2017,double logistic,end,286.8508470057036,medium,False,19.0,,,5.0,True,False,2017-10-14
+GCC,2200_N,2017,double logistic,end,283.28740649485087,medium,False,18.0,,,inf,False,False,2017-10-10
+GCC,all,2017,double logistic,end,280.5798988979242,medium,False,25.0,,,5.0,True,False,2017-10-08
 GRVI,1600_N,2017,double logistic,end,282.3797404295998,filled,False,14.0,,,5.0,False,False,2017-10-09
 GRVI,1600_N,2018,double logistic,end,287.242367763111,low,False,21.0,,,5.0,False,False,2018-10-14
 GRVI,1600_N,2019,double logistic,end,288.87320913241933,low,True,13.0,,,inf,False,False,2019-10-16
@@ -417,6 +444,14 @@ NDVI,all,2023,double logistic,end,300.4201358381011,low,False,26.0,,,15.0,False,
 NDVI,all,2024,double logistic,end,295.13307408713433,medium,False,30.0,,,15.0,True,False,2024-10-21
 NDVI,all,2025,double logistic,end,291.51582186040326,high,False,43.0,,,5.0,True,False,2025-10-19
 NDVI,all,2026,double logistic,end,311.32580975482733,medium,False,46.0,,,inf,False,True,2026-11-07
+NDYI,1600_N,2017,double logistic,end,285.98821210467446,filled,True,14.0,,,5.0,False,False,2017-10-13
+NDYI,1600_S,2017,double logistic,end,295.6054525113748,medium,True,19.0,,,5.0,False,False,2017-10-23
+NDYI,1800_N,2017,double logistic,end,260.10811069001903,medium,False,21.0,,,17.0,False,False,2017-09-17
+NDYI,1800_S,2017,double logistic,end,338.70576054736017,low,True,18.0,,,inf,False,False,2017-12-05
+NDYI,2000_N,2017,double logistic,end,294.97535974024174,low,False,19.0,,,inf,False,False,2017-10-22
+NDYI,2000_S,2017,double logistic,end,299.3048289722306,medium,True,19.0,,,15.0,False,False,2017-10-26
+NDYI,2200_N,2017,double logistic,end,274.05114527522613,low,True,18.0,,,10.0,False,False,2017-10-01
+NDYI,all,2017,double logistic,end,312.9429872385322,low,True,25.0,,,inf,False,False,2017-11-09
 PSRI,1600_N,2017,double logistic,end,256.7292392320678,low,False,14.0,,,30.0,False,False,2017-09-14
 PSRI,1600_N,2018,double logistic,end,279.3902819238134,medium,False,21.0,,,5.0,True,False,2018-10-06
 PSRI,1600_N,2019,double logistic,end,275.8573525983403,low,False,13.0,,,15.0,False,False,2019-10-03
@@ -497,6 +532,22 @@ PSRI,all,2023,double logistic,end,287.6968763771298,low,False,26.0,,,15.0,False,
 PSRI,all,2024,double logistic,end,283.13635483537917,medium,True,30.0,,,15.0,False,False,2024-10-09
 PSRI,all,2025,double logistic,end,283.58726681339783,medium,True,43.0,,,4.0,False,False,2025-10-11
 PSRI,all,2026,double logistic,end,323.46967119523725,medium,False,46.0,,,inf,False,True,2026-11-19
+RCC,1600_N,2017,double logistic,end,282.7596623427874,filled,False,14.0,,,5.0,False,False,2017-10-10
+RCC,1600_S,2017,double logistic,end,284.79331118334346,low,True,19.0,,,5.0,False,False,2017-10-12
+RCC,1800_N,2017,double logistic,end,249.289713457511,medium,False,21.0,,,17.0,False,False,2017-09-06
+RCC,1800_S,2017,double logistic,end,285.448772745643,low,False,18.0,,,5.0,False,False,2017-10-12
+RCC,2000_N,2017,double logistic,end,273.8348859349694,low,True,19.0,,,10.0,False,False,2017-10-01
+RCC,2000_S,2017,double logistic,end,285.2839736594795,medium,False,19.0,,,5.0,True,False,2017-10-12
+RCC,2200_N,2017,double logistic,end,273.29723961026275,low,True,18.0,,,10.0,False,False,2017-09-30
+RCC,all,2017,double logistic,end,287.2317053329277,low,False,24.0,,,10.0,False,False,2017-10-14
+GCC,1600_N,2017,"double logistic, 3rd derivative",end,288.4868577278123,medium,False,14.0,,,inf,False,False,2017-10-15
+GCC,1600_S,2017,"double logistic, 3rd derivative",end,283.0821634527308,high,False,19.0,,,5.0,True,False,2017-10-10
+GCC,1800_N,2017,"double logistic, 3rd derivative",end,284.5734208030167,filled,False,21.0,,,inf,False,False,2017-10-12
+GCC,1800_S,2017,"double logistic, 3rd derivative",end,290.9714609738221,high,False,18.0,,,5.0,True,False,2017-10-18
+GCC,2000_N,2017,"double logistic, 3rd derivative",end,311.05893231768977,low,False,19.0,,,inf,False,False,2017-11-07
+GCC,2000_S,2017,"double logistic, 3rd derivative",end,285.61389286293496,medium,False,19.0,,,5.0,True,False,2017-10-13
+GCC,2200_N,2017,"double logistic, 3rd derivative",end,279.74696222395676,medium,False,18.0,,,inf,False,False,2017-10-07
+GCC,all,2017,"double logistic, 3rd derivative",end,280.0879473238574,medium,False,25.0,,,5.0,True,False,2017-10-07
 GRVI,1600_N,2017,"double logistic, 3rd derivative",end,281.1283617718355,filled,False,14.0,,,5.0,False,False,2017-10-08
 GRVI,1600_N,2018,"double logistic, 3rd derivative",end,286.6873145485578,low,False,21.0,,,5.0,False,False,2018-10-14
 GRVI,1600_N,2019,"double logistic, 3rd derivative",end,288.4555659728006,low,True,13.0,,,inf,False,False,2019-10-15
@@ -657,6 +708,14 @@ NDVI,all,2023,"double logistic, 3rd derivative",end,297.83850126811217,low,False
 NDVI,all,2024,"double logistic, 3rd derivative",end,294.5903095354523,medium,False,30.0,,,15.0,True,False,2024-10-21
 NDVI,all,2025,"double logistic, 3rd derivative",end,290.5131277740221,high,False,43.0,,,5.0,True,False,2025-10-18
 NDVI,all,2026,"double logistic, 3rd derivative",end,306.8851297629183,medium,False,46.0,,,inf,False,True,2026-11-03
+NDYI,1600_N,2017,"double logistic, 3rd derivative",end,285.57056892792866,filled,True,14.0,,,5.0,False,False,2017-10-13
+NDYI,1600_S,2017,"double logistic, 3rd derivative",end,278.8997261728432,medium,True,19.0,,,5.0,False,False,2017-10-06
+NDYI,1800_N,2017,"double logistic, 3rd derivative",end,255.03780249483287,medium,False,21.0,,,17.0,False,False,2017-09-12
+NDYI,1800_S,2017,"double logistic, 3rd derivative",end,322.0000342088286,low,True,18.0,,,inf,False,False,2017-11-18
+NDYI,2000_N,2017,"double logistic, 3rd derivative",end,280.2824959820897,low,False,19.0,,,inf,False,False,2017-10-07
+NDYI,2000_S,2017,"double logistic, 3rd derivative",end,282.59910263369903,medium,True,19.0,,,5.0,False,False,2017-10-10
+NDYI,2200_N,2017,"double logistic, 3rd derivative",end,273.6335015572727,low,True,18.0,,,10.0,False,False,2017-10-01
+NDYI,all,2017,"double logistic, 3rd derivative",end,296.2372609000007,low,True,25.0,,,15.0,False,False,2017-10-23
 PSRI,1600_N,2017,"double logistic, 3rd derivative",end,253.3235452648483,low,False,14.0,,,30.0,False,False,2017-09-10
 PSRI,1600_N,2018,"double logistic, 3rd derivative",end,277.99973509968646,medium,False,21.0,,,5.0,True,False,2018-10-05
 PSRI,1600_N,2019,"double logistic, 3rd derivative",end,275.0928337868148,low,False,13.0,,,15.0,False,False,2019-10-02
@@ -737,6 +796,22 @@ PSRI,all,2023,"double logistic, 3rd derivative",end,286.32776324651735,low,False
 PSRI,all,2024,"double logistic, 3rd derivative",end,282.71871167691586,medium,True,30.0,,,15.0,False,False,2024-10-09
 PSRI,all,2025,"double logistic, 3rd derivative",end,283.16962365493407,medium,True,43.0,,,4.0,False,False,2025-10-10
 PSRI,all,2026,"double logistic, 3rd derivative",end,314.3567825564044,medium,False,46.0,,,inf,False,True,2026-11-10
+RCC,1600_N,2017,"double logistic, 3rd derivative",end,281.52296807736917,filled,False,14.0,,,5.0,False,False,2017-10-09
+RCC,1600_S,2017,"double logistic, 3rd derivative",end,284.37566802488016,low,True,19.0,,,5.0,False,False,2017-10-11
+RCC,1800_N,2017,"double logistic, 3rd derivative",end,245.97162057134256,medium,False,21.0,,,5.0,True,False,2017-09-03
+RCC,1800_S,2017,"double logistic, 3rd derivative",end,284.39818023171705,low,False,18.0,,,5.0,False,False,2017-10-11
+RCC,2000_N,2017,"double logistic, 3rd derivative",end,273.4172417395866,low,True,19.0,,,10.0,False,False,2017-09-30
+RCC,2000_S,2017,"double logistic, 3rd derivative",end,283.9558291574176,medium,False,19.0,,,5.0,True,False,2017-10-11
+RCC,2200_N,2017,"double logistic, 3rd derivative",end,272.87959640374663,low,True,18.0,,,10.0,False,False,2017-09-30
+RCC,all,2017,"double logistic, 3rd derivative",end,285.3424249174759,low,False,24.0,,,10.0,False,False,2017-10-12
+GCC,1600_N,2017,"logistic, fixed base",end,297.15942570950483,medium,False,10.0,249.94781153794136,337.2821002829196,inf,False,False,2017-10-24
+GCC,1600_S,2017,"logistic, fixed base",end,286.7674990409035,high,False,15.0,267.92711682648223,312.46573116496614,5.0,True,False,2017-10-14
+GCC,1800_N,2017,"logistic, fixed base",end,281.25376084406827,filled,False,15.0,279.9143622737232,346.2355248329294,inf,False,False,2017-10-08
+GCC,1800_S,2017,"logistic, fixed base",end,294.74875950171435,high,False,14.0,284.0035403192057,335.3145794720499,5.0,True,False,2017-10-22
+GCC,2000_N,2017,"logistic, fixed base",end,319.28360297498307,low,False,15.0,267.94670308418125,385.2080630755288,inf,False,False,2017-11-15
+GCC,2000_S,2017,"logistic, fixed base",end,286.8838748574082,medium,False,16.0,279.46183260673104,289.67595033573775,5.0,True,False,2017-10-14
+GCC,2200_N,2017,"logistic, fixed base",end,283.0060133610925,medium,False,15.0,267.5649256702541,334.5799499193627,inf,False,False,2017-10-10
+GCC,all,2017,"logistic, fixed base",end,280.67148493724943,medium,False,19.0,268.1319969308085,298.72531468366645,5.0,True,False,2017-10-08
 GRVI,1600_N,2017,"logistic, fixed base",end,282.5938637271316,filled,False,10.0,268.4416923572532,325.03203312515416,5.0,False,False,2017-10-10
 GRVI,1600_N,2018,"logistic, fixed base",end,287.2958077198803,low,False,18.0,274.81321870858,295.7509179393751,5.0,False,False,2018-10-14
 GRVI,1600_N,2019,"logistic, fixed base",end,288.88048733534805,low,True,10.0,272.4615715697046,343.2293373043899,inf,False,False,2019-10-16
@@ -897,6 +972,14 @@ NDVI,all,2023,"logistic, fixed base",end,300.3785406581856,low,False,20.0,283.21
 NDVI,all,2024,"logistic, fixed base",end,294.3156418107374,medium,False,25.0,291.18510133419363,327.3548113452426,15.0,True,False,2024-10-20
 NDVI,all,2025,"logistic, fixed base",end,291.54769893736545,high,False,31.0,287.93676988288985,315.26072826032896,5.0,True,False,2025-10-19
 NDVI,all,2026,"logistic, fixed base",end,310.0700623862337,medium,False,30.0,277.3393914630674,394.34628274651834,inf,False,True,2026-11-06
+NDYI,1600_N,2017,"logistic, fixed base",end,286.1075640479892,filled,True,10.0,263.77154834407867,369.6877266704988,5.0,False,False,2017-10-13
+NDYI,1600_S,2017,"logistic, fixed base",end,353.56385606898624,low,False,15.0,241.65275518555194,396.60706534027355,inf,False,False,2017-12-20
+NDYI,1800_N,2017,"logistic, fixed base",end,257.9113362982795,medium,False,15.0,232.71448162524683,332.7991111800198,17.0,False,False,2017-09-15
+NDYI,1800_S,2017,"logistic, fixed base",end,403.3840422141962,low,True,14.0,278.41745713562074,403.3840422155139,inf,False,False,2018-02-07
+NDYI,2000_N,2017,"logistic, fixed base",end,288.1715945744492,medium,False,15.0,238.7503212195168,349.78735261893576,inf,False,False,2017-10-15
+NDYI,2000_S,2017,"logistic, fixed base",end,369.3938453465447,medium,True,16.0,241.27220431624073,403.3840422155242,inf,False,False,2018-01-04
+NDYI,2200_N,2017,"logistic, fixed base",end,274.1155692024775,low,True,15.0,247.0790091206055,338.3979936889951,10.0,False,False,2017-10-01
+NDYI,all,2017,"logistic, fixed base",end,275.07292033140766,medium,True,19.0,242.02361589452556,393.5832408665689,10.0,False,False,2017-10-02
 PSRI,1600_N,2017,"logistic, fixed base",end,259.06301449077273,low,False,10.0,238.04971265890828,267.02749553713653,30.0,False,False,2017-09-16
 PSRI,1600_N,2018,"logistic, fixed base",end,279.4592446827455,medium,False,18.0,252.93962823516551,285.3313243788153,5.0,True,False,2018-10-06
 PSRI,1600_N,2019,"logistic, fixed base",end,275.23935193268073,low,False,10.0,253.61109344049444,326.4500635540365,15.0,False,False,2019-10-02
@@ -977,6 +1060,22 @@ PSRI,all,2023,"logistic, fixed base",end,287.7225805887554,low,False,20.0,277.66
 PSRI,all,2024,"logistic, fixed base",end,283.2250540731748,medium,True,25.0,274.671493974102,292.6342801403897,15.0,False,False,2024-10-09
 PSRI,all,2025,"logistic, fixed base",end,283.6003468501007,medium,True,31.0,270.04979199749175,288.5046576944799,4.0,False,False,2025-10-11
 PSRI,all,2026,"logistic, fixed base",end,317.19242724601924,medium,False,30.0,298.7808743819622,370.10200154859416,inf,False,True,2026-11-13
+RCC,1600_N,2017,"logistic, fixed base",end,283.12146596060285,filled,False,10.0,254.2066935151568,345.99520385134014,5.0,False,False,2017-10-10
+RCC,1600_S,2017,"logistic, fixed base",end,284.88583626742894,low,True,15.0,277.79707783303644,322.5547969945586,5.0,False,False,2017-10-12
+RCC,1800_N,2017,"logistic, fixed base",end,248.07610538899536,medium,False,15.0,239.46095327580662,335.11998319829445,17.0,False,False,2017-09-05
+RCC,1800_S,2017,"logistic, fixed base",end,285.43527082403557,low,False,14.0,273.070792189301,326.0654892065768,5.0,False,False,2017-10-12
+RCC,2000_N,2017,"logistic, fixed base",end,273.8280676785324,low,True,15.0,249.60411909626944,356.7817960694523,10.0,False,False,2017-10-01
+RCC,2000_S,2017,"logistic, fixed base",end,285.3411159473868,medium,False,16.0,277.0869550234498,322.58765815920816,5.0,True,False,2017-10-12
+RCC,2200_N,2017,"logistic, fixed base",end,273.3214148671704,low,True,15.0,249.84756188767057,380.0741016019493,10.0,False,False,2017-09-30
+RCC,all,2017,"logistic, fixed base",end,287.2666607368871,low,False,18.0,278.6307436002371,330.8885189641489,10.0,False,False,2017-10-14
+GCC,1600_N,2017,"logistic, free",end,278.57,filled,True,10.0,,,5.0,False,False,2017-10-06
+GCC,1600_S,2017,"logistic, free",end,265.08,medium,False,15.0,,,20.0,False,False,2017-09-22
+GCC,1800_N,2017,"logistic, free",end,227.867,medium,False,15.0,,,10.0,True,False,2017-08-16
+GCC,1800_S,2017,"logistic, free",end,284.964,high,False,14.0,,,5.0,True,False,2017-10-12
+GCC,2000_N,2017,"logistic, free",end,282.81,low,True,15.0,,,inf,False,False,2017-10-10
+GCC,2000_S,2017,"logistic, free",end,285.758,medium,False,16.0,,,5.0,True,False,2017-10-13
+GCC,2200_N,2017,"logistic, free",end,266.353,low,True,15.0,,,3.0,False,False,2017-09-23
+GCC,all,2017,"logistic, free",end,282.291,medium,False,19.0,,,5.0,True,False,2017-10-09
 GRVI,1600_N,2017,"logistic, free",end,316.353,low,True,10.0,,,inf,False,False,2017-11-12
 GRVI,1600_N,2018,"logistic, free",end,288.426,low,False,18.0,,,5.0,False,False,2018-10-15
 GRVI,1600_N,2019,"logistic, free",end,290.712,low,False,10.0,,,inf,False,False,2019-10-18
@@ -1137,6 +1236,14 @@ NDVI,all,2023,"logistic, free",end,315.613,low,False,20.0,,,inf,False,False,2023
 NDVI,all,2024,"logistic, free",end,287.51,medium,True,25.0,,,15.0,False,False,2024-10-14
 NDVI,all,2025,"logistic, free",end,294.553,medium,False,31.0,,,5.0,True,False,2025-10-22
 NDVI,all,2026,"logistic, free",end,272.429,medium,True,30.0,,,5.0,False,True,2026-09-29
+NDYI,1600_N,2017,"logistic, free",end,288.967,filled,True,10.0,,,inf,False,False,2017-10-16
+NDYI,1600_S,2017,"logistic, free",end,285.416,medium,True,15.0,,,5.0,False,False,2017-10-12
+NDYI,1800_N,2017,"logistic, free",end,229.013,medium,False,15.0,,,10.0,True,False,2017-08-17
+NDYI,1800_S,2017,"logistic, free",end,283.708,low,True,14.0,,,5.0,False,False,2017-10-11
+NDYI,2000_N,2017,"logistic, free",end,279.498,low,True,15.0,,,inf,False,False,2017-10-06
+NDYI,2000_S,2017,"logistic, free",end,228.411,medium,True,16.0,,,10.0,False,False,2017-08-16
+NDYI,2200_N,2017,"logistic, free",end,279.802,low,True,15.0,,,inf,False,False,2017-10-07
+NDYI,all,2017,"logistic, free",end,273.807,medium,True,19.0,,,10.0,False,False,2017-10-01
 PSRI,1600_N,2017,"logistic, free",end,309.48,low,True,10.0,,,inf,False,False,2017-11-05
 PSRI,1600_N,2018,"logistic, free",end,310.163,low,False,18.0,,,inf,False,False,2018-11-06
 PSRI,1600_N,2019,"logistic, free",end,299.439,low,False,10.0,,,inf,False,False,2019-10-26
@@ -1217,6 +1324,14 @@ PSRI,all,2023,"logistic, free",end,287.721,low,True,20.0,,,15.0,False,False,2023
 PSRI,all,2024,"logistic, free",end,283.621,medium,True,25.0,,,15.0,False,False,2024-10-10
 PSRI,all,2025,"logistic, free",end,284.113,medium,True,31.0,,,1.0,False,False,2025-10-11
 PSRI,all,2026,"logistic, free",end,407.48,filled,True,30.0,,,inf,False,True,2027-02-11
+RCC,1600_N,2017,"logistic, free",end,299.905,low,True,10.0,,,inf,False,False,2017-10-27
+RCC,1600_S,2017,"logistic, free",end,284.275,low,True,15.0,,,5.0,False,False,2017-10-11
+RCC,1800_N,2017,"logistic, free",end,278.733,filled,True,15.0,,,inf,False,False,2017-10-06
+RCC,1800_S,2017,"logistic, free",end,283.408,low,False,14.0,,,5.0,False,False,2017-10-10
+RCC,2000_N,2017,"logistic, free",end,280.06,low,True,15.0,,,inf,False,False,2017-10-07
+RCC,2000_S,2017,"logistic, free",end,284.342,medium,False,16.0,,,5.0,True,False,2017-10-11
+RCC,2200_N,2017,"logistic, free",end,279.996,low,True,15.0,,,inf,False,False,2017-10-07
+RCC,all,2017,"logistic, free",end,283.351,medium,False,19.0,,,10.0,True,False,2017-10-10
 NDVI,1600_N,2017,MA midpoint,mid,267.0,,,,,,30.0,False,False,2017-09-24
 NDVI,1600_N,2018,MA midpoint,mid,287.0,,,,,,5.0,True,False,2018-10-14
 NDVI,1600_N,2019,MA midpoint,mid,292.0,,,,,,inf,False,False,2019-10-19
@@ -1297,6 +1412,12 @@ NDVI,all,2023,MA midpoint,mid,286.0,,,,,,15.0,True,False,2023-10-13
 NDVI,all,2024,MA midpoint,mid,286.0,,,,,,15.0,True,False,2024-10-12
 NDVI,all,2025,MA midpoint,mid,300.0,,,,,,15.0,True,False,2025-10-27
 NDVI,all,2026,MA midpoint,mid,275.0,,,,,,5.0,True,True,2026-10-02
+GCC,1600_N,2017,Whittaker,mid,280.0,medium,False,14.0,,,5.0,True,False,2017-10-07
+GCC,1600_S,2017,Whittaker,mid,273.0,medium,False,20.0,,,10.0,True,False,2017-09-30
+GCC,1800_S,2017,Whittaker,mid,278.0,medium,False,19.0,,,5.0,True,False,2017-10-05
+GCC,2000_S,2017,Whittaker,mid,281.0,medium,False,19.0,,,5.0,True,False,2017-10-08
+GCC,2200_N,2017,Whittaker,mid,297.0,low,False,18.0,,,inf,False,False,2017-10-24
+GCC,all,2017,Whittaker,mid,278.0,medium,False,25.0,,,5.0,True,False,2017-10-05
 GRVI,1600_N,2017,Whittaker,mid,272.0,low,False,14.0,,,30.0,False,False,2017-09-29
 GRVI,1600_N,2018,Whittaker,mid,287.0,medium,False,21.0,,,5.0,True,False,2018-10-14
 GRVI,1600_N,2019,Whittaker,mid,290.0,low,False,13.0,,,inf,False,False,2019-10-17
@@ -1452,6 +1573,12 @@ NDVI,all,2023,Whittaker,mid,293.0,medium,False,26.0,,,15.0,True,False,2023-10-20
 NDVI,all,2024,Whittaker,mid,297.0,medium,False,30.0,,,10.0,True,False,2024-10-23
 NDVI,all,2025,Whittaker,mid,289.0,high,False,43.0,,,3.0,True,False,2025-10-16
 NDVI,all,2026,Whittaker,mid,306.0,medium,False,46.0,,,inf,False,True,2026-11-02
+NDYI,1600_N,2017,Whittaker,mid,290.0,medium,False,14.0,,,inf,False,False,2017-10-17
+NDYI,1600_S,2017,Whittaker,mid,339.0,filled,False,20.0,,,inf,False,False,2017-12-05
+NDYI,1800_N,2017,Whittaker,mid,259.0,medium,False,21.0,,,17.0,False,False,2017-09-16
+NDYI,2000_N,2017,Whittaker,mid,265.0,medium,False,19.0,,,3.0,True,False,2017-09-22
+NDYI,2200_N,2017,Whittaker,mid,277.0,medium,False,18.0,,,inf,False,False,2017-10-04
+NDYI,all,2017,Whittaker,mid,279.0,medium,False,25.0,,,5.0,True,False,2017-10-06
 PSRI,1600_N,2017,Whittaker,mid,251.0,medium,False,14.0,,,30.0,False,False,2017-09-08
 PSRI,1600_N,2018,Whittaker,mid,273.0,high,False,21.0,,,5.0,True,False,2018-09-30
 PSRI,1600_N,2019,Whittaker,mid,270.0,low,False,13.0,,,10.0,False,False,2019-09-27
@@ -1531,6 +1658,22 @@ PSRI,all,2023,Whittaker,mid,281.0,medium,False,26.0,,,5.0,True,False,2023-10-08
 PSRI,all,2024,Whittaker,mid,283.0,medium,False,30.0,,,15.0,True,False,2024-10-09
 PSRI,all,2025,Whittaker,mid,276.0,high,False,43.0,,,5.0,True,False,2025-10-03
 PSRI,all,2026,Whittaker,mid,289.0,medium,False,46.0,,,inf,False,True,2026-10-16
+RCC,1600_N,2017,Whittaker,mid,263.0,medium,False,14.0,,,30.0,False,False,2017-09-20
+RCC,1600_S,2017,Whittaker,mid,279.0,medium,False,20.0,,,5.0,True,False,2017-10-06
+RCC,1800_N,2017,Whittaker,mid,244.0,medium,False,21.0,,,5.0,True,False,2017-09-01
+RCC,1800_S,2017,Whittaker,mid,279.0,medium,False,19.0,,,5.0,True,False,2017-10-06
+RCC,2000_N,2017,Whittaker,mid,277.0,medium,False,19.0,,,inf,False,False,2017-10-04
+RCC,2000_S,2017,Whittaker,mid,278.0,medium,False,19.0,,,5.0,True,False,2017-10-05
+RCC,2200_N,2017,Whittaker,mid,269.0,medium,False,18.0,,,10.0,True,False,2017-09-26
+RCC,all,2017,Whittaker,mid,283.0,medium,False,24.0,,,10.0,True,False,2017-10-10
+GCC,1600_N,2017,double logistic,mid,276.87524605626265,medium,False,14.0,,,30.0,False,False,2017-10-04
+GCC,1600_S,2017,double logistic,mid,271.4499575241651,high,False,19.0,,,10.0,True,False,2017-09-28
+GCC,1800_N,2017,double logistic,mid,280.3953184591297,filled,False,21.0,,,inf,False,False,2017-10-07
+GCC,1800_S,2017,double logistic,mid,277.9763147177831,high,False,18.0,,,5.0,True,False,2017-10-05
+GCC,2000_N,2017,double logistic,mid,296.37075851197113,low,False,19.0,,,inf,False,False,2017-10-23
+GCC,2000_S,2017,double logistic,mid,281.71339433101366,medium,False,19.0,,,5.0,True,False,2017-10-09
+GCC,2200_N,2017,double logistic,mid,268.5828477240754,medium,False,18.0,,,10.0,True,False,2017-09-26
+GCC,all,2017,double logistic,mid,278.5366720371851,medium,False,25.0,,,5.0,True,False,2017-10-06
 GRVI,1600_N,2017,double logistic,mid,277.1823782881129,filled,False,14.0,,,5.0,False,False,2017-10-04
 GRVI,1600_N,2018,double logistic,mid,284.93706029607836,low,False,21.0,,,5.0,False,False,2018-10-12
 GRVI,1600_N,2019,double logistic,mid,287.1386080722325,low,True,13.0,,,inf,False,False,2019-10-14
@@ -1691,6 +1834,14 @@ NDVI,all,2023,double logistic,mid,289.69780995059875,low,False,26.0,,,15.0,False
 NDVI,all,2024,double logistic,mid,292.8788052332185,medium,False,30.0,,,15.0,True,False,2024-10-19
 NDVI,all,2025,double logistic,mid,287.35132356748784,high,False,43.0,,,3.0,True,False,2025-10-14
 NDVI,all,2026,double logistic,mid,292.8822939339324,medium,False,46.0,,,inf,False,True,2026-10-20
+NDYI,1600_N,2017,double logistic,mid,284.2536109733534,filled,True,14.0,,,5.0,False,False,2017-10-11
+NDYI,1600_S,2017,double logistic,mid,226.22141029585052,medium,True,19.0,,,8.0,False,False,2017-08-14
+NDYI,1800_N,2017,double logistic,mid,239.0495544362216,medium,False,21.0,,,5.0,True,False,2017-08-27
+NDYI,1800_S,2017,double logistic,mid,269.32171833183594,low,True,18.0,,,10.0,False,False,2017-09-26
+NDYI,2000_N,2017,double logistic,mid,233.95135763437614,low,False,19.0,,,10.0,False,False,2017-08-22
+NDYI,2000_S,2017,double logistic,mid,229.92078675670638,medium,True,19.0,,,10.0,False,False,2017-08-18
+NDYI,2200_N,2017,double logistic,mid,272.3165418961027,low,True,18.0,,,10.0,False,False,2017-09-29
+NDYI,all,2017,double logistic,mid,243.55894502300833,low,True,25.0,,,5.0,False,False,2017-09-01
 PSRI,1600_N,2017,double logistic,mid,242.58434009950577,low,False,14.0,,,5.0,False,False,2017-08-31
 PSRI,1600_N,2018,double logistic,mid,273.614911395604,medium,False,21.0,,,5.0,True,False,2018-10-01
 PSRI,1600_N,2019,double logistic,mid,272.6820697989866,low,False,13.0,,,15.0,False,False,2019-09-30
@@ -1771,6 +1922,22 @@ PSRI,all,2023,double logistic,mid,282.0105265993808,low,False,26.0,,,5.0,False,F
 PSRI,all,2024,double logistic,mid,281.40175377999105,medium,True,30.0,,,15.0,False,False,2024-10-07
 PSRI,all,2025,double logistic,mid,281.85266575800784,medium,True,43.0,,,4.0,False,False,2025-10-09
 PSRI,all,2026,double logistic,mid,285.6210295253579,medium,False,46.0,,,2.0,True,True,2026-10-13
+RCC,1600_N,2017,double logistic,mid,277.6232890190151,filled,False,14.0,,,5.0,False,False,2017-10-05
+RCC,1600_S,2017,double logistic,mid,283.05871012795535,low,True,19.0,,,5.0,False,False,2017-10-10
+RCC,1800_N,2017,double logistic,mid,235.50864867627274,medium,False,21.0,,,10.0,True,False,2017-08-24
+RCC,1800_S,2017,double logistic,mid,281.0853374863557,low,False,18.0,,,5.0,False,False,2017-10-08
+RCC,2000_N,2017,double logistic,mid,272.10028057293414,low,True,19.0,,,10.0,False,False,2017-09-29
+RCC,2000_S,2017,double logistic,mid,279.76777925212645,medium,False,19.0,,,5.0,True,False,2017-10-07
+RCC,2200_N,2017,double logistic,mid,271.56263835529654,low,True,18.0,,,10.0,False,False,2017-09-29
+RCC,all,2017,double logistic,mid,279.38494013120635,low,False,24.0,,,5.0,False,False,2017-10-06
+GCC,1600_N,2017,"logistic, fixed base",mid,273.8817530778261,medium,False,10.0,209.99536785643033,286.532674347573,30.0,False,False,2017-10-01
+GCC,1600_S,2017,"logistic, fixed base",mid,271.4254156266611,high,False,15.0,239.6809067207093,284.50654252408884,10.0,True,False,2017-09-28
+GCC,1800_N,2017,"logistic, fixed base",mid,279.5100993923282,filled,False,15.0,266.3046568259853,333.7248691327957,inf,False,False,2017-10-07
+GCC,1800_S,2017,"logistic, fixed base",mid,278.4986392539322,high,False,14.0,257.93819845836873,287.66176265672846,5.0,True,False,2017-10-05
+GCC,2000_N,2017,"logistic, fixed base",mid,302.85109015940816,low,False,15.0,265.9675000141539,333.9981974330971,inf,False,False,2017-10-30
+GCC,2000_S,2017,"logistic, fixed base",mid,281.9118389886207,medium,False,16.0,274.08758300110765,285.7963924382434,5.0,True,False,2017-10-09
+GCC,2200_N,2017,"logistic, fixed base",mid,270.1877286810138,medium,False,15.0,256.1949520251491,331.1862891773507,10.0,True,False,2017-09-27
+GCC,all,2017,"logistic, fixed base",mid,278.7842787252464,medium,False,19.0,266.3454621012984,282.64849557386054,5.0,True,False,2017-10-06
 GRVI,1600_N,2017,"logistic, fixed base",mid,277.511507133825,filled,False,10.0,253.96069923309173,281.4263692734802,5.0,False,False,2017-10-05
 GRVI,1600_N,2018,"logistic, fixed base",mid,285.1073485605658,low,False,18.0,273.0785697870198,285.6930096632671,5.0,False,False,2018-10-12
 GRVI,1600_N,2019,"logistic, fixed base",mid,287.1458862799599,low,True,10.0,264.5354422547353,333.847222998551,inf,False,False,2019-10-14
@@ -1931,6 +2098,14 @@ NDVI,all,2023,"logistic, fixed base",mid,289.73022473142083,low,False,20.0,275.5
 NDVI,all,2024,"logistic, fixed base",mid,289.66791464472993,medium,False,25.0,283.0486571498426,306.23837964251277,15.0,True,False,2024-10-16
 NDVI,all,2025,"logistic, fixed base",mid,287.4501171673537,high,False,31.0,284.6134475176683,289.43232492277616,3.0,True,False,2025-10-14
 NDVI,all,2026,"logistic, fixed base",mid,293.11731368267317,medium,False,30.0,274.0964148295389,333.9999999999897,inf,False,True,2026-10-20
+NDYI,1600_N,2017,"logistic, fixed base",mid,284.3729623286512,filled,True,10.0,250.21574905712467,333.9999995473487,5.0,False,False,2017-10-11
+NDYI,1600_S,2017,"logistic, fixed base",mid,313.4221471052134,low,False,15.0,236.11986565154504,333.99995059083557,inf,False,False,2017-11-09
+NDYI,1800_N,2017,"logistic, fixed base",mid,239.9608941484285,medium,False,15.0,200.02519541432807,306.58789952525984,5.0,True,False,2017-08-28
+NDYI,1800_S,2017,"logistic, fixed base",mid,333.99999999867595,low,True,14.0,260.94874075556737,333.99999999999994,inf,False,False,2017-11-30
+NDYI,2000_N,2017,"logistic, fixed base",mid,253.78669371671714,medium,False,15.0,229.42328034705685,333.8387434318843,17.0,False,False,2017-09-11
+NDYI,2000_S,2017,"logistic, fixed base",mid,300.0098031310205,medium,True,16.0,186.7811682793243,333.99999999999994,15.0,False,False,2017-10-27
+NDYI,2200_N,2017,"logistic, fixed base",mid,272.38096063885143,low,True,15.0,231.85780229036325,333.7099033739249,10.0,False,False,2017-09-29
+NDYI,all,2017,"logistic, fixed base",mid,273.33831457944245,medium,True,19.0,209.55880657161362,333.9999997829669,10.0,False,False,2017-09-30
 PSRI,1600_N,2017,"logistic, fixed base",mid,246.16621968436053,low,False,10.0,227.2651866979661,264.59283341482455,5.0,False,False,2017-09-03
 PSRI,1600_N,2018,"logistic, fixed base",mid,274.68321341408455,medium,False,18.0,251.20270802553523,277.02901010712463,5.0,True,False,2018-10-02
 PSRI,1600_N,2019,"logistic, fixed base",mid,272.7501946629165,low,False,10.0,206.77989757977068,289.7128732821477,15.0,False,False,2019-09-30
@@ -2011,6 +2186,22 @@ PSRI,all,2023,"logistic, fixed base",mid,281.78151648627676,low,False,20.0,267.4
 PSRI,all,2024,"logistic, fixed base",mid,281.49045301754074,medium,True,25.0,265.0375028528135,290.8841250416588,15.0,False,False,2024-10-07
 PSRI,all,2025,"logistic, fixed base",mid,281.86574579456516,medium,True,31.0,263.43104211133186,283.7419021298016,4.0,False,False,2025-10-09
 PSRI,all,2026,"logistic, fixed base",mid,285.75178178761297,medium,False,30.0,275.7555269287974,303.7359975945325,2.0,True,True,2026-10-13
+RCC,1600_N,2017,"logistic, fixed base",mid,278.1903848733378,filled,False,10.0,244.44546710259604,288.04911157150605,5.0,False,False,2017-10-05
+RCC,1600_S,2017,"logistic, fixed base",mid,283.15123521204083,low,True,15.0,267.3576423464809,296.10235186063744,5.0,False,False,2017-10-10
+RCC,1800_N,2017,"logistic, fixed base",mid,235.87746472359788,medium,False,15.0,215.07427868319988,332.2924239098172,10.0,True,False,2017-08-24
+RCC,1800_S,2017,"logistic, fixed base",mid,280.94128967460733,low,False,14.0,266.2540278064156,296.31673428598606,5.0,False,False,2017-10-08
+RCC,2000_N,2017,"logistic, fixed base",mid,272.09346538155285,low,True,15.0,242.2805939086355,333.5864320248165,10.0,False,False,2017-09-29
+RCC,2000_S,2017,"logistic, fixed base",mid,279.94062842895045,medium,False,16.0,275.1628033713475,290.91531310961983,5.0,True,False,2017-10-07
+RCC,2200_N,2017,"logistic, fixed base",mid,271.58681153099974,low,True,15.0,247.66481650264296,333.7326529435842,10.0,False,False,2017-09-29
+RCC,all,2017,"logistic, fixed base",mid,279.4710324807824,low,False,18.0,269.87906225745394,319.38734344448017,5.0,False,False,2017-10-06
+GCC,1600_N,2017,"logistic, free",mid,277.183,filled,True,10.0,,,5.0,False,False,2017-10-04
+GCC,1600_S,2017,"logistic, free",mid,262.953,medium,False,15.0,,,20.0,False,False,2017-09-20
+GCC,1800_N,2017,"logistic, free",mid,225.802,medium,False,15.0,,,8.0,True,False,2017-08-14
+GCC,1800_S,2017,"logistic, free",mid,274.194,high,False,14.0,,,10.0,True,False,2017-10-01
+GCC,2000_N,2017,"logistic, free",mid,281.424,low,True,15.0,,,inf,False,False,2017-10-08
+GCC,2000_S,2017,"logistic, free",mid,281.847,medium,False,16.0,,,5.0,True,False,2017-10-09
+GCC,2200_N,2017,"logistic, free",mid,264.967,low,True,15.0,,,3.0,False,False,2017-09-22
+GCC,all,2017,"logistic, free",mid,280.318,medium,False,19.0,,,5.0,True,False,2017-10-07
 GRVI,1600_N,2017,"logistic, free",mid,303.701,low,True,10.0,,,inf,False,False,2017-10-31
 GRVI,1600_N,2018,"logistic, free",mid,286.314,low,False,18.0,,,5.0,False,False,2018-10-13
 GRVI,1600_N,2019,"logistic, free",mid,289.322,low,False,10.0,,,inf,False,False,2019-10-16
@@ -2171,6 +2362,14 @@ NDVI,all,2023,"logistic, free",mid,301.268,low,False,20.0,,,inf,False,False,2023
 NDVI,all,2024,"logistic, free",mid,286.123,medium,True,25.0,,,15.0,False,False,2024-10-12
 NDVI,all,2025,"logistic, free",mid,290.028,medium,False,31.0,,,5.0,True,False,2025-10-17
 NDVI,all,2026,"logistic, free",mid,271.043,medium,True,30.0,,,2.0,False,True,2026-09-28
+NDYI,1600_N,2017,"logistic, free",mid,287.581,filled,True,10.0,,,inf,False,False,2017-10-15
+NDYI,1600_S,2017,"logistic, free",mid,284.029,medium,True,15.0,,,5.0,False,False,2017-10-11
+NDYI,1800_N,2017,"logistic, free",mid,227.284,medium,False,15.0,,,10.0,True,False,2017-08-15
+NDYI,1800_S,2017,"logistic, free",mid,282.322,low,True,14.0,,,5.0,False,False,2017-10-09
+NDYI,2000_N,2017,"logistic, free",mid,278.112,low,True,15.0,,,inf,False,False,2017-10-05
+NDYI,2000_S,2017,"logistic, free",mid,227.025,medium,True,16.0,,,10.0,False,False,2017-08-15
+NDYI,2200_N,2017,"logistic, free",mid,278.416,low,True,15.0,,,inf,False,False,2017-10-05
+NDYI,all,2017,"logistic, free",mid,272.42,medium,True,19.0,,,10.0,False,False,2017-09-29
 PSRI,1600_N,2017,"logistic, free",mid,300.69,low,True,10.0,,,inf,False,False,2017-10-28
 PSRI,1600_N,2018,"logistic, free",mid,298.391,low,False,18.0,,,inf,False,False,2018-10-25
 PSRI,1600_N,2019,"logistic, free",mid,287.972,low,False,10.0,,,inf,False,False,2019-10-15
@@ -2251,6 +2450,22 @@ PSRI,all,2023,"logistic, free",mid,286.334,low,True,20.0,,,15.0,False,False,2023
 PSRI,all,2024,"logistic, free",mid,282.234,medium,True,25.0,,,15.0,False,False,2024-10-08
 PSRI,all,2025,"logistic, free",mid,282.726,medium,True,31.0,,,4.0,False,False,2025-10-10
 PSRI,all,2026,"logistic, free",mid,365.0,filled,True,30.0,,,inf,False,True,2026-12-31
+RCC,1600_N,2017,"logistic, free",mid,294.501,low,True,10.0,,,inf,False,False,2017-10-22
+RCC,1600_S,2017,"logistic, free",mid,282.889,low,True,15.0,,,5.0,False,False,2017-10-10
+RCC,1800_N,2017,"logistic, free",mid,277.346,filled,True,15.0,,,inf,False,False,2017-10-04
+RCC,1800_S,2017,"logistic, free",mid,280.193,low,False,14.0,,,5.0,False,False,2017-10-07
+RCC,2000_N,2017,"logistic, free",mid,278.673,low,True,15.0,,,inf,False,False,2017-10-06
+RCC,2000_S,2017,"logistic, free",mid,280.168,medium,False,16.0,,,5.0,True,False,2017-10-07
+RCC,2200_N,2017,"logistic, free",mid,278.61,low,True,15.0,,,inf,False,False,2017-10-06
+RCC,all,2017,"logistic, free",mid,278.937,medium,False,19.0,,,5.0,True,False,2017-10-06
+NDYI,1600_N,2017,Whittaker,peak,320.0,filled,True,14.0,,,inf,False,False,2017-11-16
+NDYI,1600_S,2017,Whittaker,peak,320.0,filled,True,20.0,,,inf,False,False,2017-11-16
+NDYI,1800_N,2017,Whittaker,peak,320.0,filled,True,21.0,,,inf,False,False,2017-11-16
+NDYI,1800_S,2017,Whittaker,peak,320.0,filled,True,19.0,,,inf,False,False,2017-11-16
+NDYI,2000_N,2017,Whittaker,peak,320.0,filled,True,19.0,,,inf,False,False,2017-11-16
+NDYI,2000_S,2017,Whittaker,peak,281.0,high,False,19.0,,,5.0,True,False,2017-10-08
+NDYI,2200_N,2017,Whittaker,peak,320.0,filled,True,18.0,,,inf,False,False,2017-11-16
+NDYI,all,2017,Whittaker,peak,320.0,filled,True,25.0,,,inf,False,False,2017-11-16
 PSRI,1600_N,2017,Whittaker,peak,288.0,medium,False,14.0,,,inf,False,False,2017-10-15
 PSRI,1600_N,2018,Whittaker,peak,295.0,medium,False,21.0,,,inf,False,False,2018-10-22
 PSRI,1600_N,2019,Whittaker,peak,291.0,low,False,13.0,,,inf,False,False,2019-10-18
@@ -2331,6 +2546,20 @@ PSRI,all,2023,Whittaker,peak,303.0,low,False,26.0,,,inf,False,False,2023-10-30
 PSRI,all,2024,Whittaker,peak,310.0,high,False,30.0,,,5.0,True,False,2024-11-05
 PSRI,all,2025,Whittaker,peak,295.0,high,False,43.0,,,15.0,True,False,2025-10-22
 PSRI,all,2026,Whittaker,peak,320.0,filled,True,46.0,,,inf,False,True,2026-11-16
+RCC,1600_N,2017,Whittaker,peak,320.0,filled,True,14.0,,,inf,False,False,2017-11-16
+RCC,1600_S,2017,Whittaker,peak,320.0,filled,True,20.0,,,inf,False,False,2017-11-16
+RCC,1800_N,2017,Whittaker,peak,320.0,filled,True,21.0,,,inf,False,False,2017-11-16
+RCC,1800_S,2017,Whittaker,peak,320.0,filled,True,19.0,,,inf,False,False,2017-11-16
+RCC,2000_N,2017,Whittaker,peak,320.0,filled,True,19.0,,,inf,False,False,2017-11-16
+RCC,2000_S,2017,Whittaker,peak,320.0,filled,True,19.0,,,inf,False,False,2017-11-16
+RCC,2200_N,2017,Whittaker,peak,320.0,filled,True,18.0,,,inf,False,False,2017-11-16
+RCC,all,2017,Whittaker,peak,320.0,filled,True,24.0,,,inf,False,False,2017-11-16
+GCC,1600_N,2017,Whittaker,start,238.0,medium,False,14.0,,,5.0,True,False,2017-08-26
+GCC,1600_S,2017,Whittaker,start,237.0,medium,False,20.0,,,5.0,True,False,2017-08-25
+GCC,1800_S,2017,Whittaker,start,239.0,medium,False,19.0,,,5.0,True,False,2017-08-27
+GCC,2000_S,2017,Whittaker,start,252.0,medium,False,19.0,,,17.0,False,False,2017-09-09
+GCC,2200_N,2017,Whittaker,start,255.0,low,False,18.0,,,17.0,False,False,2017-09-12
+GCC,all,2017,Whittaker,start,252.0,medium,False,25.0,,,17.0,False,False,2017-09-09
 GRVI,1600_N,2017,Whittaker,start,234.0,low,False,14.0,,,10.0,False,False,2017-08-22
 GRVI,1600_N,2018,Whittaker,start,278.0,medium,False,21.0,,,5.0,True,False,2018-10-05
 GRVI,1600_N,2019,Whittaker,start,278.0,low,False,13.0,,,15.0,False,False,2019-10-05
@@ -2486,6 +2715,12 @@ NDVI,all,2023,Whittaker,start,271.0,medium,False,26.0,,,5.0,True,False,2023-09-2
 NDVI,all,2024,Whittaker,start,280.0,medium,False,30.0,,,5.0,True,False,2024-10-06
 NDVI,all,2025,Whittaker,start,270.0,high,False,43.0,,,10.0,True,False,2025-09-27
 NDVI,all,2026,Whittaker,start,271.0,medium,False,46.0,,,2.0,True,True,2026-09-28
+NDYI,1600_N,2017,Whittaker,start,232.0,medium,False,14.0,,,10.0,True,False,2017-08-20
+NDYI,1600_S,2017,Whittaker,start,234.0,filled,False,20.0,,,10.0,False,False,2017-08-22
+NDYI,1800_N,2017,Whittaker,start,222.0,medium,False,21.0,,,8.0,True,False,2017-08-10
+NDYI,2000_N,2017,Whittaker,start,224.0,medium,False,19.0,,,8.0,True,False,2017-08-12
+NDYI,2200_N,2017,Whittaker,start,225.0,medium,False,18.0,,,8.0,True,False,2017-08-13
+NDYI,all,2017,Whittaker,start,225.0,medium,False,25.0,,,8.0,True,False,2017-08-13
 PSRI,1600_N,2017,Whittaker,start,231.0,medium,False,14.0,,,10.0,True,False,2017-08-19
 PSRI,1600_N,2018,Whittaker,start,244.0,high,False,21.0,,,5.0,True,False,2018-09-01
 PSRI,1600_N,2019,Whittaker,start,256.0,low,False,13.0,,,5.0,False,False,2019-09-13
@@ -2565,6 +2800,22 @@ PSRI,all,2023,Whittaker,start,270.0,medium,False,26.0,,,5.0,True,False,2023-09-2
 PSRI,all,2024,Whittaker,start,275.0,medium,False,30.0,,,3.0,True,False,2024-10-01
 PSRI,all,2025,Whittaker,start,217.0,high,False,43.0,,,3.0,True,False,2025-08-05
 PSRI,all,2026,Whittaker,start,253.0,medium,False,46.0,,,6.0,True,True,2026-09-10
+RCC,1600_N,2017,Whittaker,start,230.0,medium,False,14.0,,,10.0,True,False,2017-08-18
+RCC,1600_S,2017,Whittaker,start,237.0,medium,False,20.0,,,5.0,True,False,2017-08-25
+RCC,1800_N,2017,Whittaker,start,220.0,medium,False,21.0,,,8.0,True,False,2017-08-08
+RCC,1800_S,2017,Whittaker,start,242.0,medium,False,19.0,,,5.0,True,False,2017-08-30
+RCC,2000_N,2017,Whittaker,start,235.0,medium,False,19.0,,,10.0,True,False,2017-08-23
+RCC,2000_S,2017,Whittaker,start,245.0,medium,False,19.0,,,5.0,True,False,2017-09-02
+RCC,2200_N,2017,Whittaker,start,238.0,medium,False,18.0,,,5.0,True,False,2017-08-26
+RCC,all,2017,Whittaker,start,242.0,medium,False,24.0,,,5.0,True,False,2017-08-30
+GCC,1600_N,2017,double logistic,start,257.5023271445888,medium,False,14.0,,,30.0,False,False,2017-09-15
+GCC,1600_S,2017,double logistic,start,252.0426789660869,high,False,19.0,,,20.0,False,False,2017-09-09
+GCC,1800_N,2017,double logistic,start,273.4245343679671,filled,False,21.0,,,13.0,False,False,2017-09-30
+GCC,1800_S,2017,double logistic,start,256.2950940754821,high,False,18.0,,,20.0,False,False,2017-09-13
+GCC,2000_N,2017,double logistic,start,271.8648752506527,low,False,19.0,,,10.0,False,False,2017-09-29
+GCC,2000_S,2017,double logistic,start,275.2057669738951,medium,False,19.0,,,10.0,True,False,2017-10-02
+GCC,2200_N,2017,double logistic,start,249.9565371786781,medium,False,18.0,,,17.0,False,False,2017-09-07
+GCC,all,2017,double logistic,start,275.94851018778223,medium,False,25.0,,,10.0,True,False,2017-10-03
 GRVI,1600_N,2017,double logistic,start,270.5988634221908,filled,False,14.0,,,30.0,False,False,2017-09-28
 GRVI,1600_N,2018,double logistic,start,282.01692012370455,low,False,21.0,,,5.0,False,False,2018-10-09
 GRVI,1600_N,2019,double logistic,start,284.94138348881773,low,True,13.0,,,15.0,False,False,2019-10-12
@@ -2725,6 +2976,14 @@ NDVI,all,2023,double logistic,start,276.1158062425719,low,False,26.0,,,5.0,False
 NDVI,all,2024,double logistic,start,290.0233158315709,medium,False,30.0,,,15.0,True,False,2024-10-16
 NDVI,all,2025,double logistic,start,282.0761405661601,high,False,43.0,,,4.0,True,False,2025-10-09
 NDVI,all,2026,double logistic,start,269.519834809236,medium,False,46.0,,,1.0,True,True,2026-09-27
+NDYI,1600_N,2017,double logistic,start,282.0563862998326,filled,True,14.0,,,5.0,False,False,2017-10-09
+NDYI,1600_S,2017,double logistic,start,138.33242720240173,medium,True,19.0,,,10.0,False,False,2017-05-18
+NDYI,1800_N,2017,double logistic,start,212.3746154233958,medium,False,21.0,,,8.0,True,False,2017-07-31
+NDYI,1800_S,2017,double logistic,start,181.43273523838718,low,True,18.0,,,30.0,False,False,2017-06-30
+NDYI,2000_N,2017,double logistic,start,156.65206347222383,low,False,19.0,,,10.0,False,False,2017-06-06
+NDYI,2000_S,2017,double logistic,start,142.03180366325762,medium,True,19.0,,,10.0,False,False,2017-05-22
+NDYI,2200_N,2017,double logistic,start,270.1193143752837,low,True,18.0,,,10.0,False,False,2017-09-27
+NDYI,all,2017,double logistic,start,155.66996192955997,low,True,25.0,,,3.0,False,False,2017-06-05
 PSRI,1600_N,2017,double logistic,start,224.6669521667207,low,False,14.0,,,10.0,False,False,2017-08-13
 PSRI,1600_N,2018,double logistic,start,266.29923149999496,medium,False,21.0,,,5.0,True,False,2018-09-23
 PSRI,1600_N,2019,double logistic,start,268.65992915456513,low,False,13.0,,,10.0,False,False,2019-09-26
@@ -2805,6 +3064,22 @@ PSRI,all,2023,double logistic,start,274.80760956656195,low,False,26.0,,,3.0,Fals
 PSRI,all,2024,double logistic,start,279.20452920265484,medium,True,30.0,,,5.0,False,False,2024-10-05
 PSRI,all,2025,double logistic,start,279.65544118066924,medium,True,43.0,,,5.0,False,False,2025-10-07
 PSRI,all,2026,double logistic,start,237.6780368484374,medium,False,46.0,,,4.0,True,True,2026-08-26
+RCC,1600_N,2017,double logistic,start,271.11702887907677,filled,False,14.0,,,30.0,False,False,2017-09-28
+RCC,1600_S,2017,double logistic,start,280.86148555061914,low,True,19.0,,,5.0,False,False,2017-10-08
+RCC,1800_N,2017,double logistic,start,218.05213085325994,medium,False,21.0,,,2.0,True,False,2017-08-06
+RCC,1800_S,2017,double logistic,start,275.5581604080641,low,False,18.0,,,10.0,False,False,2017-10-03
+RCC,2000_N,2017,double logistic,start,269.9030505403545,low,True,19.0,,,10.0,False,False,2017-09-27
+RCC,2000_S,2017,double logistic,start,272.78039855870884,medium,False,19.0,,,10.0,True,False,2017-09-30
+RCC,2200_N,2017,double logistic,start,269.36541352515417,low,True,18.0,,,10.0,False,False,2017-09-26
+RCC,all,2017,double logistic,start,269.4454181297332,low,False,24.0,,,10.0,False,False,2017-09-26
+GCC,1600_N,2017,"double logistic, 3rd derivative",start,265.263634384713,medium,False,14.0,,,30.0,False,False,2017-09-22
+GCC,1600_S,2017,"double logistic, 3rd derivative",start,259.81775159559936,high,False,19.0,,,20.0,False,False,2017-09-17
+GCC,1800_N,2017,"double logistic, 3rd derivative",start,276.21721611524276,filled,False,21.0,,,13.0,False,False,2017-10-03
+GCC,1800_S,2017,"double logistic, 3rd derivative",start,264.9811684617441,high,False,18.0,,,20.0,False,False,2017-09-22
+GCC,2000_N,2017,"double logistic, 3rd derivative",start,281.6825847062525,low,False,19.0,,,inf,False,False,2017-10-09
+GCC,2000_S,2017,"double logistic, 3rd derivative",start,277.81289579909236,medium,False,19.0,,,5.0,True,False,2017-10-05
+GCC,2200_N,2017,"double logistic, 3rd derivative",start,257.41873322419406,medium,False,18.0,,,17.0,False,False,2017-09-14
+GCC,all,2017,"double logistic, 3rd derivative",start,276.9853967505128,medium,False,25.0,,,10.0,True,False,2017-10-04
 GRVI,1600_N,2017,"double logistic, 3rd derivative",start,273.2363948043903,filled,False,14.0,,,30.0,False,False,2017-09-30
 GRVI,1600_N,2018,"double logistic, 3rd derivative",start,283.1868060435989,low,False,21.0,,,5.0,False,False,2018-10-10
 GRVI,1600_N,2019,"double logistic, 3rd derivative",start,285.8216501716644,low,True,13.0,,,15.0,False,False,2019-10-13
@@ -2965,6 +3240,14 @@ NDVI,all,2023,"double logistic, 3rd derivative",start,281.55711863308534,low,Fal
 NDVI,all,2024,"double logistic, 3rd derivative",start,291.16730093098465,medium,False,30.0,,,15.0,True,False,2024-10-17
 NDVI,all,2025,"double logistic, 3rd derivative",start,284.18951936095357,high,False,43.0,,,1.0,True,False,2025-10-11
 NDVI,all,2026,"double logistic, 3rd derivative",start,278.8794581049464,medium,False,46.0,,,5.0,True,True,2026-10-06
+NDYI,1600_N,2017,"double logistic, 3rd derivative",start,282.9366530187781,filled,True,14.0,,,5.0,False,False,2017-10-10
+NDYI,1600_S,2017,"double logistic, 3rd derivative",start,173.54309441885786,medium,True,19.0,,,30.0,False,False,2017-06-23
+NDYI,1800_N,2017,"double logistic, 3rd derivative",start,223.06130637761032,medium,False,21.0,,,8.0,True,False,2017-08-11
+NDYI,1800_S,2017,"double logistic, 3rd derivative",start,216.64340245484328,low,True,18.0,,,20.0,False,False,2017-08-05
+NDYI,2000_N,2017,"double logistic, 3rd derivative",start,187.62021928666258,low,False,19.0,,,2.0,False,False,2017-07-07
+NDYI,2000_S,2017,"double logistic, 3rd derivative",start,177.24247087971372,medium,True,19.0,,,40.0,False,False,2017-06-26
+NDYI,2200_N,2017,"double logistic, 3rd derivative",start,270.9995822349327,low,True,18.0,,,10.0,False,False,2017-09-28
+NDYI,all,2017,"double logistic, 3rd derivative",start,190.88062914601593,low,True,25.0,,,5.0,False,False,2017-07-10
 PSRI,1600_N,2017,"double logistic, 3rd derivative",start,231.84513493416324,low,False,14.0,,,10.0,False,False,2017-08-20
 PSRI,1600_N,2018,"double logistic, 3rd derivative",start,269.23008769152153,medium,False,21.0,,,5.0,True,False,2018-09-26
 PSRI,1600_N,2019,"double logistic, 3rd derivative",start,270.2713058111584,low,False,13.0,,,10.0,False,False,2019-09-27
@@ -3045,6 +3328,22 @@ PSRI,all,2023,"double logistic, 3rd derivative",start,277.69328995224424,low,Fal
 PSRI,all,2024,"double logistic, 3rd derivative",start,280.08479588306625,medium,True,30.0,,,5.0,False,False,2024-10-06
 PSRI,all,2025,"double logistic, 3rd derivative",start,280.5357078610816,medium,True,43.0,,,4.0,False,False,2025-10-08
 PSRI,all,2026,"double logistic, 3rd derivative",start,256.8852764943114,medium,False,46.0,,,7.0,True,True,2026-09-14
+RCC,1600_N,2017,"double logistic, 3rd derivative",start,273.723609960661,filled,False,14.0,,,30.0,False,False,2017-10-01
+RCC,1600_S,2017,"double logistic, 3rd derivative",start,281.74175223103055,low,True,19.0,,,5.0,False,False,2017-10-09
+RCC,1800_N,2017,"double logistic, 3rd derivative",start,225.04567678120293,medium,False,21.0,,,8.0,True,False,2017-08-13
+RCC,1800_S,2017,"double logistic, 3rd derivative",start,277.7724947409943,low,False,18.0,,,5.0,False,False,2017-10-05
+RCC,2000_N,2017,"double logistic, 3rd derivative",start,270.7833194062817,low,True,19.0,,,10.0,False,False,2017-09-28
+RCC,2000_S,2017,"double logistic, 3rd derivative",start,275.5797293468353,medium,False,19.0,,,10.0,True,False,2017-10-03
+RCC,2200_N,2017,"double logistic, 3rd derivative",start,270.24568030684645,low,True,18.0,,,10.0,False,False,2017-09-27
+RCC,all,2017,"double logistic, 3rd derivative",start,273.4274553449368,low,False,24.0,,,10.0,False,False,2017-09-30
+GCC,1600_N,2017,"logistic, fixed base",start,244.39585241459403,medium,False,10.0,122.10638491666619,276.51497158575603,5.0,True,False,2017-09-01
+GCC,1600_S,2017,"logistic, fixed base",start,251.99155062317573,high,False,15.0,151.79192362726369,278.2970527957507,20.0,False,False,2017-09-09
+GCC,1800_N,2017,"logistic, fixed base",start,277.30139798261996,filled,False,15.0,195.36644562401395,331.2431687045786,inf,False,False,2017-10-04
+GCC,1800_S,2017,"logistic, fixed base",start,257.9145611558665,high,False,14.0,177.5670389487181,280.0738022426411,20.0,False,False,2017-09-15
+GCC,2000_N,2017,"logistic, fixed base",start,282.0359748257587,low,False,15.0,208.59732157054228,331.5518883937152,inf,False,False,2017-10-09
+GCC,2000_S,2017,"logistic, fixed base",start,275.61374561645164,medium,False,16.0,262.1402368475756,283.5400131453351,10.0,True,False,2017-10-03
+GCC,2200_N,2017,"logistic, fixed base",start,253.95076742074315,medium,False,15.0,199.081568988944,328.3332012736699,17.0,False,False,2017-09-11
+GCC,all,2017,"logistic, fixed base",start,276.3937487191483,medium,False,19.0,238.5441649943225,278.5625590321526,10.0,True,False,2017-10-03
 GRVI,1600_N,2017,"logistic, fixed base",start,271.0736701551651,filled,False,10.0,200.2330256345725,279.1242684520815,30.0,False,False,2017-09-28
 GRVI,1600_N,2018,"logistic, fixed base",start,282.33522050471925,low,False,18.0,268.5264337346596,283.4957850859295,5.0,False,False,2018-10-09
 GRVI,1600_N,2019,"logistic, fixed base",start,284.94866170262355,low,True,10.0,237.904273451304,331.01138361353014,15.0,False,False,2019-10-12
@@ -3205,6 +3504,14 @@ NDVI,all,2023,"logistic, fixed base",start,276.2419696719349,low,False,20.0,260.
 NDVI,all,2024,"logistic, fixed base",start,283.78062411980864,medium,False,25.0,272.35675048598415,301.8739346023698,15.0,True,False,2024-10-10
 NDVI,all,2025,"logistic, fixed base",start,282.25969753469633,high,False,31.0,240.9764257337342,287.2351003092731,4.0,True,False,2025-10-09
 NDVI,all,2026,"logistic, fixed base",start,271.64321392402076,medium,False,30.0,230.1463123439519,288.18285334879766,2.0,True,True,2026-09-29
+NDYI,1600_N,2017,"logistic, fixed base",start,282.1757369102877,filled,True,10.0,223.7870741843554,331.73538469990825,5.0,False,False,2017-10-09
+NDYI,1600_S,2017,"logistic, fixed base",start,262.57451892148384,low,False,15.0,186.90441721038965,331.54004703864763,20.0,False,False,2017-09-20
+NDYI,1800_N,2017,"logistic, fixed base",start,217.22301298365554,medium,False,15.0,127.66864651897637,297.7992191160266,2.0,True,False,2017-08-05
+NDYI,1800_S,2017,"logistic, fixed base",start,246.11101690523225,low,True,14.0,191.97163263739813,331.77748401138035,5.0,False,False,2017-09-03
+NDYI,2000_N,2017,"logistic, fixed base",start,210.23123235042965,medium,False,15.0,159.6053819113026,330.79289136302333,8.0,True,False,2017-07-29
+NDYI,2000_S,2017,"logistic, fixed base",start,212.12082003757172,medium,True,16.0,109.65422782573961,331.78996893440063,20.0,False,False,2017-07-31
+NDYI,2200_N,2017,"logistic, fixed base",start,270.18372655080674,low,True,15.0,149.0582212878305,331.2173135140888,10.0,False,False,2017-09-27
+NDYI,all,2017,"logistic, fixed base",start,271.14108405293734,medium,True,19.0,122.99988658633833,331.5337020097924,10.0,False,False,2017-09-28
 PSRI,1600_N,2017,"logistic, fixed base",start,229.82980940172595,low,False,10.0,198.44203453704125,262.28242798636325,10.0,False,False,2017-08-18
 PSRI,1600_N,2018,"logistic, fixed base",start,268.6333996813931,medium,False,18.0,240.5680620903967,274.82258629856733,5.0,True,False,2018-09-26
 PSRI,1600_N,2019,"logistic, fixed base",start,269.5971713709081,low,False,10.0,118.890914486424,272.9264751873555,10.0,False,False,2019-09-27
@@ -3285,6 +3592,22 @@ PSRI,all,2023,"logistic, fixed base",start,274.25595202236303,low,False,20.0,245
 PSRI,all,2024,"logistic, fixed base",start,279.29322843989297,medium,True,25.0,260.43349797136176,288.66763090576103,5.0,False,False,2024-10-05
 PSRI,all,2025,"logistic, fixed base",start,279.66852121704216,medium,True,31.0,253.15805638584007,281.5446735456719,5.0,False,False,2025-10-07
 PSRI,all,2026,"logistic, fixed base",start,245.92581793619132,medium,False,30.0,195.132003224083,261.6093582172787,2.0,True,True,2026-09-03
+RCC,1600_N,2017,"logistic, fixed base",start,271.9441690509034,filled,False,10.0,200.5794571371291,280.3842267178933,30.0,False,False,2017-09-29
+RCC,1600_S,2017,"logistic, fixed base",start,280.9540106347046,low,True,15.0,229.96176587883727,281.1617124693335,5.0,False,False,2017-10-08
+RCC,1800_N,2017,"logistic, fixed base",start,220.4254084730571,medium,False,15.0,127.18529558983447,329.53339924886166,8.0,True,False,2017-08-08
+RCC,1800_S,2017,"logistic, fixed base",start,275.2487497093298,low,False,14.0,237.9444706266615,280.50900015223925,10.0,False,False,2017-10-02
+RCC,2000_N,2017,"logistic, fixed base",start,269.89623923148883,low,True,15.0,222.97664758106026,331.20732521605953,10.0,False,False,2017-09-27
+RCC,2000_S,2017,"logistic, fixed base",start,273.0998140132974,medium,False,16.0,240.39586027725232,283.325702574104,10.0,True,False,2017-09-30
+RCC,2200_N,2017,"logistic, fixed base",start,269.38958406458914,low,True,15.0,219.13162984446976,331.08942224679123,10.0,False,False,2017-09-26
+RCC,all,2017,"logistic, fixed base",start,269.5962858081203,low,False,18.0,229.75781550521467,316.3272313268333,10.0,False,False,2017-09-27
+GCC,1600_N,2017,"logistic, free",start,275.797,filled,True,10.0,,,30.0,False,False,2017-10-03
+GCC,1600_S,2017,"logistic, free",start,260.827,medium,False,15.0,,,20.0,False,False,2017-09-18
+GCC,1800_N,2017,"logistic, free",start,223.738,medium,False,15.0,,,8.0,True,False,2017-08-12
+GCC,1800_S,2017,"logistic, free",start,263.424,high,False,14.0,,,20.0,False,False,2017-09-20
+GCC,2000_N,2017,"logistic, free",start,280.037,low,True,15.0,,,inf,False,False,2017-10-07
+GCC,2000_S,2017,"logistic, free",start,277.936,medium,False,16.0,,,5.0,True,False,2017-10-05
+GCC,2200_N,2017,"logistic, free",start,263.581,low,True,15.0,,,17.0,False,False,2017-09-21
+GCC,all,2017,"logistic, free",start,278.344,medium,False,19.0,,,5.0,True,False,2017-10-05
 GRVI,1600_N,2017,"logistic, free",start,291.048,low,True,10.0,,,inf,False,False,2017-10-18
 GRVI,1600_N,2018,"logistic, free",start,284.201,low,False,18.0,,,5.0,False,False,2018-10-11
 GRVI,1600_N,2019,"logistic, free",start,287.931,low,False,10.0,,,inf,False,False,2019-10-15
@@ -3445,6 +3768,14 @@ NDVI,all,2023,"logistic, free",start,286.923,low,False,20.0,,,15.0,False,False,2
 NDVI,all,2024,"logistic, free",start,284.737,medium,True,25.0,,,15.0,False,False,2024-10-11
 NDVI,all,2025,"logistic, free",start,285.502,medium,False,31.0,,,2.0,True,False,2025-10-13
 NDVI,all,2026,"logistic, free",start,269.657,medium,True,30.0,,,1.0,False,True,2026-09-27
+NDYI,1600_N,2017,"logistic, free",start,286.194,filled,True,10.0,,,5.0,False,False,2017-10-13
+NDYI,1600_S,2017,"logistic, free",start,282.643,medium,True,15.0,,,5.0,False,False,2017-10-10
+NDYI,1800_N,2017,"logistic, free",start,225.554,medium,False,15.0,,,8.0,True,False,2017-08-14
+NDYI,1800_S,2017,"logistic, free",start,280.936,low,True,14.0,,,5.0,False,False,2017-10-08
+NDYI,2000_N,2017,"logistic, free",start,276.726,low,True,15.0,,,10.0,False,False,2017-10-04
+NDYI,2000_S,2017,"logistic, free",start,225.639,medium,True,16.0,,,8.0,False,False,2017-08-14
+NDYI,2200_N,2017,"logistic, free",start,277.03,low,True,15.0,,,inf,False,False,2017-10-04
+NDYI,all,2017,"logistic, free",start,271.034,medium,True,19.0,,,10.0,False,False,2017-09-28
 PSRI,1600_N,2017,"logistic, free",start,291.9,low,True,10.0,,,inf,False,False,2017-10-19
 PSRI,1600_N,2018,"logistic, free",start,286.619,low,False,18.0,,,5.0,False,False,2018-10-14
 PSRI,1600_N,2019,"logistic, free",start,276.505,low,False,10.0,,,15.0,False,False,2019-10-04
@@ -3525,3 +3856,11 @@ PSRI,all,2023,"logistic, free",start,284.948,low,True,20.0,,,5.0,False,False,202
 PSRI,all,2024,"logistic, free",start,280.848,medium,True,25.0,,,5.0,False,False,2024-10-07
 PSRI,all,2025,"logistic, free",start,281.34,medium,True,31.0,,,4.0,False,False,2025-10-08
 PSRI,all,2026,"logistic, free",start,322.52,filled,True,30.0,,,inf,False,True,2026-11-19
+RCC,1600_N,2017,"logistic, free",start,289.097,low,True,10.0,,,inf,False,False,2017-10-16
+RCC,1600_S,2017,"logistic, free",start,281.503,low,True,15.0,,,5.0,False,False,2017-10-09
+RCC,1800_N,2017,"logistic, free",start,275.96,filled,True,15.0,,,13.0,False,False,2017-10-03
+RCC,1800_S,2017,"logistic, free",start,276.978,low,False,14.0,,,10.0,False,False,2017-10-04
+RCC,2000_N,2017,"logistic, free",start,277.287,low,True,15.0,,,inf,False,False,2017-10-04
+RCC,2000_S,2017,"logistic, free",start,275.994,medium,False,16.0,,,10.0,True,False,2017-10-03
+RCC,2200_N,2017,"logistic, free",start,277.224,low,True,15.0,,,inf,False,False,2017-10-04
+RCC,all,2017,"logistic, free",start,274.524,medium,False,19.0,,,10.0,True,False,2017-10-02

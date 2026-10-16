@@ -48,6 +48,11 @@ SCL_GROUPS = {
 MAX_SCENE_CLOUD = 100      # % tile cloud cover (100 = no limit)
 MAX_SCL_FRACTION = {"cloud": 1.0, "cirrus": 1.0, "shadow": 1.0, "snow": 1.0, "nodata": 1.0}   # 1.0 = no limit
 MIN_VALID_FRACTION = 0.15  # share of clear pixels in the zone needed to keep a date
+# What the clear and SCL shares (MIN_VALID_FRACTION, MAX_SCL_FRACTION, GOOD_VALID_FRACTION, MAX_SNOW_FRACTION) refer to:
+# "covered" = the zone pixels inside the scene's footprint, so scenes from the swath edge that cover only part of a
+# zone can pass; "zone" = all zone pixels (the original behaviour)
+VALID_SHARE_OF = "covered"
+MIN_COVERED_PIXELS = 200   # zone pixels a scene must cover to be used
 
 # Topographic zones: elevation band x north/south facing (+ flat)
 DEM_COLLECTION = "cop-dem-glo-30"
@@ -67,18 +72,13 @@ MIN_OBS_PER_YEAR = 6       # clear observations in FIT_WINDOW needed for a logis
 TRANSITION_FRACTIONS = {"onset": 0.2, "mid": 0.5, "end": 0.8}
 # Direction of the autumn change: greenness drops, PSRI / RCC / NDYI rise with yellowing
 EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False, "GCC": True, "RCC": False, "NDYI": False}
-MIN_OBS_SIDE = 2           # clear observations needed on each side of the logistic mid point
+MIN_OBS_SIDE = 2           # clear observations needed on each side of the logistic mid point (04)
 ALPHA = 0.05
-FORECAST_YEARS = 2
 # A year counts only once its cache reaches this DOY (1 Dec); earlier = autumn still in progress at download time
 SEASON_COMPLETE_DOY = 335
-# Diagnostic panel: DOY range, zones ("all" = whole AOI; zones the AOI lacks are skipped), gaps worth shading
-PANEL_WINDOW = (230, 330)
-PANEL_ZONES = ["all", "2000_N", "2000_S"]
-GAP_DAYS = 15              # days without a clear observation
-PANEL_METHODS = ["logistic, fixed base", "Whittaker"]   # season-date methods drawn in the panel (see 03 §5)
+GAP_DAYS = 15              # a date with no clear observation within this many days on a side lies in a data gap
 
-# ---------------------------------------------------------------- season dates: start / peak / end (03 §5)
+# ---------------------------------------------------------------- season dates: start / peak / end (03 §3-6)
 # Dates at a share of the autumn amplitude still left: 90 % = start of the decline ("senescence" in MODIS
 # MCD12Q2), 50 % = midpoint (MCD12Q2 "greendown midpoint"), 15 % = end (HR-VPP end of season, MCD12Q2 dormancy)
 AMPLITUDE_FRACTIONS = {"start": 0.9, "mid": 0.5, "end": 0.15}
@@ -98,6 +98,14 @@ N_BOOT = 100               # bootstrap resamples per fit for date CIs (0 = off; 
 VALIDATION_RADIUS_KM = 40  # MeteoSwiss phenology stations with larch observations within this distance
 PHENO_PARAMS = {"mlard94d": "needle colouring 50 %", "mlard95d": "needle drop 50 %"}   # European larch
 HRVPP_PRODUCTS = ["SOSD", "EOSD"]   # HR-VPP start / end of season dates, season 1
+
+# ---------------------------------------------------------------- chosen dates and projection (03 §7-9)
+# Date used per date type for the projection and the topography: "average" = mean of the AVERAGE_TOP_N best
+# candidates of the 03 §7 short list (None = all candidates with coverage >= 0.5), or one candidate written
+# "<method> / <index> / <metric>" as in the 03 §7 table, e.g. "Whittaker / GRVI / mid"
+SEASON_CHOICE = {"start": "average", "peak": "average", "end": "average"}
+AVERAGE_TOP_N = 3
+FORECAST_YEARS = 2         # years projected ahead with the OLS trend
 # ---------------------------------------------------------------- climate data (02)
 # MeteoSwiss gridded observations (1 km, LV95): variable -> product
 OBS_GRID_PRODUCTS = {"tas": "tabsd", "tasmin": "tmind", "tasmax": "tmaxd", "pr": "rhiresd", "srel": "sreld"}

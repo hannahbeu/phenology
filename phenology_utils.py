@@ -8,8 +8,9 @@ import rioxarray
 import xarray as xr
 from pyproj import Transformer
 
-from config import (CACHE_DIR, END, GRID_BUFFER, MAX_SCENE_CLOUD, MAX_SCL_FRACTION, MIN_VALID_FRACTION,
-                    SCL_GROUPS, SEASON_COMPLETE_DOY, START, TEMPERATURE_VARS, YEARS)
+from config import (CACHE_DIR, END, GRID_BUFFER, MAX_SCENE_CLOUD, MAX_SCL_FRACTION, MIN_COVERED_PIXELS,
+                    MIN_VALID_FRACTION, SCL_GROUPS, SEASON_COMPLETE_DOY, START, TEMPERATURE_VARS, VALID_SHARE_OF,
+                    YEARS)
 
 QUALITY_COLS = ["scene_cloud_cover"] + [f"scl_{g}_fraction" for g in SCL_GROUPS]
 
@@ -41,15 +42,27 @@ def load_zone_table():
 
 
 def index_frame(stats, name, zone="all"):
-    # Statistics of one index (lower-case name, e.g. "ndvi") and zone, with the date quality columns
+    # Statistics of one index (lower-case name, e.g. "ndvi") and zone, with the date quality columns.
+    # valid_fraction and the scl_* shares (except nodata) refer to VALID_SHARE_OF; zone_valid_fraction is always the
+    # clear share of all zone pixels, covered_fraction / covered_pixels the part of the zone inside the scene
     cols = [f"{name}_mean", f"{name}_median", f"{name}_std", f"{name}_valid_fraction"]
-    rows = stats[stats.zone == zone]
-    return rows[cols + QUALITY_COLS].rename(columns={f"{name}_valid_fraction": "valid_fraction"})
+    frame = stats.loc[stats.zone == zone, cols + QUALITY_COLS].rename(
+        columns={f"{name}_valid_fraction": "zone_valid_fraction"})
+    frame.insert(3, "valid_fraction", frame.zone_valid_fraction)
+    covered = 1 - frame.scl_nodata_fraction
+    frame["covered_fraction"] = covered
+    frame["covered_pixels"] = (covered * load_zone_table().n_pixels[zone]).round().astype(int)
+    if VALID_SHARE_OF == "covered":
+        shares = ["valid_fraction"] + [f"scl_{g}_fraction" for g in SCL_GROUPS if g != "nodata"]
+        frame[shares] = frame[shares].div(covered.where(covered > 0), axis=0)
+    elif VALID_SHARE_OF != "zone":
+        raise ValueError(f"VALID_SHARE_OF must be 'covered' or 'zone', not {VALID_SHARE_OF!r}")
+    return frame
 
 
 def quality_ok(frame):
-    # Date filter on tile cloud cover and SCL shares of the zone's pixels, shared by all indices
-    ok = frame.scene_cloud_cover <= MAX_SCENE_CLOUD
+    # Date filter on tile cloud cover, scene footprint and SCL shares, shared by all indices
+    ok = (frame.scene_cloud_cover <= MAX_SCENE_CLOUD) & (frame.covered_pixels >= MIN_COVERED_PIXELS)
     for group, limit in MAX_SCL_FRACTION.items():
         ok &= frame[f"scl_{group}_fraction"] <= limit
     return ok
