@@ -61,24 +61,27 @@ FLAT_SLOPE = 5             # degrees
 MIN_ZONE_PIXELS = 200
 
 # ---------------------------------------------------------------- phenology metrics (03)
-# GCC, RCC and NDYI (colour indices for the yellowing peak) are only in caches downloaded since they were added;
-# 03 skips indices the cache lacks, 01 re-downloads years whose CSV lacks one
+# GCC, RCC and NDYI (colour indices) are only in caches downloaded since they were added; 03 skips indices the
+# cache lacks, 01 re-downloads years whose CSV lacks one
 INDICES = ["NDVI", "GRVI", "PSRI", "GCC", "RCC", "NDYI"]
 SMOOTH_WINDOW = 7          # 5-day steps -> centred 35-day moving average
-EOS_FIXED_THRESHOLD = 0.5
-MIN_POINTS_PER_YEAR = 30   # valid 5-day values needed for an EOS
-FIT_WINDOW = (182, 365)    # DOY range of the logistic autumn fit
-MIN_OBS_PER_YEAR = 6       # clear observations in FIT_WINDOW needed for a logistic fit
-TRANSITION_FRACTIONS = {"onset": 0.2, "mid": 0.5, "end": 0.8}
+AUTUMN_START_DOY = 182     # 1 Jul: autumn observations run from here to the end of POST_WINDOW
+MIN_OBS_PER_YEAR = 6       # weighted autumn observations needed for a double-logistic fit
 # Direction of the autumn change: greenness drops, PSRI / RCC / NDYI rise with yellowing
 EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False, "GCC": True, "RCC": False, "NDYI": False}
-MIN_OBS_SIDE = 2           # clear observations needed on each side of the logistic mid point (04)
 ALPHA = 0.05
 # A year counts only once its cache reaches this DOY (1 Dec); earlier = autumn still in progress at download time
 SEASON_COMPLETE_DOY = 335
 GAP_DAYS = 15              # a date with no clear observation within this many days on a side lies in a data gap
 
 # ---------------------------------------------------------------- season dates: start / peak / end (03 §3-6)
+# Two candidates per date type, "<method> / <index> / <metric>": method = Whittaker | double logistic,
+# metric = start | mid | end (see AMPLITUDE_FRACTIONS). The peak is the 50 % point ("mid") of the autumn change.
+SEASON_METHODS = {
+    "start": ["Whittaker / GRVI / start", "double logistic / GRVI / start"],
+    "peak": ["Whittaker / GRVI / mid", "double logistic / NDVI / mid"],
+    "end": ["Whittaker / GRVI / end", "double logistic / NDVI / end"],
+}
 # Dates at a share of the autumn amplitude still left: 90 % = start of the decline ("senescence" in MODIS
 # MCD12Q2), 50 % = midpoint (MCD12Q2 "greendown midpoint"), 15 % = end (HR-VPP end of season, MCD12Q2 dormancy)
 AMPLITUDE_FRACTIONS = {"start": 0.9, "mid": 0.5, "end": 0.15}
@@ -90,9 +93,6 @@ MAX_SNOW_FRACTION = 0.2    # dates with a larger snow share of the zone get weig
 GOOD_VALID_FRACTION = 0.5  # clear share for weight 1; below: weight 0.5 (HR-VPP weight classes)
 OUTLIER_FACTOR = 6         # outlier: residual > 6x the global and the local median residual (HR-VPP)
 WHITTAKER_LAMBDAS = [1e1, 3e1, 1e2, 3e2, 1e3, 3e3, 1e4, 3e4, 1e5]   # candidates, chosen by cross-validation
-PEAK_WINDOW = (244, 320)   # DOY range searched for the yellowing peak (maximum of RCC / NDYI / PSRI)
-PEAK_INDICES = ["PSRI", "RCC", "NDYI"]
-N_BOOT = 100               # bootstrap resamples per fit for date CIs (0 = off; ~1-2 min per 100)
 
 # ---------------------------------------------------------------- validation data (01b) and comparison (03 §7)
 VALIDATION_RADIUS_KM = 40  # MeteoSwiss phenology stations with larch observations within this distance
@@ -100,11 +100,9 @@ PHENO_PARAMS = {"mlard94d": "needle colouring 50 %", "mlard95d": "needle drop 50
 HRVPP_PRODUCTS = ["SOSD", "EOSD"]   # HR-VPP start / end of season dates, season 1
 
 # ---------------------------------------------------------------- chosen dates and projection (03 §7-9)
-# Date used per date type for the projection and the topography: "average" = mean of the AVERAGE_TOP_N best
-# candidates of the 03 §7 short list (None = all candidates with coverage >= 0.5), or one candidate written
-# "<method> / <index> / <metric>" as in the 03 §7 table, e.g. "Whittaker / GRVI / mid"
+# Date used per date type for the projection, the topography and 04: "average" = mean of both candidates of
+# SEASON_METHODS, or one of them, e.g. "Whittaker / GRVI / mid"
 SEASON_CHOICE = {"start": "average", "peak": "average", "end": "average"}
-AVERAGE_TOP_N = 3
 FORECAST_YEARS = 2         # years projected ahead with the OLS trend
 # ---------------------------------------------------------------- climate data (02)
 # MeteoSwiss gridded observations (1 km, LV95): variable -> product
@@ -126,6 +124,6 @@ CH2025_GRID_VARS = ["tas", "tasmin", "tasmax", "pr"]
 CH2025_GRID_MODELS = None  # None = all model chains, or a list such as ["clmcom-cclm4-cccma"]
 
 # ---------------------------------------------------------------- climate analysis (04)
-# Phenology dates to explain/predict: "<INDEX> <metric>", metric = eos_mid | eos_fixed | onset | mid | end
-# (eos_* only for NDVI, from the smoothed curve; onset/mid/end from the logistic fit)
-TARGETS = ["NDVI eos_mid", "NDVI mid", "GRVI mid", "PSRI mid", "PSRI onset"]
+# Phenology dates to explain/predict: "start" | "peak" | "end" = the chosen dates of 03 (SEASON_CHOICE,
+# season_selected.csv), or one candidate of SEASON_METHODS, e.g. "Whittaker / GRVI / mid" (season_dates.csv)
+TARGETS = ["start", "peak", "end"]
