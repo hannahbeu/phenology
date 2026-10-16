@@ -4,3 +4,4 @@ oldcache/
 __pycache__/
 cache/climate/
 *.part
+cache/validation/*/hrvpp_raw/
