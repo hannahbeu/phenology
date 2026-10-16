@@ -24,7 +24,8 @@ AOI_RASTER_BAND = 1
 AOI_PATH = AOI_FOLDER / AOI_FILE
 AOI_NAME = AOI_PATH.stem
 CACHE_DIR = ROOT / "cache" / f"{AOI_NAME}_zones"       # Sentinel-2 statistics per year and zone (notebook 01)
-CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # clipped climate data and zone series (notebook 02)
+CLIMATE_SOURCE_DIR = ROOT / "cache" / "climate" / "sources"   # clipped climate data, shared by all AOIs (02)
+CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # zone series of this AOI (notebook 02)
 OUT_DIR = ROOT / "results" / AOI_NAME                  # phenology results (notebook 03)
 CLIMATE_OUT_DIR = OUT_DIR / "climate"                  # climate analysis results (notebook 04)
 

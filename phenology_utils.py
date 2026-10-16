@@ -136,6 +136,28 @@ def clip_grid(ds, bbox):
     return ds.sel(E=slice(e0, e1), N=slice(n0, n1))
 
 
+def grid_extent(ds):
+    return float(ds.E.min()), float(ds.N.min()), float(ds.E.max()), float(ds.N.max())
+
+
+def covers(ds, bbox):
+    # True if the clipped grid ds contains every cell of bbox
+    e0, n0, e1, n1 = grid_extent(ds)
+    return e0 <= bbox[0] and n0 <= bbox[1] and e1 >= bbox[2] and n1 >= bbox[3]
+
+
+def fetch_bbox(path, bbox):
+    # Box to clip a (re)download of a shared source file to: None if the cached file already covers bbox, else
+    # bbox joined with the cached extent, so the file stays valid for the AOIs that used it before
+    if not path.exists():
+        return bbox
+    with xr.open_dataset(path) as ds:
+        if covers(ds, bbox):
+            return None
+        old = grid_extent(ds)
+    return min(old[0], bbox[0]), min(old[1], bbox[1]), max(old[2], bbox[2]), max(old[3], bbox[3])
+
+
 def add_calendar(ds):
     # year / month / doy coordinates for real (datetime) and model (cftime, 365-day) calendars. doy is counted
     # in a 365-day year (29 Feb shares doy 60 with 1 Mar), so windows mean the same dates in both.
