@@ -4539,7 +4539,7 @@ LEZ;mbetp13d;1;01.01.1996 00:00;;MeteoSchweiz
 LEZ;mbetp60d;1;01.01.1997 00:00;01.01.2001 00:00;MeteoSchweiz
 LEZ;mbetp65d;1;01.01.2011 00:00;01.01.2011 00:00;MeteoSchweiz
 LEZ;mbetp94d;1;01.01.1996 00:00;;MeteoSchweiz
-LEZ;mbetp95d;1;01.01.1996 00:00;01.01.2024 00:00;MeteoSchweiz
+LEZ;mbetp95d;1;01.01.1996 00:00;;MeteoSchweiz
 LEZ;mcarp65d;1;01.01.2021 00:00;;MeteoSchweiz
 LEZ;mcola65d;1;01.01.1970 00:00;;MeteoSchweiz
 LEZ;mdacg65d;1;01.01.1996 00:00;;MeteoSchweiz
@@ -4561,7 +4561,7 @@ LEZ;msora60d;1;01.01.1996 00:00;;MeteoSchweiz
 LEZ;msora65d;1;01.01.1997 00:00;01.01.2024 00:00;MeteoSchweiz
 LEZ;msora87d;1;01.01.1974 00:00;;MeteoSchweiz
 LEZ;msora94d;1;01.01.1996 00:00;;MeteoSchweiz
-LEZ;msora95d;1;01.01.1996 00:00;01.01.2024 00:00;MeteoSchweiz
+LEZ;msora95d;1;01.01.1996 00:00;;MeteoSchweiz
 LEZ;mtaro65d;1;01.01.1970 00:00;;MeteoSchweiz
 LEZ;mtusf65d;1;01.01.1970 00:00;;MeteoSchweiz
 LID;macep13d;1;01.01.2007 00:00;;MeteoSchweiz
