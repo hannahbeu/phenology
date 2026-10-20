@@ -1,3 +1,0 @@
-method,year,trend_doy,trend_pi_low,trend_pi_high,mean_doy,mean_pi_low,mean_pi_high,trend_significant,trend_date,mean_date
-EOS midpoint,2026,294.9,277.6,312.2,285.2,266.6,303.8,False,2026-10-22,2026-10-12
-EOS midpoint,2027,296.8,278.5,315.1,285.2,266.6,303.8,False,2027-10-24,2027-10-12
