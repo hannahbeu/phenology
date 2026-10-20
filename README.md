@@ -24,7 +24,7 @@ uv pip install -r requirements.txt
 nbstripout --install          # notebooks are committed without outputs
 ```
 
-- **AOI:** set `AOI_FOLDER` and `AOI_FILE` in `config.py`. The AOI is a larch classification GeoTIFF (non-zero pixels = larch) or a vector file. The AOI files are not in this repository. The environment variable `PHENOLOGY_AOI_FILE` overrides `AOI_FILE`.
+- **AOI:** the AOI files are in `aoi/`: larch classification GeoTIFFs (non-zero pixels = larch). A vector file (.geojson/.shp/.gpkg) also works. Choose one with `AOI_FILE` in `config.py`; the environment variable `PHENOLOGY_AOI_FILE` overrides it.
 - **HR-VPP (optional):** needs a free [WEkEO](https://www.wekeo.eu) account and a `~/.hdarc` file with two lines, `user:<name>` and `password:<password>`. Without it, `02` skips HR-VPP and `04` validates against MeteoSwiss only.
 
 ## Configuration
@@ -43,13 +43,12 @@ Shared helper functions are in `phenology_utils.py`.
 ```
 config.py, phenology_utils.py   settings and shared functions
 0*_*.ipynb                      the workflow notebooks
+aoi/                            AOI masks (larch classification GeoTIFFs)
 cache/<AOI>_zones/              Sentinel-2 statistics per year (stats_<year>.csv), zones.csv / zones.tif
 cache/validation/<AOI>/         MeteoSwiss phenology observations
 cache/climate/                  climate data (not in git: too large; rebuilt by 03)
 results/<AOI>/                  season dates, method comparison, projection, topography effects
 results/<AOI>/climate/          climate effects, regression, CH2025 projections
-dev/py2nb.py                    converts percent-format .py scripts to notebooks
-sentinel2_ndvi_polygon_timeseries.ipynb   the original single notebook, before the split into separate notebooks
 ```
 
 Two AOIs have been processed:

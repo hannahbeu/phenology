@@ -1,5 +1,5 @@
 {
- "aoi_path": "C:\\Users\\hanna\\OneDrive\\Desktop\\Documents\\Uni\\HS 26\\GIS Exkursion\\project\\Larch_Classification_2017_multidate_aspect_improved_threshold099.tif",
+ "aoi_path": "aoi/Larch_Classification_2017_multidate_aspect_improved_threshold099.tif",
  "aoi_raster_values": null,
  "aoi_raster_band": 1,
  "scl_keep": [
