@@ -73,14 +73,13 @@ SEASON_COMPLETE_DOY = 335
 GAP_DAYS = 15              # a date with no clear observation within this many days on a side lies in a data gap
 
 # ---------------------------------------------------------------- season dates: start / peak / end (04 §3-6)
-# Both methods (Whittaker, double logistic) are fitted to every index of INDICES. Each date type is read from the
-# indices whose signal matches it; a method's date is the median of its dates over these indices:
-# - start / peak: colour change. Chlorophyll loss shows in the visible bands: GRVI falls, RCC rises
-# - end: needle fall. NDVI drops mostly when the needles fall, but alone its Whittaker end lies mostly in the November
-#   data gap and agrees poorly with MeteoSwiss (04 §7); the colour indices also reach their post-season level then,
-#   so the end is the median of all three
-# PSRI is fitted and compared (04 §7) but not used: on the multidate AOI its dates come later higher up
-SEASON_INDICES = {"start": ["GRVI", "RCC"], "peak": ["GRVI", "RCC"], "end": ["NDVI", "GRVI", "RCC"]}
+# Two candidates per date type, "<method> / <index> / <metric>": method = Whittaker | double logistic,
+# metric = start | mid | end (see AMPLITUDE_FRACTIONS). The peak is the 50 % point ("mid") of the autumn change.
+SEASON_METHODS = {
+    "start": ["Whittaker / GRVI / start", "double logistic / GRVI / start"],
+    "peak": ["Whittaker / GRVI / mid", "double logistic / NDVI / mid"],
+    "end": ["Whittaker / GRVI / end", "double logistic / NDVI / end"],
+}
 # Dates at a share of the autumn amplitude still left: 90 % = start of the decline ("senescence" in MODIS
 # MCD12Q2), 50 % = midpoint (MCD12Q2 "greendown midpoint"), 15 % = end (HR-VPP end of season, MCD12Q2 dormancy)
 AMPLITUDE_FRACTIONS = {"start": 0.9, "mid": 0.5, "end": 0.15}
@@ -98,8 +97,8 @@ VALIDATION_RADIUS_KM = 40  # MeteoSwiss phenology stations with larch observatio
 PHENO_PARAMS = {"mlard94d": "needle colouring 50 %", "mlard95d": "needle drop 50 %"}   # European larch
 
 # ---------------------------------------------------------------- chosen dates and projection (04 §7-9)
-# Date used per date type for the projection, the topography and 05: "average" = mean of the two methods' dates
-# (SEASON_INDICES), or one row of the 04 §7 table, e.g. "Whittaker / GRVI+RCC / mid" or "Whittaker / GRVI / mid"
+# Date used per date type for the projection, the topography and 05: "average" = mean of both candidates of
+# SEASON_METHODS, or one of them, e.g. "Whittaker / GRVI / mid"
 SEASON_CHOICE = {"start": "average", "peak": "average", "end": "average"}
 FORECAST_YEARS = 2         # years projected ahead with the OLS trend
 # ---------------------------------------------------------------- climate data (03)
@@ -123,5 +122,5 @@ CH2025_GRID_MODELS = None  # None = all model chains, or a list such as ["clmcom
 
 # ---------------------------------------------------------------- climate analysis (05)
 # Phenology dates to explain/predict: "start" | "peak" | "end" = the chosen dates of 04 (SEASON_CHOICE,
-# season_selected.csv), or one row of season_dates.csv, e.g. "Whittaker / GRVI+RCC / mid" or "Whittaker / NDVI / end"
+# season_selected.csv), or one candidate of SEASON_METHODS, e.g. "Whittaker / GRVI / mid" (season_dates.csv)
 TARGETS = ["start", "peak", "end"]
