@@ -69,7 +69,6 @@ EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False, "RCC": False}
 ALPHA = 0.05
 # A year counts only once its cache reaches this DOY (1 Dec); earlier = autumn still in progress at download time
 SEASON_COMPLETE_DOY = 335
-GAP_DAYS = 15              # a date lies in a data gap if the clear dates before and after it are further apart
 
 # ---------------------------------------------------------------- season dates: start / peak / end (04 §3-6)
 # Two candidates per date type, "<method> / <index> / <metric>": method = Whittaker | double logistic,
