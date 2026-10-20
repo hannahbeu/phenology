@@ -24,13 +24,13 @@ AOI_RASTER_BAND = 1
 AOI_PATH = AOI_FOLDER / AOI_FILE
 AOI_NAME = AOI_PATH.stem
 CACHE_DIR = ROOT / "cache" / f"{AOI_NAME}_zones"       # Sentinel-2 statistics per year and zone (notebook 01)
-CLIMATE_SOURCE_DIR = ROOT / "cache" / "climate" / "sources"   # clipped climate data, shared by all AOIs (02)
-CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # zone series of this AOI (notebook 02)
-VALIDATION_DIR = ROOT / "cache" / "validation" / AOI_NAME   # MeteoSwiss larch observations, HR-VPP (01b)
-OUT_DIR = ROOT / "results" / AOI_NAME                  # phenology results (notebook 03)
-CLIMATE_OUT_DIR = OUT_DIR / "climate"                  # climate analysis results (notebook 04)
+CLIMATE_SOURCE_DIR = ROOT / "cache" / "climate" / "sources"   # clipped climate data, shared by all AOIs (03)
+CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # zone series of this AOI (notebook 03)
+VALIDATION_DIR = ROOT / "cache" / "validation" / AOI_NAME   # MeteoSwiss larch observations, HR-VPP (02)
+OUT_DIR = ROOT / "results" / AOI_NAME                  # phenology results (notebook 04)
+CLIMATE_OUT_DIR = OUT_DIR / "climate"                  # climate analysis results (notebook 05)
 
-# ---------------------------------------------------------------- Sentinel-2 (01) and date filter (03)
+# ---------------------------------------------------------------- Sentinel-2 (01) and date filter (04)
 RESOLUTION = 10            # m
 INNER_BUFFER = 0           # m; shrink the AOI to avoid mixed edge pixels (0 = off)
 SCL_KEEP = [4, 5]          # SCL classes counted as clear: 4 vegetation, 5 bare soil
@@ -60,8 +60,8 @@ ELEV_STEP = 200            # m
 FLAT_SLOPE = 5             # degrees
 MIN_ZONE_PIXELS = 200
 
-# ---------------------------------------------------------------- phenology metrics (03)
-# RCC (red chromatic coordinate) is only in caches downloaded since it was added; 03 skips indices the cache
+# ---------------------------------------------------------------- phenology metrics (04)
+# RCC (red chromatic coordinate) is only in caches downloaded since it was added; 04 skips indices the cache
 # lacks, 01 re-downloads years whose CSV lacks one
 INDICES = ["NDVI", "GRVI", "PSRI", "RCC"]
 SMOOTH_WINDOW = 7          # 5-day steps -> centred 35-day moving average
@@ -74,7 +74,7 @@ ALPHA = 0.05
 SEASON_COMPLETE_DOY = 335
 GAP_DAYS = 15              # a date with no clear observation within this many days on a side lies in a data gap
 
-# ---------------------------------------------------------------- season dates: start / peak / end (03 §3-6)
+# ---------------------------------------------------------------- season dates: start / peak / end (04 §3-6)
 # Two candidates per date type, "<method> / <index> / <metric>": method = Whittaker | double logistic,
 # metric = start | mid | end (see AMPLITUDE_FRACTIONS). The peak is the 50 % point ("mid") of the autumn change.
 SEASON_METHODS = {
@@ -94,17 +94,17 @@ GOOD_VALID_FRACTION = 0.5  # clear share for weight 1; below: weight 0.5 (HR-VPP
 OUTLIER_FACTOR = 6         # outlier: residual > 6x the global and the local median residual (HR-VPP)
 WHITTAKER_LAMBDAS = [1e1, 3e1, 1e2, 3e2, 1e3, 3e3, 1e4, 3e4, 1e5]   # candidates, chosen by cross-validation
 
-# ---------------------------------------------------------------- validation data (01b) and comparison (03 §7)
+# ---------------------------------------------------------------- validation data (02) and comparison (04 §7)
 VALIDATION_RADIUS_KM = 40  # MeteoSwiss phenology stations with larch observations within this distance
 PHENO_PARAMS = {"mlard94d": "needle colouring 50 %", "mlard95d": "needle drop 50 %"}   # European larch
 HRVPP_PRODUCTS = ["SOSD", "EOSD"]   # HR-VPP start / end of season dates, season 1
 
-# ---------------------------------------------------------------- chosen dates and projection (03 §7-9)
-# Date used per date type for the projection, the topography and 04: "average" = mean of both candidates of
+# ---------------------------------------------------------------- chosen dates and projection (04 §7-9)
+# Date used per date type for the projection, the topography and 05: "average" = mean of both candidates of
 # SEASON_METHODS, or one of them, e.g. "Whittaker / GRVI / mid"
 SEASON_CHOICE = {"start": "average", "peak": "average", "end": "average"}
 FORECAST_YEARS = 2         # years projected ahead with the OLS trend
-# ---------------------------------------------------------------- climate data (02)
+# ---------------------------------------------------------------- climate data (03)
 # MeteoSwiss gridded observations (1 km, LV95): variable -> product
 OBS_GRID_PRODUCTS = {"tas": "tabsd", "tasmin": "tmind", "tasmax": "tmaxd", "pr": "rhiresd", "srel": "sreld"}
 CLIMATE_SPINUP_DAYS = 92   # observations also downloaded for the last days of FIRST_YEAR - 1
@@ -123,7 +123,7 @@ CH2025_LOCAL_VARS = ["tas", "tasmin", "tasmax", "pr", "hurs", "sfcwind"]
 CH2025_GRID_VARS = ["tas", "tasmin", "tasmax", "pr"]
 CH2025_GRID_MODELS = None  # None = all model chains, or a list such as ["clmcom-cclm4-cccma"]
 
-# ---------------------------------------------------------------- climate analysis (04)
-# Phenology dates to explain/predict: "start" | "peak" | "end" = the chosen dates of 03 (SEASON_CHOICE,
+# ---------------------------------------------------------------- climate analysis (05)
+# Phenology dates to explain/predict: "start" | "peak" | "end" = the chosen dates of 04 (SEASON_CHOICE,
 # season_selected.csv), or one candidate of SEASON_METHODS, e.g. "Whittaker / GRVI / mid" (season_dates.csv)
 TARGETS = ["start", "peak", "end"]
