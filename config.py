@@ -1,5 +1,4 @@
 """Settings shared by all notebooks. The year range and the AOI are set here only."""
-import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -16,8 +15,7 @@ START, END = f"{FIRST_YEAR}-01-01", f"{LAST_YEAR}-12-31"
 # vector file (.geojson/.shp/.gpkg) in AOI_FOLDER. Other mask in the folder:
 # "Larch_Classification_2017_threshold099.tif"
 AOI_FOLDER = ROOT / "aoi"
-# The environment variable PHENOLOGY_AOI_FILE overrides AOI_FILE (for running another AOI in the background)
-AOI_FILE = os.environ.get("PHENOLOGY_AOI_FILE", "Larch_Classification_2017_multidate_aspect_improved_threshold099.tif")
+AOI_FILE = "Larch_Classification_2017_multidate_aspect_improved_threshold099.tif"
 AOI_RASTER_VALUES = None
 AOI_RASTER_BAND = 1
 
@@ -26,7 +24,7 @@ AOI_NAME = AOI_PATH.stem
 CACHE_DIR = ROOT / "cache" / f"{AOI_NAME}_zones"       # Sentinel-2 statistics per year and zone (notebook 01)
 CLIMATE_SOURCE_DIR = ROOT / "cache" / "climate" / "sources"   # clipped climate data, shared by all AOIs (03)
 CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # zone series of this AOI (notebook 03)
-VALIDATION_DIR = ROOT / "cache" / "validation" / AOI_NAME   # MeteoSwiss larch observations, HR-VPP (02)
+VALIDATION_DIR = ROOT / "cache" / "validation" / AOI_NAME   # MeteoSwiss larch observations (notebook 02)
 OUT_DIR = ROOT / "results" / AOI_NAME                  # phenology results (notebook 04)
 CLIMATE_OUT_DIR = OUT_DIR / "climate"                  # climate analysis results (notebook 05)
 
@@ -97,7 +95,6 @@ WHITTAKER_LAMBDAS = [1e1, 3e1, 1e2, 3e2, 1e3, 3e3, 1e4, 3e4, 1e5]   # candidates
 # ---------------------------------------------------------------- validation data (02) and comparison (04 §7)
 VALIDATION_RADIUS_KM = 40  # MeteoSwiss phenology stations with larch observations within this distance
 PHENO_PARAMS = {"mlard94d": "needle colouring 50 %", "mlard95d": "needle drop 50 %"}   # European larch
-HRVPP_PRODUCTS = ["SOSD", "EOSD"]   # HR-VPP start / end of season dates, season 1
 
 # ---------------------------------------------------------------- chosen dates and projection (04 §7-9)
 # Date used per date type for the projection, the topography and 05: "average" = mean of both candidates of

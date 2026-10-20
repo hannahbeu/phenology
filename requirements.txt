@@ -3,7 +3,6 @@ cftime==1.6.6
 dask==2026.8.0
 folium==0.20.0
 geopandas==1.2.0
-hda==2.40
 ipykernel==7.4.0
 mapclassify==2.11.0
 matplotlib==3.11.2

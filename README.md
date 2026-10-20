@@ -9,7 +9,7 @@ The notebooks run in order. Each one reads the output of the earlier ones from `
 | Notebook | What it does | Writes |
 |---|---|---|
 | `01_download_sentinel2` | Sentinel-2 L2A from Microsoft Planetary Computer (no account needed). Splits the AOI into zones using the Copernicus DEM; NDVI, GRVI, PSRI and RCC statistics of the clear pixels per date and zone | `cache/<AOI>_zones/` |
-| `02_download_validation` | MeteoSwiss larch observations (needle colouring 50 %, needle drop 50 %) near the AOI; optional Copernicus HR-VPP start/end of season | `cache/validation/<AOI>/` |
+| `02_download_validation` | MeteoSwiss larch observations (needle colouring 50 %, needle drop 50 %) near the AOI | `cache/validation/<AOI>/` |
 | `03_download_climate` | MeteoSwiss gridded and station observations, CH2025 local and gridded scenarios; daily series per zone, with lapse-rate correction | `cache/climate/sources/`, `cache/climate/<AOI>/` |
 | `04_phenology_metrics` | Date filtering; Whittaker and double-logistic curves; start / peak / end per zone and year; method comparison against the validation data; trend; topography effects | `results/<AOI>/` |
 | `05_climate_analysis` | Zone fixed-effects regression of the dates on climate features; projection with CH2025 per global warming level, compared with the trend | `results/<AOI>/climate/` |
@@ -24,8 +24,7 @@ uv pip install -r requirements.txt
 nbstripout --install          # notebooks are committed without outputs
 ```
 
-- **AOI:** the AOI files are in `aoi/`: larch classification GeoTIFFs (non-zero pixels = larch). A vector file (.geojson/.shp/.gpkg) also works. Choose one with `AOI_FILE` in `config.py`; the environment variable `PHENOLOGY_AOI_FILE` overrides it.
-- **HR-VPP (optional):** needs a free [WEkEO](https://www.wekeo.eu) account and a `~/.hdarc` file with two lines, `user:<name>` and `password:<password>`. Without it, `02` skips HR-VPP and `04` validates against MeteoSwiss only.
+- **AOI:** the AOI files are in `aoi/`: larch classification GeoTIFFs (non-zero pixels = larch). A vector file (.geojson/.shp/.gpkg) also works. Choose one with `AOI_FILE` in `config.py`.
 
 ## Configuration
 
@@ -66,6 +65,5 @@ Two AOIs have been processed:
 - Sentinel-2 L2A and Copernicus DEM GLO-30, via Microsoft Planetary Computer
 - MeteoSwiss open data: gridded observations (`ogd-surface-derived-grid`), SwissMetNet station Buffalora (`ogd-smn`) and phenology observations (`ogd-phenology`)
 - MeteoSwiss & ETH Zurich (2025): Climate CH2025 – Daily Datasets (local and gridded)
-- Copernicus Land Monitoring Service: HR-VPP vegetation phenology and productivity (optional)
 
 The methods and literature are described in the notebooks.
