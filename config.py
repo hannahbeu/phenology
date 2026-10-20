@@ -59,8 +59,7 @@ FLAT_SLOPE = 5             # degrees
 MIN_ZONE_PIXELS = 200
 
 # ---------------------------------------------------------------- phenology metrics (04)
-# RCC (red chromatic coordinate) is only in caches downloaded since it was added; 04 skips indices the cache
-# lacks, 01 re-downloads years whose CSV lacks one
+# 04 skips indices the cache lacks; 01 re-downloads years whose CSV lacks one (REFRESH_MISSING_INDICES)
 INDICES = ["NDVI", "GRVI", "PSRI", "RCC"]
 SMOOTH_WINDOW = 7          # 5-day steps -> centred 35-day moving average
 AUTUMN_START_DOY = 182     # 1 Jul: autumn observations run from here to the end of POST_WINDOW
@@ -70,7 +69,7 @@ EXPECT_DECREASE = {"NDVI": True, "GRVI": True, "PSRI": False, "RCC": False}
 ALPHA = 0.05
 # A year counts only once its cache reaches this DOY (1 Dec); earlier = autumn still in progress at download time
 SEASON_COMPLETE_DOY = 335
-GAP_DAYS = 15              # a date with no clear observation within this many days on a side lies in a data gap
+GAP_DAYS = 15              # a date lies in a data gap if the clear dates before and after it are further apart
 
 # ---------------------------------------------------------------- season dates: start / peak / end (04 §3-6)
 # Two candidates per date type, "<method> / <index> / <metric>": method = Whittaker | double logistic,
