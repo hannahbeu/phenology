@@ -32,7 +32,7 @@ All settings are in `config.py`. The main ones:
 
 - `FIRST_YEAR`, `LAST_YEAR`: the year range for all notebooks
 - `AOI_FILE`: which AOI to process. Every AOI gets its own folders in `cache/` and `results/`.
-- `SEASON_METHODS`, `SEASON_CHOICE`: the two date candidates per date type, and which one (or their average) is used downstream
+- `SEASON_INDICES`, `SEASON_CHOICE`: the indices each date type is read from, and which method's date (or the average of both) is used downstream
 - `TARGETS`: the date types that `05` analyses
 
 Shared helper functions are in `phenology_utils.py`.
