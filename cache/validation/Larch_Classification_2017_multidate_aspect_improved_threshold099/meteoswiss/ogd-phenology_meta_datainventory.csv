@@ -606,7 +606,7 @@ BAB;mtilc94d;1;01.01.2010 00:00;;MeteoSchweiz
 BAB;mtilp13d;1;01.01.2014 00:00;;MeteoSchweiz
 BAB;mtilp60d;1;01.01.2010 00:00;;MeteoSchweiz
 BAB;mtilp65d;1;01.01.1966 00:00;;MeteoSchweiz
-BAB;mtilp94d;1;01.01.2010 00:00;01.01.2024 00:00;MeteoSchweiz
+BAB;mtilp94d;1;01.01.2010 00:00;;MeteoSchweiz
 BAB;mtusf65d;1;01.01.1966 00:00;;MeteoSchweiz
 BAB;mvitv89d;1;01.01.2026 00:00;;MeteoSchweiz
 BAE;macep13d;1;01.01.2016 00:00;;MeteoSchweiz
@@ -2772,7 +2772,7 @@ ENS;mbetp13d;1;01.01.1996 00:00;;MeteoSchweiz
 ENS;mbetp60d;1;01.01.1996 00:00;;MeteoSchweiz
 ENS;mbetp65d;1;01.01.1996 00:00;;MeteoSchweiz
 ENS;mbetp94d;1;01.01.1996 00:00;;MeteoSchweiz
-ENS;mbetp95d;1;01.01.1996 00:00;01.01.2023 00:00;MeteoSchweiz
+ENS;mbetp95d;1;01.01.1996 00:00;;MeteoSchweiz
 ENS;mcarp65d;1;01.01.1958 00:00;;MeteoSchweiz
 ENS;mcola65d;1;01.01.1957 00:00;01.01.2001 00:00;MeteoSchweiz
 ENS;mcora13d;1;01.01.1951 00:00;;MeteoSchweiz
@@ -3032,7 +3032,7 @@ FWI;manen65d;1;01.01.1955 00:00;;MeteoSchweiz
 FWI;mbetp13d;1;01.01.1996 00:00;;MeteoSchweiz
 FWI;mbetp60d;1;01.01.2009 00:00;01.01.2021 00:00;MeteoSchweiz
 FWI;mbetp65d;1;01.01.1998 00:00;;MeteoSchweiz
-FWI;mbetp94d;1;01.01.1997 00:00;01.01.2023 00:00;MeteoSchweiz
+FWI;mbetp94d;1;01.01.1997 00:00;;MeteoSchweiz
 FWI;mbetp95d;1;01.01.1997 00:00;;MeteoSchweiz
 FWI;mcarp65d;1;01.01.1952 00:00;;MeteoSchweiz
 FWI;mcola65d;1;01.01.1953 00:00;;MeteoSchweiz
@@ -3448,7 +3448,7 @@ GUD;maesh13d;1;01.01.1988 00:00;;MeteoSchweiz
 GUD;maesh60d;1;01.01.2026 00:00;;MeteoSchweiz
 GUD;maesh65d;1;01.01.1988 00:00;;MeteoSchweiz
 GUD;maesh94d;1;01.01.1988 00:00;;MeteoSchweiz
-GUD;maesh95d;1;01.01.1988 00:00;01.01.1995 00:00;MeteoSchweiz
+GUD;maesh95d;1;01.01.1988 00:00;;MeteoSchweiz
 GUD;manen65d;1;01.01.1987 00:00;;MeteoSchweiz
 GUD;mbetp13d;1;01.01.1999 00:00;;MeteoSchweiz
 GUD;mbetp60d;1;01.01.1999 00:00;;MeteoSchweiz
@@ -4015,8 +4015,8 @@ JEN;msamr87d;1;01.01.1996 00:00;01.01.1996 00:00;MeteoSchweiz
 JEN;msora13d;1;01.01.1996 00:00;;MeteoSchweiz
 JEN;msora60d;1;01.01.1997 00:00;;MeteoSchweiz
 JEN;msora65d;1;01.01.1997 00:00;;MeteoSchweiz
-JEN;msora87d;1;01.01.1970 00:00;01.01.2024 00:00;MeteoSchweiz
-JEN;msora94d;1;01.01.1996 00:00;01.01.2024 00:00;MeteoSchweiz
+JEN;msora87d;1;01.01.1970 00:00;;MeteoSchweiz
+JEN;msora94d;1;01.01.1996 00:00;;MeteoSchweiz
 JEN;msora95d;1;01.01.1996 00:00;01.01.2022 00:00;MeteoSchweiz
 JEN;mtaro65d;1;01.01.1970 00:00;;MeteoSchweiz
 JEN;mtilc13d;1;01.01.2004 00:00;01.01.2015 00:00;MeteoSchweiz
@@ -4481,7 +4481,7 @@ LEY;macep94d;1;01.01.1996 00:00;;MeteoSchweiz
 LEY;maesh13d;1;01.01.1995 00:00;;MeteoSchweiz
 LEY;maesh60d;1;01.01.1996 00:00;;MeteoSchweiz
 LEY;maesh65d;1;01.01.1996 00:00;;MeteoSchweiz
-LEY;maesh94d;1;01.01.1995 00:00;01.01.2024 00:00;MeteoSchweiz
+LEY;maesh94d;1;01.01.1995 00:00;;MeteoSchweiz
 LEY;maesh95d;1;01.01.1995 00:00;01.01.2024 00:00;MeteoSchweiz
 LEY;manen65d;1;01.01.1967 00:00;;MeteoSchweiz
 LEY;mbetp13d;1;01.01.1996 00:00;;MeteoSchweiz
@@ -7045,8 +7045,8 @@ RFR;msamr87d;1;01.01.2015 00:00;;MeteoSchweiz
 RFR;msora13d;1;01.01.1996 00:00;;MeteoSchweiz
 RFR;msora60d;1;01.01.1996 00:00;;MeteoSchweiz
 RFR;msora65d;1;01.01.1996 00:00;;MeteoSchweiz
-RFR;msora87d;1;01.01.1992 00:00;01.01.2024 00:00;MeteoSchweiz
-RFR;msora94d;1;01.01.1996 00:00;01.01.2024 00:00;MeteoSchweiz
+RFR;msora87d;1;01.01.1992 00:00;;MeteoSchweiz
+RFR;msora94d;1;01.01.1996 00:00;;MeteoSchweiz
 RFR;msora95d;1;01.01.1996 00:00;01.01.2024 00:00;MeteoSchweiz
 RFR;mtaro65d;1;01.01.1992 00:00;;MeteoSchweiz
 RFR;mtilc13d;1;01.01.2012 00:00;01.01.2021 00:00;MeteoSchweiz
@@ -9772,7 +9772,7 @@ ZAL;mcola65d;1;01.01.1953 00:00;01.01.2017 00:00;MeteoSchweiz
 ZAL;mcora13d;1;01.01.1952 00:00;;MeteoSchweiz
 ZAL;mcora60d;1;01.01.1996 00:00;;MeteoSchweiz
 ZAL;mcora65d;1;01.01.1953 00:00;;MeteoSchweiz
-ZAL;mdacg65d;1;01.01.1998 00:00;01.01.2023 00:00;MeteoSchweiz
+ZAL;mdacg65d;1;01.01.1998 00:00;;MeteoSchweiz
 ZAL;mfags13d;1;01.01.1952 00:00;;MeteoSchweiz
 ZAL;mfags94d;1;01.01.1952 00:00;;MeteoSchweiz
 ZAL;mfags95d;1;01.01.1952 00:00;01.01.2024 00:00;MeteoSchweiz
@@ -9794,7 +9794,7 @@ ZAL;mrobp65d;1;01.01.1996 00:00;;MeteoSchweiz
 ZAL;mrobp95d;1;01.01.2000 00:00;01.01.2020 00:00;MeteoSchweiz
 ZAL;msamn60d;1;01.01.1997 00:00;;MeteoSchweiz
 ZAL;msamn65d;1;01.01.1952 00:00;;MeteoSchweiz
-ZAL;msamn87d;1;01.01.1997 00:00;01.01.2019 00:00;MeteoSchweiz
+ZAL;msamn87d;1;01.01.1997 00:00;;MeteoSchweiz
 ZAL;msamr60d;1;01.01.1996 00:00;01.01.2021 00:00;MeteoSchweiz
 ZAL;msamr65d;1;01.01.1959 00:00;01.01.2021 00:00;MeteoSchweiz
 ZAL;msamr87d;1;01.01.1999 00:00;01.01.2020 00:00;MeteoSchweiz
@@ -9810,8 +9810,8 @@ ZAL;mtilc60d;1;01.01.1996 00:00;01.01.2012 00:00;MeteoSchweiz
 ZAL;mtilc65d;1;01.01.1953 00:00;01.01.2012 00:00;MeteoSchweiz
 ZAL;mtilc94d;1;01.01.1996 00:00;01.01.2013 00:00;MeteoSchweiz
 ZAL;mtilp13d;1;01.01.1996 00:00;;MeteoSchweiz
-ZAL;mtilp60d;1;01.01.1999 00:00;01.01.2022 00:00;MeteoSchweiz
-ZAL;mtilp65d;1;01.01.1952 00:00;01.01.2022 00:00;MeteoSchweiz
+ZAL;mtilp60d;1;01.01.1999 00:00;;MeteoSchweiz
+ZAL;mtilp65d;1;01.01.1952 00:00;;MeteoSchweiz
 ZAL;mtilp94d;1;01.01.1996 00:00;;MeteoSchweiz
 ZAL;mtusf65d;1;01.01.1952 00:00;;MeteoSchweiz
 ZAL;mvitv65d;1;01.01.1952 00:00;01.01.2013 00:00;MeteoSchweiz
