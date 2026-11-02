@@ -14,7 +14,8 @@ START, END = f"{FIRST_YEAR}-01-01", f"{LAST_YEAR}-12-31"
 # GeoTIFF mask (non-zero pixels of AOI_RASTER_BAND, or the pixel values in AOI_RASTER_VALUES) or a
 # vector file (.geojson/.shp/.gpkg) in AOI_FOLDER. Other mask in the folder:
 # "Larch_Classification_2017_threshold099.tif"
-AOI_FOLDER = ROOT / "aoi"
+DATA_DIR = ROOT / "data"                               # input files: AOI masks (aoi/), validation data (validation/)
+AOI_FOLDER = DATA_DIR / "aoi"
 AOI_FILE = "Larch_Classification_2017_multidate_aspect_improved_threshold099.tif"
 AOI_RASTER_VALUES = None
 AOI_RASTER_BAND = 1
@@ -22,6 +23,7 @@ AOI_RASTER_BAND = 1
 AOI_PATH = AOI_FOLDER / AOI_FILE
 AOI_NAME = AOI_PATH.stem
 CACHE_DIR = ROOT / "cache" / f"{AOI_NAME}_zones"       # Sentinel-2 statistics per year and zone (notebook 01)
+SITE_CACHE_DIR = ROOT / "cache" / f"{AOI_NAME}_sites"  # the same for the areas around SITE_AREAS (notebook 01 §6)
 CLIMATE_SOURCE_DIR = ROOT / "cache" / "climate" / "sources"   # clipped climate data, shared by all AOIs (03)
 CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # zone series of this AOI (notebook 03)
 VALIDATION_DIR = ROOT / "cache" / "validation" / AOI_NAME   # MeteoSwiss larch observations (notebook 02)
@@ -91,8 +93,14 @@ OUTLIER_FACTOR = 6         # outlier: residual > 6x the global and the local med
 WHITTAKER_LAMBDAS = [1e1, 3e1, 1e2, 3e2, 1e3, 3e3, 1e4, 3e4, 1e5]   # candidates, chosen by cross-validation
 
 # ---------------------------------------------------------------- validation data (02) and comparison (04 §7)
-VALIDATION_RADIUS_KM = 40  # MeteoSwiss phenology stations with larch observations within this distance
+VALIDATION_RADIUS_KM = 40  # MeteoSwiss stations and local sites with larch observations within this distance
 PHENO_PARAMS = {"mlard94d": "needle colouring 50 %", "mlard95d": "needle drop 50 %"}   # European larch
+LOCAL_PHENO_FILE = DATA_DIR / "validation" / "Lärchen_pheno.xlsx"   # local larch observations per site, year and phase (LV95 coordinates)
+REFERENCE_FOREST_FILE = DATA_DIR / "validation" / "Lärchen_SNP.shp" # forest-type map (polygons, column Forest_typ) to check the AOI against (02)
+# Site check (01 §6, 04 §7c): Sentinel-2 statistics of the AOI pixels within SITE_RADIUS_M of these local sites
+# (site codes of LOCAL_PHENO_FILE), compared with the site's own observations
+SITE_AREAS = ["fuo"]
+SITE_RADIUS_M = 500
 
 # ---------------------------------------------------------------- chosen dates and projection (04 §7-9)
 # Date used per date type for the projection, the topography and 05: "average" = mean of both candidates of

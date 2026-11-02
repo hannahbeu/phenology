@@ -7108,12 +7108,12 @@ RGS;mtilp65d;1;01.01.1978 00:00;01.01.2018 00:00;MeteoSchweiz
 RGS;mtilp94d;1;01.01.1998 00:00;01.01.2024 00:00;MeteoSchweiz
 RGS;mtusf65d;1;01.01.1978 00:00;01.01.2024 00:00;MeteoSchweiz
 RON;macep13d;1;01.01.1996 00:00;01.01.2008 00:00;MeteoSchweiz
-RON;macep94d;1;01.01.1996 00:00;01.01.2008 00:00;MeteoSchweiz
+RON;macep94d;1;01.01.1996 00:00;;MeteoSchweiz
 RON;maesh13d;1;01.01.1978 00:00;01.01.2008 00:00;MeteoSchweiz
 RON;maesh60d;1;01.01.1996 00:00;01.01.2008 00:00;MeteoSchweiz
 RON;maesh65d;1;01.01.1983 00:00;01.01.2008 00:00;MeteoSchweiz
-RON;maesh94d;1;01.01.1983 00:00;01.01.2007 00:00;MeteoSchweiz
-RON;maesh95d;1;01.01.1978 00:00;01.01.2008 00:00;MeteoSchweiz
+RON;maesh94d;1;01.01.1983 00:00;;MeteoSchweiz
+RON;maesh95d;1;01.01.1978 00:00;;MeteoSchweiz
 RON;manen65d;1;01.01.1978 00:00;01.01.2008 00:00;MeteoSchweiz
 RON;mbetp13d;1;01.01.1996 00:00;01.01.2008 00:00;MeteoSchweiz
 RON;mbetp60d;1;01.01.1996 00:00;01.01.2008 00:00;MeteoSchweiz
@@ -7172,6 +7172,7 @@ RON;mtilp65d;1;01.01.1983 00:00;;MeteoSchweiz
 RON;mtilp94d;1;01.01.1996 00:00;01.01.2008 00:00;MeteoSchweiz
 RON;mtusf65d;1;01.01.1983 00:00;01.01.2008 00:00;MeteoSchweiz
 RON;mvitv65d;1;01.01.2026 00:00;;MeteoSchweiz
+RON;mvitv89d;1;01.01.2026 00:00;;MeteoSchweiz
 ROR;macep13d;1;01.01.1996 00:00;;MeteoSchweiz
 ROR;macep94d;1;01.01.2005 00:00;01.01.2024 00:00;MeteoSchweiz
 ROR;maesh13d;1;01.01.1977 00:00;;MeteoSchweiz
@@ -9959,7 +9960,7 @@ ZON;manen65d;1;01.01.1952 00:00;;MeteoSchweiz
 ZON;mbetp13d;1;01.01.1997 00:00;;MeteoSchweiz
 ZON;mbetp60d;1;01.01.1997 00:00;;MeteoSchweiz
 ZON;mbetp65d;1;01.01.1997 00:00;;MeteoSchweiz
-ZON;mbetp94d;1;01.01.1996 00:00;01.01.2024 00:00;MeteoSchweiz
+ZON;mbetp94d;1;01.01.1996 00:00;;MeteoSchweiz
 ZON;mbetp95d;1;01.01.2023 00:00;;MeteoSchweiz
 ZON;mcarp65d;1;01.01.1951 00:00;;MeteoSchweiz
 ZON;mcass13d;1;01.01.1997 00:00;;MeteoSchweiz
@@ -10003,12 +10004,12 @@ ZON;msora60d;1;01.01.1997 00:00;;MeteoSchweiz
 ZON;msora65d;1;01.01.1997 00:00;;MeteoSchweiz
 ZON;msora87d;1;01.01.1954 00:00;;MeteoSchweiz
 ZON;msora94d;1;01.01.2023 00:00;;MeteoSchweiz
-ZON;msora95d;1;01.01.2023 00:00;01.01.2023 00:00;MeteoSchweiz
+ZON;msora95d;1;01.01.2023 00:00;;MeteoSchweiz
 ZON;mtaro65d;1;01.01.1951 00:00;;MeteoSchweiz
 ZON;mtilc13d;1;01.01.1998 00:00;;MeteoSchweiz
 ZON;mtilc60d;1;01.01.1996 00:00;;MeteoSchweiz
 ZON;mtilc65d;1;01.01.1951 00:00;;MeteoSchweiz
-ZON;mtilc94d;1;01.01.1997 00:00;01.01.2023 00:00;MeteoSchweiz
+ZON;mtilc94d;1;01.01.1997 00:00;;MeteoSchweiz
 ZON;mtilp13d;1;01.01.1998 00:00;;MeteoSchweiz
 ZON;mtilp60d;1;01.01.1996 00:00;;MeteoSchweiz
 ZON;mtilp65d;1;01.01.1954 00:00;;MeteoSchweiz

@@ -1,0 +1,54 @@
+index,site,year,method,metric,doy,n_obs
+NDVI,fuo,2017,double logistic,mid,277.0798191037225,21
+NDVI,fuo,2017,double logistic,end,278.8144201591538,21
+NDVI,fuo,2018,double logistic,mid,284.2228508388727,22
+NDVI,fuo,2018,double logistic,end,286.49765884198234,22
+NDVI,fuo,2019,double logistic,mid,286.1600843126504,10
+NDVI,fuo,2019,double logistic,end,287.894685794662,10
+NDVI,fuo,2020,double logistic,mid,258.39259151497987,20
+NDVI,fuo,2020,double logistic,end,260.127192570368,20
+NDVI,fuo,2021,double logistic,mid,290.1715386247017,16
+NDVI,fuo,2021,double logistic,end,306.50201049808487,16
+NDVI,fuo,2022,double logistic,mid,269.3118432510616,26
+NDVI,fuo,2022,double logistic,end,283.8545605823476,26
+NDVI,fuo,2023,double logistic,mid,287.1993538556353,19
+NDVI,fuo,2023,double logistic,end,288.9339549504525,19
+NDVI,fuo,2024,double logistic,mid,282.75963875221555,30
+NDVI,fuo,2024,double logistic,end,284.49423980760366,30
+NDVI,fuo,2025,double logistic,mid,284.4491934268356,30
+NDVI,fuo,2025,double logistic,end,286.18379448222373,30
+GRVI,fuo,2017,Whittaker,start,265.0,22
+GRVI,fuo,2017,Whittaker,mid,276.0,22
+GRVI,fuo,2017,Whittaker,end,283.0,22
+GRVI,fuo,2018,Whittaker,start,274.0,22
+GRVI,fuo,2018,Whittaker,mid,284.0,22
+GRVI,fuo,2018,Whittaker,end,290.0,22
+GRVI,fuo,2019,Whittaker,start,274.0,10
+GRVI,fuo,2019,Whittaker,mid,287.0,10
+GRVI,fuo,2019,Whittaker,end,299.0,10
+GRVI,fuo,2020,Whittaker,start,255.0,20
+GRVI,fuo,2020,Whittaker,mid,273.0,20
+GRVI,fuo,2020,Whittaker,end,298.0,20
+GRVI,fuo,2021,Whittaker,start,263.0,18
+GRVI,fuo,2021,Whittaker,mid,343.0,18
+GRVI,fuo,2022,Whittaker,start,257.0,27
+GRVI,fuo,2022,Whittaker,mid,280.0,27
+GRVI,fuo,2022,Whittaker,end,289.0,27
+GRVI,fuo,2023,Whittaker,start,281.0,21
+GRVI,fuo,2023,Whittaker,mid,290.0,21
+GRVI,fuo,2023,Whittaker,end,297.0,21
+GRVI,fuo,2024,Whittaker,start,276.0,32
+GRVI,fuo,2024,Whittaker,mid,286.0,32
+GRVI,fuo,2024,Whittaker,end,293.0,32
+GRVI,fuo,2025,Whittaker,start,279.0,35
+GRVI,fuo,2025,Whittaker,mid,285.0,35
+GRVI,fuo,2025,Whittaker,end,290.0,35
+GRVI,fuo,2017,double logistic,start,273.29204453672867,21
+GRVI,fuo,2018,double logistic,start,280.38716191858884,22
+GRVI,fuo,2019,double logistic,start,284.3715593145671,10
+GRVI,fuo,2020,double logistic,start,282.8203003781124,20
+GRVI,fuo,2021,double logistic,start,270.41579873206456,16
+GRVI,fuo,2022,double logistic,start,278.5887911811058,26
+GRVI,fuo,2023,double logistic,start,284.5274117349578,19
+GRVI,fuo,2024,double logistic,start,282.91629062987505,30
+GRVI,fuo,2025,double logistic,start,282.1462794361712,30

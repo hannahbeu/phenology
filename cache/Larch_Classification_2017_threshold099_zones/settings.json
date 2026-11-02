@@ -1,5 +1,5 @@
 {
- "aoi_path": "aoi/Larch_Classification_2017_threshold099.tif",
+ "aoi_path": "data/aoi/Larch_Classification_2017_threshold099.tif",
  "aoi_raster_values": null,
  "aoi_raster_band": 1,
  "scl_keep": [

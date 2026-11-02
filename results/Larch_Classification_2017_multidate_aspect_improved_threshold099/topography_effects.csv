@@ -1,4 +1,4 @@
 date_type,method,n_zone_years,n_zones,days_per_100m,elev_ci_low,elev_ci_high,elev_p,north_minus_south_days,ns_ci_low,ns_ci_high,ns_p,r2
 start,average of 2,63,7,-3.584,-5.68,-1.488,0.001,-2.646,-9.758,4.466,0.459,0.461
-peak,average of 2,63,7,-2.493,-3.792,-1.195,0.0,0.295,-4.111,4.7,0.894,0.641
-end,average of 2,63,7,-1.604,-3.607,0.4,0.114,4.676,-2.122,11.473,0.173,0.511
+peak,average of 2,63,7,-2.384,-3.651,-1.117,0.0,0.01,-4.288,4.308,0.996,0.649
+end,average of 2,63,7,-1.639,-3.638,0.361,0.106,4.68,-2.103,11.463,0.172,0.513

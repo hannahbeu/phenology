@@ -21,12 +21,13 @@ def cached_years():
     return [y for y in YEARS if y <= pd.Timestamp.today().year]
 
 
-def load_stats():
-    # Per-date statistics of all zones (long format: one row per date and zone), cropped to START..END
-    missing = [y for y in cached_years() if not (CACHE_DIR / f"stats_{y}.csv").exists()]
+def load_stats(cache_dir=CACHE_DIR):
+    # Per-date statistics of all zones (long format: one row per date and zone), cropped to START..END.
+    # cache_dir: CACHE_DIR (topographic zones) or SITE_CACHE_DIR (areas around local sites)
+    missing = [y for y in cached_years() if not (cache_dir / f"stats_{y}.csv").exists()]
     if missing:
-        print(f"Not cached yet: {missing} (run 01_download_sentinel2)")
-    frames = [pd.read_csv(CACHE_DIR / f"stats_{y}.csv", index_col="date", parse_dates=["date"])
+        print(f"Not cached yet in {cache_dir.name}: {missing} (run 01_download_sentinel2)")
+    frames = [pd.read_csv(cache_dir / f"stats_{y}.csv", index_col="date", parse_dates=["date"])
               for y in cached_years() if y not in missing]
     return pd.concat([f for f in frames if not f.empty]).sort_index(kind="stable").loc[START:END]
 
@@ -37,21 +38,29 @@ def incomplete_years(stats):
     return [int(year) for year, day in last.items() if day.dayofyear < SEASON_COMPLETE_DOY]
 
 
-def load_zone_table():
-    return pd.read_csv(CACHE_DIR / "zones.csv", index_col="zone")
+def last_complete_season():
+    # Latest year whose autumn is over by today (SEASON_COMPLETE_DOY reached)
+    today = pd.Timestamp.today()
+    return today.year if today.dayofyear >= SEASON_COMPLETE_DOY else today.year - 1
 
 
-def index_frame(stats, name, zone="all"):
+def load_zone_table(cache_dir=CACHE_DIR):
+    return pd.read_csv(cache_dir / "zones.csv", index_col="zone")
+
+
+def index_frame(stats, name, zone="all", zone_table=None):
     # Statistics of one index (lower-case name, e.g. "ndvi") and zone, with the date quality columns.
     # valid_fraction and the scl_* shares (except nodata) refer to VALID_SHARE_OF; zone_valid_fraction is always the
-    # clear share of all zone pixels, covered_fraction / covered_pixels the part of the zone inside the scene
+    # clear share of all zone pixels, covered_fraction / covered_pixels the part of the zone inside the scene.
+    # zone_table: the zone table of the cache stats comes from (default: load_zone_table())
     cols = [f"{name}_mean", f"{name}_median", f"{name}_std", f"{name}_valid_fraction"]
     frame = stats.loc[stats.zone == zone, cols + QUALITY_COLS].rename(
         columns={f"{name}_valid_fraction": "zone_valid_fraction"})
     frame.insert(3, "valid_fraction", frame.zone_valid_fraction)
     covered = 1 - frame.scl_nodata_fraction
     frame["covered_fraction"] = covered
-    frame["covered_pixels"] = (covered * load_zone_table().n_pixels[zone]).round().astype(int)
+    frame["zone_pixels"] = (load_zone_table() if zone_table is None else zone_table).n_pixels[zone]
+    frame["covered_pixels"] = (covered * frame.zone_pixels).round().astype(int)
     if VALID_SHARE_OF == "covered":
         shares = ["valid_fraction"] + [f"scl_{g}_fraction" for g in SCL_GROUPS if g != "nodata"]
         frame[shares] = frame[shares].div(covered.where(covered > 0), axis=0)
@@ -61,15 +70,17 @@ def index_frame(stats, name, zone="all"):
 
 
 def quality_ok(frame):
-    # Date filter on tile cloud cover, scene footprint and SCL shares, shared by all indices
-    ok = (frame.scene_cloud_cover <= MAX_SCENE_CLOUD) & (frame.covered_pixels >= MIN_COVERED_PIXELS)
+    # Date filter on tile cloud cover, scene footprint and SCL shares, shared by all indices. The scene must cover
+    # MIN_COVERED_PIXELS of the zone, or the whole zone if it is smaller
+    ok = ((frame.scene_cloud_cover <= MAX_SCENE_CLOUD)
+          & (frame.covered_pixels >= np.minimum(MIN_COVERED_PIXELS, frame.zone_pixels)))
     for group, limit in MAX_SCL_FRACTION.items():
         ok &= frame[f"scl_{group}_fraction"] <= limit
     return ok
 
 
-def clean_frame(stats, name, zone="all"):
-    frame = index_frame(stats, name, zone)
+def clean_frame(stats, name, zone="all", zone_table=None):
+    frame = index_frame(stats, name, zone, zone_table)
     return frame[quality_ok(frame) & (frame.valid_fraction >= MIN_VALID_FRACTION)].copy()
 
 

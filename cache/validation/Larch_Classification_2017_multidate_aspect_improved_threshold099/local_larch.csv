@@ -1,0 +1,86 @@
+station,year,param,phase,date,doy,obs_anomalies,obs_remarks,name,height_masl,distance_km
+clu,2016,mlard94d,needle colouring 50 %,2016-09-13,257,,,Val Cluozza,2092.1,5.470746846141317
+clu,2017,mlard94d,needle colouring 50 %,2017-09-18,261,,,Val Cluozza,2092.1,5.470746846141317
+clu,2018,mlard94d,needle colouring 50 %,2018-09-12,255,,,Val Cluozza,2092.1,5.470746846141317
+clu,2019,mlard94d,needle colouring 50 %,2019-10-02,275,,,Val Cluozza,2092.1,5.470746846141317
+clu,2020,mlard94d,needle colouring 50 %,2020-10-04,278,,,Val Cluozza,2092.1,5.470746846141317
+clu,2021,mlard94d,needle colouring 50 %,2021-09-14,257,,,Val Cluozza,2092.1,5.470746846141317
+clu,2022,mlard94d,needle colouring 50 %,2022-09-28,271,,,Val Cluozza,2092.1,5.470746846141317
+clu,2023,mlard94d,needle colouring 50 %,2023-10-06,279,,,Val Cluozza,2092.1,5.470746846141317
+clu,2024,mlard94d,needle colouring 50 %,2024-09-27,271,,,Val Cluozza,2092.1,5.470746846141317
+clu,2017,mlard95d,needle drop 50 %,2017-10-14,287,,,Val Cluozza,2092.1,5.470746846141317
+clu,2018,mlard95d,needle drop 50 %,2018-10-25,298,,,Val Cluozza,2092.1,5.470746846141317
+clu,2019,mlard95d,needle drop 50 %,2019-10-30,303,,,Val Cluozza,2092.1,5.470746846141317
+clu,2020,mlard95d,needle drop 50 %,2020-10-28,302,,,Val Cluozza,2092.1,5.470746846141317
+clu,2021,mlard95d,needle drop 50 %,2021-11-03,307,,,Val Cluozza,2092.1,5.470746846141317
+clu,2022,mlard95d,needle drop 50 %,2022-10-27,300,,,Val Cluozza,2092.1,5.470746846141317
+clu,2023,mlard95d,needle drop 50 %,2023-11-05,309,delayed_unknown,,Val Cluozza,2092.1,5.470746846141317
+clu,2024,mlard95d,needle drop 50 %,2024-10-26,300,,,Val Cluozza,2092.1,5.470746846141317
+fuo,2016,mlard94d,needle colouring 50 %,2016-10-17,291,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2017,mlard94d,needle colouring 50 %,2017-10-02,275,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2018,mlard94d,needle colouring 50 %,2018-10-10,283,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2019,mlard94d,needle colouring 50 %,2019-10-08,281,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2020,mlard94d,needle colouring 50 %,2020-10-11,285,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2021,mlard94d,needle colouring 50 %,2021-10-21,294,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2022,mlard94d,needle colouring 50 %,2022-10-07,280,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2023,mlard94d,needle colouring 50 %,2023-10-15,288,other,"Dank sommerliche Temperaturen, auch in der  Nacht, stark ausgezoegert. Warme Temperaturen - ausgezoegert",Il Fuorn,1829.6,1.923253682276443
+fuo,2024,mlard94d,needle colouring 50 %,2024-10-12,286,other,,Il Fuorn,1829.6,1.923253682276443
+fuo,2016,mlard95d,needle drop 50 %,2016-11-07,312,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2017,mlard95d,needle drop 50 %,2017-10-22,295,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2018,mlard95d,needle drop 50 %,2018-10-27,300,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2019,mlard95d,needle drop 50 %,2019-11-04,308,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2020,mlard95d,needle drop 50 %,2020-11-05,310,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2021,mlard95d,needle drop 50 %,2021-11-04,308,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2022,mlard95d,needle drop 50 %,2022-10-24,297,,,Il Fuorn,1829.6,1.923253682276443
+fuo,2023,mlard95d,needle drop 50 %,2023-11-02,306,other,Stuermische Winde mit Schneefall,Il Fuorn,1829.6,1.923253682276443
+fuo,2024,mlard95d,needle drop 50 %,2024-10-26,300,other,,Il Fuorn,1829.6,1.923253682276443
+lue,2016,mlard94d,needle colouring 50 %,2016-10-20,294,,,Lü,1989.1,14.874641267746915
+lue,2017,mlard94d,needle colouring 50 %,2017-10-05,278,,,Lü,1989.1,14.874641267746915
+lue,2018,mlard94d,needle colouring 50 %,2018-10-14,287,,,Lü,1989.1,14.874641267746915
+lue,2019,mlard94d,needle colouring 50 %,2019-10-14,287,,,Lü,1989.1,14.874641267746915
+lue,2020,mlard94d,needle colouring 50 %,2020-10-16,290,,,Lü,1989.1,14.874641267746915
+lue,2021,mlard94d,needle colouring 50 %,2021-10-15,288,,,Lü,1989.1,14.874641267746915
+lue,2022,mlard94d,needle colouring 50 %,2022-10-09,282,,,Lü,1989.1,14.874641267746915
+lue,2023,mlard94d,needle colouring 50 %,2023-10-29,302,,,Lü,1989.1,14.874641267746915
+lue,2024,mlard94d,needle colouring 50 %,2024-10-08,282,,,Lü,1989.1,14.874641267746915
+lue,2016,mlard95d,needle drop 50 %,2016-11-04,309,,,Lü,1989.1,14.874641267746915
+lue,2017,mlard95d,needle drop 50 %,2017-10-18,291,,,Lü,1989.1,14.874641267746915
+lue,2018,mlard95d,needle drop 50 %,2018-10-30,303,,,Lü,1989.1,14.874641267746915
+lue,2019,mlard95d,needle drop 50 %,2019-11-07,311,,,Lü,1989.1,14.874641267746915
+lue,2020,mlard95d,needle drop 50 %,2020-11-02,307,,,Lü,1989.1,14.874641267746915
+lue,2021,mlard95d,needle drop 50 %,2021-10-30,303,,,Lü,1989.1,14.874641267746915
+lue,2022,mlard95d,needle drop 50 %,2022-10-26,299,,,Lü,1989.1,14.874641267746915
+lue,2023,mlard95d,needle drop 50 %,2023-11-08,312,,,Lü,1989.1,14.874641267746915
+lue,2024,mlard95d,needle drop 50 %,2024-10-20,294,,,Lü,1989.1,14.874641267746915
+min,2016,mlard94d,needle colouring 50 %,2016-10-05,279,,,Val Mingèr,1717.6,11.710688538309261
+min,2017,mlard94d,needle colouring 50 %,2017-10-05,278,,,Val Mingèr,1717.6,11.710688538309261
+min,2018,mlard94d,needle colouring 50 %,2018-10-07,280,,,Val Mingèr,1717.6,11.710688538309261
+min,2019,mlard94d,needle colouring 50 %,2019-10-20,293,,,Val Mingèr,1717.6,11.710688538309261
+min,2020,mlard94d,needle colouring 50 %,2020-10-17,291,,,Val Mingèr,1717.6,11.710688538309261
+min,2021,mlard94d,needle colouring 50 %,2021-10-23,296,,,Val Mingèr,1717.6,11.710688538309261
+min,2022,mlard94d,needle colouring 50 %,2022-10-12,285,,,Val Mingèr,1717.6,11.710688538309261
+min,2023,mlard94d,needle colouring 50 %,2023-10-13,286,,,Val Mingèr,1717.6,11.710688538309261
+min,2024,mlard94d,needle colouring 50 %,2024-10-09,283,,,Val Mingèr,1717.6,11.710688538309261
+min,2016,mlard95d,needle drop 50 %,2016-10-26,300,,,Val Mingèr,1717.6,11.710688538309261
+min,2017,mlard95d,needle drop 50 %,2017-10-22,295,,,Val Mingèr,1717.6,11.710688538309261
+min,2018,mlard95d,needle drop 50 %,2018-10-26,299,,,Val Mingèr,1717.6,11.710688538309261
+min,2019,mlard95d,needle drop 50 %,2019-10-29,302,,,Val Mingèr,1717.6,11.710688538309261
+min,2020,mlard95d,needle drop 50 %,2020-10-31,305,,,Val Mingèr,1717.6,11.710688538309261
+min,2021,mlard95d,needle drop 50 %,2021-10-31,304,,,Val Mingèr,1717.6,11.710688538309261
+min,2022,mlard95d,needle drop 50 %,2022-10-23,296,,,Val Mingèr,1717.6,11.710688538309261
+min,2023,mlard95d,needle drop 50 %,2023-10-30,303,,,Val Mingèr,1717.6,11.710688538309261
+min,2024,mlard95d,needle drop 50 %,2024-10-23,297,,,Val Mingèr,1717.6,11.710688538309261
+tru,2016,mlard94d,needle colouring 50 %,2016-10-19,293,,,Val Trupchun,1831.3,12.113017798270537
+tru,2017,mlard94d,needle colouring 50 %,2017-10-10,283,,,Val Trupchun,1831.3,12.113017798270537
+tru,2019,mlard94d,needle colouring 50 %,2019-10-13,286,,,Val Trupchun,1831.3,12.113017798270537
+tru,2020,mlard94d,needle colouring 50 %,2020-10-13,287,,,Val Trupchun,1831.3,12.113017798270537
+tru,2021,mlard94d,needle colouring 50 %,2021-10-12,285,,,Val Trupchun,1831.3,12.113017798270537
+tru,2022,mlard94d,needle colouring 50 %,2022-10-08,281,,,Val Trupchun,1831.3,12.113017798270537
+tru,2023,mlard94d,needle colouring 50 %,2023-10-10,283,,,Val Trupchun,1831.3,12.113017798270537
+tru,2024,mlard94d,needle colouring 50 %,2024-10-07,281,,,Val Trupchun,1831.3,12.113017798270537
+tru,2016,mlard95d,needle drop 50 %,2016-10-26,300,,,Val Trupchun,1831.3,12.113017798270537
+tru,2019,mlard95d,needle drop 50 %,2019-10-29,302,,,Val Trupchun,1831.3,12.113017798270537
+tru,2020,mlard95d,needle drop 50 %,2020-10-21,295,,,Val Trupchun,1831.3,12.113017798270537
+tru,2021,mlard95d,needle drop 50 %,2021-11-10,314,,,Val Trupchun,1831.3,12.113017798270537
+tru,2023,mlard95d,needle drop 50 %,2023-10-29,302,,,Val Trupchun,1831.3,12.113017798270537
+tru,2024,mlard95d,needle drop 50 %,2024-10-29,303,,,Val Trupchun,1831.3,12.113017798270537

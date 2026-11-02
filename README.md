@@ -8,10 +8,10 @@ The notebooks run in order. Each one reads the output of the earlier ones from `
 
 | Notebook | What it does | Writes |
 |---|---|---|
-| `01_download_sentinel2` | Sentinel-2 L2A from Microsoft Planetary Computer (no account needed). Splits the AOI into zones using the Copernicus DEM; NDVI, GRVI, PSRI and RCC statistics of the clear pixels per date and zone | `cache/<AOI>_zones/` |
-| `02_download_validation` | MeteoSwiss larch observations (needle colouring 50 %, needle drop 50 %) near the AOI | `cache/validation/<AOI>/` |
+| `01_download_sentinel2` | Sentinel-2 L2A from Microsoft Planetary Computer (no account needed). Splits the AOI into zones using the Copernicus DEM; NDVI, GRVI, PSRI and RCC statistics of the clear pixels per date and zone; the same for the AOI pixels around local sites (`SITE_AREAS`) | `cache/<AOI>_zones/`, `cache/<AOI>_sites/` |
+| `02_download_validation` | Larch observations (needle colouring 50 %, needle drop 50 %) near the AOI from two separate sources: MeteoSwiss stations and the local sites of `Lärchen_pheno.xlsx`; maps of the stations, sites and the Swiss National Park; checks of the larch classification against the forest-type map `Lärchen_SNP.shp` and against images | `cache/validation/<AOI>/` |
 | `03_download_climate` | MeteoSwiss gridded and station observations, CH2025 local and gridded scenarios; daily series per zone, with lapse-rate correction | `cache/climate/sources/`, `cache/climate/<AOI>/` |
-| `04_phenology_metrics` | Date filtering; Whittaker and double-logistic curves; start / peak / end per zone and year; method comparison against the validation data; trend; topography effects | `results/<AOI>/` |
+| `04_phenology_metrics` | Date filtering; Whittaker and double-logistic curves; start / peak / end per zone and year; method comparison against the validation data; check against a local site's own observations; trend; topography effects | `results/<AOI>/` |
 | `05_climate_analysis` | Zone fixed-effects regression of the dates on climate features; projection with CH2025 per global warming level, compared with the trend | `results/<AOI>/climate/` |
 
 `01` and `03` take hours on the first run (the CH2025 grid alone is 512 files of ~1.8 GB). After that they only fetch what is missing. `04` and `05` run offline in a few minutes.
@@ -24,7 +24,7 @@ uv pip install -r requirements.txt
 nbstripout --install          # notebooks are committed without outputs
 ```
 
-- **AOI:** the AOI files are in `aoi/`: larch classification GeoTIFFs (non-zero pixels = larch). A vector file (.geojson/.shp/.gpkg) also works. Choose one with `AOI_FILE` in `config.py`.
+- **Input files** are in `data/`. The AOI files are in `data/aoi/`: larch classification GeoTIFFs (non-zero pixels = larch). A vector file (.geojson/.shp/.gpkg) also works. Choose one with `AOI_FILE` in `config.py`. The local validation data are in `data/validation/`: the larch observations `Lärchen_pheno.xlsx` and the forest-type map `Lärchen_SNP.shp`.
 
 ## Configuration
 
@@ -32,6 +32,7 @@ All settings are in `config.py`. The main ones:
 
 - `FIRST_YEAR`, `LAST_YEAR`: the year range for all notebooks
 - `AOI_FILE`: which AOI to process. Every AOI gets its own folders in `cache/` and `results/`.
+- `LOCAL_PHENO_FILE`, `SITE_AREAS`, `SITE_RADIUS_M`: the local larch observations, and the sites whose surrounding AOI pixels get their own dates for a direct check
 - `SEASON_METHODS`, `SEASON_CHOICE`: the two date candidates per date type, and which one (or their average) is used downstream
 - `TARGETS`: the date types that `05` analyses
 
@@ -42,9 +43,11 @@ Shared helper functions are in `phenology_utils.py`.
 ```
 config.py, phenology_utils.py   settings and shared functions
 0*_*.ipynb                      the workflow notebooks
-aoi/                            AOI masks (larch classification GeoTIFFs)
+data/aoi/                       AOI masks (larch classification GeoTIFFs)
+data/validation/                local larch observations (Lärchen_pheno.xlsx), forest-type map (Lärchen_SNP.shp)
 cache/<AOI>_zones/              Sentinel-2 statistics per year (stats_<year>.csv), zones.csv / zones.tif
-cache/validation/<AOI>/         MeteoSwiss phenology observations
+cache/<AOI>_sites/              the same for the areas around SITE_AREAS
+cache/validation/<AOI>/         MeteoSwiss and local phenology observations, maps (stations, AOI checks)
 cache/climate/                  climate data (not in git: too large; rebuilt by 03)
 results/<AOI>/                  season dates, method comparison, projection, topography effects
 results/<AOI>/climate/          climate effects, regression, CH2025 projections
@@ -65,5 +68,8 @@ Two AOIs have been processed:
 - Sentinel-2 L2A and Copernicus DEM GLO-30, via Microsoft Planetary Computer
 - MeteoSwiss open data: gridded observations (`ogd-surface-derived-grid`), SwissMetNet station Buffalora (`ogd-smn`) and phenology observations (`ogd-phenology`)
 - MeteoSwiss & ETH Zurich (2025): Climate CH2025 – Daily Datasets (local and gridded)
+- Local larch phenology observations (`Lärchen_pheno.xlsx`): Il Fuorn, Val Cluozza, Val Mingèr, Val Trupchun, Lü
+- Forest-type map of the Swiss National Park area (`Lärchen_SNP.shp`)
+- swisstopo: national map (grey), SWISSIMAGE, terrain height service; BAFU: Swiss National Park border
 
 The methods and literature are described in the notebooks.
