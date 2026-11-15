@@ -107,6 +107,14 @@ SITE_RADIUS_M = 500
 # SEASON_METHODS, or one of them, e.g. "Whittaker / GRVI / mid"
 SEASON_CHOICE = {"start": "average", "peak": "average", "end": "average"}
 FORECAST_YEARS = 2         # years projected ahead with the OLS trend
+
+# ---------------------------------------------------------------- best dates over all indices and curves (06)
+# 06 ranks every index x curve (8 candidates) against the validation data, adds the pair averages of the BEST_TOP_N
+# best ones and uses per date type: "auto" = the best mean rank; "peak" (start only) = the start of the peak's
+# candidate(s); or a fixed choice, e.g. "Whittaker / GRVI" or "Whittaker / GRVI + double logistic / RCC"
+BEST_CHOICE = {"start": "peak", "peak": "auto", "end": "auto"}
+BEST_TOP_N = 4
+
 # ---------------------------------------------------------------- climate data (03)
 # MeteoSwiss gridded observations (1 km, LV95): variable -> product
 OBS_GRID_PRODUCTS = {"tas": "tabsd", "tasmin": "tmind", "tasmax": "tmaxd", "pr": "rhiresd", "srel": "sreld"}

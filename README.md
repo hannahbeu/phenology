@@ -13,6 +13,7 @@ The notebooks run in order. Each one reads the output of the earlier ones from `
 | `03_download_climate` | MeteoSwiss gridded observations and CH2025 gridded scenarios; daily series per zone, with lapse-rate correction | `cache/climate/sources/`, `cache/climate/<AOI>/` |
 | `04_phenology_metrics` | Date filtering; Whittaker and double-logistic curves; start / peak / end per zone and year; method comparison against the validation data; check against a local site's own observations; trend; topography effects | `results/<AOI>/` |
 | `05_climate_analysis` | Zone fixed-effects regression of the dates on climate features; projection with CH2025 per global warming level, compared with the trend | `results/<AOI>/climate/` |
+| `06_season_dates_all_indices` | Outlook, not part of the report: the steps of `04`, but for every index (NDVI, GRVI, PSRI, RCC) and both curves: checks against the validation data, a ranking of the 8 candidates and of pair averages of the best ones, the best version per date type (`BEST_CHOICE`), and trend, topography and STL on it. Separate from `04`; `05` reads the files of `04` | `results/<AOI>/season_all_indices_*.csv`, `season_*_best.csv`, `topography_effects_best.csv` |
 
 `01` and `03` take hours on the first run (the CH2025 grid alone is 512 files of ~1.8 GB). After that they only fetch what is missing. `04` and `05` run offline in a few minutes.
 

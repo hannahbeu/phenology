@@ -1,0 +1,397 @@
+target,candidate,site,year,doy,date
+start,Whittaker / NDVI,fuo,2017,242.0,2017-08-30
+start,Whittaker / NDVI,fuo,2018,257.0,2018-09-14
+start,Whittaker / NDVI,fuo,2019,257.0,2019-09-14
+start,Whittaker / NDVI,fuo,2020,234.0,2020-08-21
+start,Whittaker / NDVI,fuo,2021,267.0,2021-09-24
+start,Whittaker / NDVI,fuo,2022,242.0,2022-08-30
+start,Whittaker / NDVI,fuo,2023,276.0,2023-10-03
+start,Whittaker / NDVI,fuo,2024,256.0,2024-09-12
+start,Whittaker / NDVI,fuo,2025,233.0,2025-08-21
+start,Whittaker / GRVI,fuo,2017,265.0,2017-09-22
+start,Whittaker / GRVI,fuo,2018,274.0,2018-10-01
+start,Whittaker / GRVI,fuo,2019,274.0,2019-10-01
+start,Whittaker / GRVI,fuo,2020,255.0,2020-09-11
+start,Whittaker / GRVI,fuo,2021,263.0,2021-09-20
+start,Whittaker / GRVI,fuo,2022,257.0,2022-09-14
+start,Whittaker / GRVI,fuo,2023,281.0,2023-10-08
+start,Whittaker / GRVI,fuo,2024,276.0,2024-10-02
+start,Whittaker / GRVI,fuo,2025,279.0,2025-10-06
+start,Whittaker / PSRI,fuo,2017,240.0,2017-08-28
+start,Whittaker / PSRI,fuo,2018,259.0,2018-09-16
+start,Whittaker / PSRI,fuo,2019,261.0,2019-09-18
+start,Whittaker / PSRI,fuo,2020,254.0,2020-09-10
+start,Whittaker / PSRI,fuo,2022,246.0,2022-09-03
+start,Whittaker / PSRI,fuo,2023,233.0,2023-08-21
+start,Whittaker / PSRI,fuo,2024,267.0,2024-09-23
+start,Whittaker / PSRI,fuo,2025,270.0,2025-09-27
+start,Whittaker / RCC,fuo,2017,233.0,2017-08-21
+start,Whittaker / RCC,fuo,2018,265.0,2018-09-22
+start,Whittaker / RCC,fuo,2019,265.0,2019-09-22
+start,Whittaker / RCC,fuo,2020,257.0,2020-09-13
+start,Whittaker / RCC,fuo,2021,346.0,2021-12-12
+start,Whittaker / RCC,fuo,2022,256.0,2022-09-13
+start,Whittaker / RCC,fuo,2023,272.0,2023-09-29
+start,Whittaker / RCC,fuo,2024,278.0,2024-10-04
+start,Whittaker / RCC,fuo,2025,275.0,2025-10-02
+start,double logistic / NDVI,fuo,2017,274.88259452633156,2017-10-02
+start,double logistic / NDVI,fuo,2018,281.3413444327583,2018-10-08
+start,double logistic / NDVI,fuo,2019,283.96285919490884,2019-10-11
+start,double logistic / NDVI,fuo,2020,256.19536693764366,2020-09-12
+start,double logistic / NDVI,fuo,2021,269.4856788713955,2021-09-26
+start,double logistic / NDVI,fuo,2022,250.89053776280593,2022-09-08
+start,double logistic / NDVI,fuo,2023,285.00212922835414,2023-10-12
+start,double logistic / NDVI,fuo,2024,280.56241417487934,2024-10-07
+start,double logistic / NDVI,fuo,2025,282.2519688494994,2025-10-09
+start,double logistic / GRVI,fuo,2017,273.29204453672867,2017-09-30
+start,double logistic / GRVI,fuo,2018,280.38716191858884,2018-10-07
+start,double logistic / GRVI,fuo,2019,284.3715593145671,2019-10-11
+start,double logistic / GRVI,fuo,2020,282.8203003781124,2020-10-09
+start,double logistic / GRVI,fuo,2021,270.41579873206456,2021-09-27
+start,double logistic / GRVI,fuo,2022,278.5887911811058,2022-10-06
+start,double logistic / GRVI,fuo,2023,284.5274117349578,2023-10-12
+start,double logistic / GRVI,fuo,2024,282.91629062987505,2024-10-09
+start,double logistic / GRVI,fuo,2025,282.1462794361712,2025-10-09
+start,double logistic / PSRI,fuo,2017,270.85981067162356,2017-09-28
+start,double logistic / PSRI,fuo,2018,275.54764487556696,2018-10-03
+start,double logistic / PSRI,fuo,2019,272.8844851398917,2019-09-30
+start,double logistic / PSRI,fuo,2020,259.80475309224016,2020-09-16
+start,double logistic / PSRI,fuo,2021,257.06133761183673,2021-09-14
+start,double logistic / PSRI,fuo,2022,226.08863881755437,2022-08-14
+start,double logistic / PSRI,fuo,2023,279.5412118184254,2023-10-07
+start,double logistic / PSRI,fuo,2024,281.15005186771856,2024-10-07
+start,double logistic / PSRI,fuo,2025,279.6898959310027,2025-10-07
+start,double logistic / RCC,fuo,2017,235.77942815076614,2017-08-24
+start,double logistic / RCC,fuo,2018,276.1164786718197,2018-10-03
+start,double logistic / RCC,fuo,2019,277.4833502591045,2019-10-04
+start,double logistic / RCC,fuo,2020,261.9831301898232,2020-09-18
+start,double logistic / RCC,fuo,2021,267.8353929389178,2021-09-25
+start,double logistic / RCC,fuo,2022,275.8484214165898,2022-10-03
+start,double logistic / RCC,fuo,2023,278.0781105680406,2023-10-05
+start,double logistic / RCC,fuo,2024,281.4105041296549,2024-10-07
+start,double logistic / RCC,fuo,2025,280.3012132789833,2025-10-07
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2017,253.50000000000003,2017-09-11
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2018,265.5,2018-09-23
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2019,265.5,2019-09-23
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2020,244.50000000000003,2020-09-01
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2021,265.0,2021-09-22
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2022,249.50000000000003,2022-09-07
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2023,278.5,2023-10-05
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2024,266.0,2024-09-22
+start,Whittaker / NDVI + Whittaker / GRVI,fuo,2025,256.0,2025-09-13
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2017,241.0,2017-08-29
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2018,258.0,2018-09-15
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2019,259.0,2019-09-16
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2020,244.0,2020-08-31
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2021,268.09722222222223,2021-09-25
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2022,244.0,2022-09-01
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2023,254.5,2023-09-11
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2024,261.5,2024-09-18
+start,Whittaker / NDVI + Whittaker / PSRI,fuo,2025,251.5,2025-09-09
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2017,237.5,2017-08-26
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2018,261.0,2018-09-18
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2019,261.0,2019-09-18
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2020,245.5,2020-09-02
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2021,306.5,2021-11-02
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2022,249.0,2022-09-06
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2023,274.0,2023-10-01
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2024,267.0,2024-09-23
+start,Whittaker / NDVI + Whittaker / RCC,fuo,2025,254.0,2025-09-11
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2017,252.49999999999997,2017-09-09
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2018,266.5,2018-09-23
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2019,267.5,2019-09-25
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2020,254.49999999999997,2020-09-10
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2021,255.20833333333331,2021-09-12
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2022,251.49999999999997,2022-09-08
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2023,257.0,2023-09-14
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2024,271.5,2024-09-28
+start,Whittaker / GRVI + Whittaker / PSRI,fuo,2025,274.5,2025-10-01
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2017,248.99999999999997,2017-09-06
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2018,269.5,2018-09-27
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2019,269.5,2019-09-27
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2020,255.99999999999997,2020-09-12
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2021,304.5,2021-10-31
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2022,256.5,2022-09-13
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2023,276.5,2023-10-03
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2024,277.0,2024-10-03
+start,Whittaker / GRVI + Whittaker / RCC,fuo,2025,277.0,2025-10-04
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2017,236.5,2017-08-24
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2018,262.0,2018-09-19
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2019,263.0,2019-09-20
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2020,255.5,2020-09-12
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2022,251.0,2022-09-08
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2023,252.5,2023-09-09
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2024,272.5,2024-09-28
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2025,272.5,2025-09-29
+start,Whittaker / PSRI + Whittaker / RCC,fuo,2021,336.93055555555554,2021-12-03
+start,04 choice,fuo,2017,269.1460222683643,2017-09-26
+start,04 choice,fuo,2018,277.1935809592944,2018-10-04
+start,04 choice,fuo,2019,279.18577965728355,2019-10-06
+start,04 choice,fuo,2020,268.91015018905614,2020-09-25
+start,04 choice,fuo,2021,266.7078993660323,2021-09-24
+start,04 choice,fuo,2022,267.7943955905529,2022-09-25
+start,04 choice,fuo,2023,282.76370586747885,2023-10-10
+start,04 choice,fuo,2024,279.4581453149375,2024-10-05
+start,04 choice,fuo,2025,280.5731397180856,2025-10-08
+peak,Whittaker / NDVI,fuo,2017,269.0,2017-09-26
+peak,Whittaker / NDVI,fuo,2018,284.0,2018-10-11
+peak,Whittaker / NDVI,fuo,2019,287.0,2019-10-14
+peak,Whittaker / NDVI,fuo,2020,262.0,2020-09-18
+peak,Whittaker / NDVI,fuo,2021,285.0,2021-10-12
+peak,Whittaker / NDVI,fuo,2022,270.0,2022-09-27
+peak,Whittaker / NDVI,fuo,2023,295.0,2023-10-22
+peak,Whittaker / NDVI,fuo,2024,278.0,2024-10-04
+peak,Whittaker / NDVI,fuo,2025,283.0,2025-10-10
+peak,Whittaker / GRVI,fuo,2017,276.0,2017-10-03
+peak,Whittaker / GRVI,fuo,2018,284.0,2018-10-11
+peak,Whittaker / GRVI,fuo,2019,287.0,2019-10-14
+peak,Whittaker / GRVI,fuo,2020,273.0,2020-09-29
+peak,Whittaker / GRVI,fuo,2021,343.0,2021-12-09
+peak,Whittaker / GRVI,fuo,2022,280.0,2022-10-07
+peak,Whittaker / GRVI,fuo,2023,290.0,2023-10-17
+peak,Whittaker / GRVI,fuo,2024,286.0,2024-10-12
+peak,Whittaker / GRVI,fuo,2025,285.0,2025-10-12
+peak,Whittaker / PSRI,fuo,2017,264.0,2017-09-21
+peak,Whittaker / PSRI,fuo,2018,276.0,2018-10-03
+peak,Whittaker / PSRI,fuo,2019,278.0,2019-10-05
+peak,Whittaker / PSRI,fuo,2020,273.0,2020-09-29
+peak,Whittaker / PSRI,fuo,2022,294.0,2022-10-21
+peak,Whittaker / PSRI,fuo,2023,281.0,2023-10-08
+peak,Whittaker / PSRI,fuo,2024,285.0,2024-10-11
+peak,Whittaker / PSRI,fuo,2025,279.0,2025-10-06
+peak,Whittaker / RCC,fuo,2017,270.0,2017-09-27
+peak,Whittaker / RCC,fuo,2018,279.0,2018-10-06
+peak,Whittaker / RCC,fuo,2019,280.0,2019-10-07
+peak,Whittaker / RCC,fuo,2020,278.0,2020-10-04
+peak,Whittaker / RCC,fuo,2021,365.0,2021-12-31
+peak,Whittaker / RCC,fuo,2022,279.0,2022-10-06
+peak,Whittaker / RCC,fuo,2023,286.0,2023-10-13
+peak,Whittaker / RCC,fuo,2024,287.0,2024-10-13
+peak,Whittaker / RCC,fuo,2025,282.0,2025-10-09
+peak,double logistic / NDVI,fuo,2017,277.0798191037225,2017-10-04
+peak,double logistic / NDVI,fuo,2018,284.2228508388727,2018-10-11
+peak,double logistic / NDVI,fuo,2019,286.1600843126504,2019-10-13
+peak,double logistic / NDVI,fuo,2020,258.39259151497987,2020-09-14
+peak,double logistic / NDVI,fuo,2021,290.1715386247017,2021-10-17
+peak,double logistic / NDVI,fuo,2022,269.3118432510616,2022-09-26
+peak,double logistic / NDVI,fuo,2023,287.1993538556353,2023-10-14
+peak,double logistic / NDVI,fuo,2024,282.75963875221555,2024-10-09
+peak,double logistic / NDVI,fuo,2025,284.4491934268356,2025-10-11
+peak,double logistic / GRVI,fuo,2017,278.07896703383767,2017-10-05
+peak,double logistic / GRVI,fuo,2018,283.7593068961106,2018-10-11
+peak,double logistic / GRVI,fuo,2019,286.5687838919033,2019-10-14
+peak,double logistic / GRVI,fuo,2020,290.2834829968946,2020-10-16
+peak,double logistic / GRVI,fuo,2021,302.6897706261499,2021-10-30
+peak,double logistic / GRVI,fuo,2022,280.78601575844203,2022-10-08
+peak,double logistic / GRVI,fuo,2023,286.8501094852598,2023-10-14
+peak,double logistic / GRVI,fuo,2024,285.99555221724154,2024-10-12
+peak,double logistic / GRVI,fuo,2025,284.3435040135074,2025-10-11
+peak,double logistic / PSRI,fuo,2017,274.79202330590374,2017-10-02
+peak,double logistic / PSRI,fuo,2018,279.89554678127746,2018-10-07
+peak,double logistic / PSRI,fuo,2019,275.0817097172279,2019-10-02
+peak,double logistic / PSRI,fuo,2020,262.0019776695764,2020-09-18
+peak,double logistic / PSRI,fuo,2021,294.6344415476014,2021-10-22
+peak,double logistic / PSRI,fuo,2022,313.9776219110023,2022-11-10
+peak,double logistic / PSRI,fuo,2023,285.9171951111391,2023-10-13
+peak,double logistic / PSRI,fuo,2024,286.3455700448955,2024-10-12
+peak,double logistic / PSRI,fuo,2025,281.8871205083389,2025-10-09
+peak,double logistic / RCC,fuo,2017,256.2922540543811,2017-09-13
+peak,double logistic / RCC,fuo,2018,280.08091073115054,2018-10-07
+peak,double logistic / RCC,fuo,2019,279.6805748364413,2019-10-07
+peak,double logistic / RCC,fuo,2020,279.47495612491696,2020-10-05
+peak,double logistic / RCC,fuo,2021,298.6684307101155,2021-10-26
+peak,double logistic / RCC,fuo,2022,278.19911033960517,2022-10-05
+peak,double logistic / RCC,fuo,2023,286.0541515628436,2023-10-13
+peak,double logistic / RCC,fuo,2024,286.53138386782825,2024-10-13
+peak,double logistic / RCC,fuo,2025,282.4984378563195,2025-10-09
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2017,260.1461270271906,2017-09-17
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2018,278.04045536557527,2018-10-05
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2019,278.84028741822067,2019-10-06
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2020,276.2374780624585,2020-10-02
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2021,297.62786348324875,2021-10-25
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2022,286.09955516980256,2022-10-13
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2023,283.5270757814218,2023-10-11
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2024,285.7656919339141,2024-10-12
+peak,double logistic / RCC + Whittaker / PSRI,fuo,2025,280.74921892815973,2025-10-08
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2017,266.1461270271905,2017-09-23
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2018,282.0404553655752,2018-10-09
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2019,283.3402874182206,2019-10-10
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2020,276.2374780624584,2020-10-02
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2021,320.8342153550577,2021-11-17
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2022,279.09955516980256,2022-10-06
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2023,288.0270757814218,2023-10-15
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2024,286.2656919339141,2024-10-12
+peak,double logistic / RCC + Whittaker / GRVI,fuo,2025,283.74921892815973,2025-10-11
+peak,double logistic / RCC + double logistic / NDVI,fuo,2017,266.6860365790518,2017-09-24
+peak,double logistic / RCC + double logistic / NDVI,fuo,2018,282.15188078501166,2018-10-09
+peak,double logistic / RCC + double logistic / NDVI,fuo,2019,282.92032957454586,2019-10-10
+peak,double logistic / RCC + double logistic / NDVI,fuo,2020,268.93377381994844,2020-09-25
+peak,double logistic / RCC + double logistic / NDVI,fuo,2021,294.41998466740864,2021-10-21
+peak,double logistic / RCC + double logistic / NDVI,fuo,2022,273.7554767953334,2022-10-01
+peak,double logistic / RCC + double logistic / NDVI,fuo,2023,286.62675270923944,2023-10-14
+peak,double logistic / RCC + double logistic / NDVI,fuo,2024,284.6455113100219,2024-10-11
+peak,double logistic / RCC + double logistic / NDVI,fuo,2025,283.47381564157763,2025-10-10
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2017,270.0,2017-09-27
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2018,280.0,2018-10-07
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2019,282.5,2019-10-09
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2020,273.0,2020-09-29
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2022,287.0,2022-10-14
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2023,285.5,2023-10-13
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2024,285.5,2024-10-12
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2025,282.0,2025-10-09
+peak,Whittaker / PSRI + Whittaker / GRVI,fuo,2021,337.7083333333333,2021-12-04
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2017,270.53990955186123,2017-09-28
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2018,280.1114254194364,2018-10-07
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2019,282.0800421563252,2019-10-09
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2020,265.6962957574899,2020-09-22
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2022,281.6559216255308,2022-10-09
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2023,284.09967692781765,2023-10-11
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2024,283.8798193761078,2024-10-10
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2025,281.7245967134178,2025-10-09
+peak,Whittaker / PSRI + double logistic / NDVI,fuo,2021,289.56059897577535,2021-10-17
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2017,276.53990955186123,2017-10-04
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2018,284.1114254194364,2018-10-11
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2019,286.5800421563252,2019-10-14
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2020,265.6962957574899,2020-09-22
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2021,316.58576931235086,2021-11-13
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2022,274.6559216255308,2022-10-02
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2023,288.59967692781765,2023-10-16
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2024,284.3798193761078,2024-10-10
+peak,Whittaker / GRVI + double logistic / NDVI,fuo,2025,284.7245967134178,2025-10-12
+peak,04 choice,fuo,2017,276.53990955186123,2017-10-04
+peak,04 choice,fuo,2018,284.1114254194364,2018-10-11
+peak,04 choice,fuo,2019,286.5800421563252,2019-10-14
+peak,04 choice,fuo,2020,265.6962957574899,2020-09-22
+peak,04 choice,fuo,2021,316.58576931235086,2021-11-13
+peak,04 choice,fuo,2022,274.6559216255308,2022-10-02
+peak,04 choice,fuo,2023,288.59967692781765,2023-10-16
+peak,04 choice,fuo,2024,284.3798193761078,2024-10-10
+peak,04 choice,fuo,2025,284.7245967134178,2025-10-12
+end,Whittaker / NDVI,fuo,2017,286.0,2017-10-13
+end,Whittaker / NDVI,fuo,2018,307.0,2018-11-03
+end,Whittaker / NDVI,fuo,2019,313.0,2019-11-09
+end,Whittaker / NDVI,fuo,2020,281.0,2020-10-07
+end,Whittaker / NDVI,fuo,2021,295.0,2021-10-22
+end,Whittaker / NDVI,fuo,2022,288.0,2022-10-15
+end,Whittaker / NDVI,fuo,2023,313.0,2023-11-09
+end,Whittaker / NDVI,fuo,2024,292.0,2024-10-18
+end,Whittaker / NDVI,fuo,2025,295.0,2025-10-22
+end,Whittaker / GRVI,fuo,2017,283.0,2017-10-10
+end,Whittaker / GRVI,fuo,2018,290.0,2018-10-17
+end,Whittaker / GRVI,fuo,2019,299.0,2019-10-26
+end,Whittaker / GRVI,fuo,2020,298.0,2020-10-24
+end,Whittaker / GRVI,fuo,2022,289.0,2022-10-16
+end,Whittaker / GRVI,fuo,2023,297.0,2023-10-24
+end,Whittaker / GRVI,fuo,2024,293.0,2024-10-19
+end,Whittaker / GRVI,fuo,2025,290.0,2025-10-17
+end,Whittaker / PSRI,fuo,2017,274.0,2017-10-01
+end,Whittaker / PSRI,fuo,2018,284.0,2018-10-11
+end,Whittaker / PSRI,fuo,2019,289.0,2019-10-16
+end,Whittaker / PSRI,fuo,2020,287.0,2020-10-13
+end,Whittaker / PSRI,fuo,2023,292.0,2023-10-19
+end,Whittaker / PSRI,fuo,2024,295.0,2024-10-21
+end,Whittaker / PSRI,fuo,2025,286.0,2025-10-13
+end,Whittaker / RCC,fuo,2017,279.0,2017-10-06
+end,Whittaker / RCC,fuo,2018,286.0,2018-10-13
+end,Whittaker / RCC,fuo,2019,288.0,2019-10-15
+end,Whittaker / RCC,fuo,2020,300.0,2020-10-26
+end,Whittaker / RCC,fuo,2022,288.0,2022-10-15
+end,Whittaker / RCC,fuo,2023,294.0,2023-10-21
+end,Whittaker / RCC,fuo,2024,295.0,2024-10-21
+end,Whittaker / RCC,fuo,2025,286.0,2025-10-13
+end,double logistic / NDVI,fuo,2017,278.8144201591538,2017-10-06
+end,double logistic / NDVI,fuo,2018,286.49765884198234,2018-10-13
+end,double logistic / NDVI,fuo,2019,287.894685794662,2019-10-15
+end,double logistic / NDVI,fuo,2020,260.127192570368,2020-09-16
+end,double logistic / NDVI,fuo,2021,306.50201049808487,2021-11-03
+end,double logistic / NDVI,fuo,2022,283.8545605823476,2022-10-11
+end,double logistic / NDVI,fuo,2023,288.9339549504525,2023-10-16
+end,double logistic / NDVI,fuo,2024,284.49423980760366,2024-10-10
+end,double logistic / NDVI,fuo,2025,286.18379448222373,2025-10-13
+end,double logistic / GRVI,fuo,2017,281.85800760219547,2017-10-09
+end,double logistic / GRVI,fuo,2018,286.42144999120666,2018-10-13
+end,double logistic / GRVI,fuo,2019,288.3033849472914,2019-10-15
+end,double logistic / GRVI,fuo,2020,296.17529969174893,2020-10-22
+end,double logistic / GRVI,fuo,2021,328.1684887719828,2021-11-24
+end,double logistic / GRVI,fuo,2022,282.52061681383015,2022-10-10
+end,double logistic / GRVI,fuo,2023,288.68376545769837,2023-10-16
+end,double logistic / GRVI,fuo,2024,288.4264782383483,2024-10-14
+end,double logistic / GRVI,fuo,2025,286.0781050688955,2025-10-13
+end,double logistic / PSRI,fuo,2017,277.89631235117827,2017-10-05
+end,double logistic / PSRI,fuo,2018,283.3280021216017,2018-10-10
+end,double logistic / PSRI,fuo,2019,276.816310772616,2019-10-04
+end,double logistic / PSRI,fuo,2020,263.7365787249645,2020-09-20
+end,double logistic / PSRI,fuo,2021,324.2965645792843,2021-11-20
+end,double logistic / PSRI,fuo,2022,383.3616641265259,2023-01-18
+end,double logistic / PSRI,fuo,2023,290.95072125259816,2023-10-18
+end,double logistic / PSRI,fuo,2024,290.44717686578093,2024-10-16
+end,double logistic / PSRI,fuo,2025,283.621721563727,2025-10-11
+end,double logistic / RCC,fuo,2017,272.4861241887394,2017-09-29
+end,double logistic / RCC,fuo,2018,283.2106354325129,2018-10-10
+end,double logistic / RCC,fuo,2019,281.41517589182985,2019-10-08
+end,double logistic / RCC,fuo,2020,293.2838949291891,2020-10-19
+end,double logistic / RCC,fuo,2021,323.00960202705954,2021-11-19
+end,double logistic / RCC,fuo,2022,280.0548639702581,2022-10-07
+end,double logistic / RCC,fuo,2023,292.3508447958025,2023-10-19
+end,double logistic / RCC,fuo,2024,290.5740673012713,2024-10-17
+end,double logistic / RCC,fuo,2025,284.23303891170764,2025-10-11
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2017,281.0,2017-10-08
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2018,288.0,2018-10-15
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2019,293.5,2019-10-21
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2020,299.0,2020-10-25
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2022,288.5,2022-10-15
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2023,295.5,2023-10-23
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2024,294.0,2024-10-20
+end,Whittaker / GRVI + Whittaker / RCC,fuo,2025,288.0,2025-10-15
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2017,278.5,2017-10-05
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2018,287.0,2018-10-14
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2019,294.0,2019-10-21
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2020,292.5,2020-10-18
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2022,286.1696428571429,2022-10-13
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2023,294.5,2023-10-21
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2024,294.0,2024-10-20
+end,Whittaker / GRVI + Whittaker / PSRI,fuo,2025,288.0,2025-10-15
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2017,282.42900380109774,2017-10-09
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2018,288.2107249956033,2018-10-15
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2019,293.6516924736457,2019-10-21
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2020,297.08764984587447,2020-10-23
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2022,285.7603084069151,2022-10-13
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2023,292.8418827288492,2023-10-20
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2024,290.71323911917415,2024-10-17
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2025,288.03905253444776,2025-10-15
+end,Whittaker / GRVI + double logistic / GRVI,fuo,2021,328.4317889618052,2021-11-24
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2017,276.5,2017-10-03
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2018,285.0,2018-10-12
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2019,288.5,2019-10-15
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2020,293.5,2020-10-20
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2022,286.6071428571429,2022-10-14
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2023,293.0,2023-10-20
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2024,295.0,2024-10-21
+end,Whittaker / RCC + Whittaker / PSRI,fuo,2025,286.0,2025-10-13
+end,Whittaker / RCC + double logistic / GRVI,fuo,2017,280.42900380109774,2017-10-07
+end,Whittaker / RCC + double logistic / GRVI,fuo,2018,286.2107249956033,2018-10-13
+end,Whittaker / RCC + double logistic / GRVI,fuo,2019,288.1516924736457,2019-10-15
+end,Whittaker / RCC + double logistic / GRVI,fuo,2020,298.08764984587447,2020-10-24
+end,Whittaker / RCC + double logistic / GRVI,fuo,2022,285.2603084069151,2022-10-12
+end,Whittaker / RCC + double logistic / GRVI,fuo,2023,291.3418827288492,2023-10-18
+end,Whittaker / RCC + double logistic / GRVI,fuo,2024,291.71323911917415,2024-10-18
+end,Whittaker / RCC + double logistic / GRVI,fuo,2025,286.03905253444776,2025-10-13
+end,Whittaker / RCC + double logistic / GRVI,fuo,2021,326.9942889618052,2021-11-23
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2017,277.9290038010977,2017-10-05
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2018,285.2107249956033,2018-10-12
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2019,288.65169247364565,2019-10-16
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2020,291.58764984587447,2020-10-18
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2023,290.34188272884916,2023-10-17
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2024,291.7132391191741,2024-10-18
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2025,286.0390525344477,2025-10-13
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2021,325.601431818948,2021-11-22
+end,Whittaker / PSRI + double logistic / GRVI,fuo,2022,279.95355986079534,2022-10-07
+end,04 choice,fuo,2017,280.90721007957694,2017-10-08
+end,04 choice,fuo,2018,288.2488294209912,2018-10-15
+end,04 choice,fuo,2019,293.44734289733105,2019-10-20
+end,04 choice,fuo,2020,279.063596285184,2020-10-05
+end,04 choice,fuo,2022,286.4272802911738,2022-10-13
+end,04 choice,fuo,2023,292.96697747522626,2023-10-20
+end,04 choice,fuo,2024,288.74711990380183,2024-10-15
+end,04 choice,fuo,2025,288.0918972411119,2025-10-15
+end,04 choice,fuo,2021,310.2838150710361,2021-11-06
