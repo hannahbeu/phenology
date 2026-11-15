@@ -114,15 +114,10 @@ CLIMATE_SPINUP_DAYS = 92   # observations also downloaded for the last days of F
 GRID_BUFFER = 2000         # m around the AOI when clipping grids
 LAPSE_RATE_FALLBACK = -0.0065   # K/m, used if the lapse rate cannot be fitted from the grid
 
-# Station for SMN observations and CH2025 DAILY-LOCAL scenarios: Buffalora (1971 m, ~8 km from the AOI)
-STATION = "BUF"
-STATION_PARAMS = {"tas": "tre200d0", "tasmin": "tre200dn", "tasmax": "tre200dx", "pr": "rre150d0",
-                  "rsds": "gre000d0", "hurs": "ure200d0", "sfcwind": "fkl010d0", "et0": "erefaod0"}
 TEMPERATURE_VARS = ["tas", "tasmin", "tasmax"]   # shifted to each zone's elevation with the lapse rate
 
 # CH2025 climate scenarios (30-year daily series per global warming level, 26 model chains)
 CH2025_PERIODS = ["ref91-20", "gwl1.5", "gwl2.0", "gwl2.5", "gwl3.0"]
-CH2025_LOCAL_VARS = ["tas", "tasmin", "tasmax", "pr", "hurs", "sfcwind"]
 CH2025_GRID_VARS = ["tas", "tasmin", "tasmax", "pr"]
 CH2025_GRID_MODELS = None  # None = all model chains, or a list such as ["clmcom-cclm4-cccma"]
 

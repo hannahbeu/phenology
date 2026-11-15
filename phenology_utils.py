@@ -224,15 +224,5 @@ def grid_to_zones(ds, weights, lapse):
     return out
 
 
-def point_to_zones(ds, source_elev, zone_elev, lapse):
-    # Station series -> one series per zone; temperatures shifted from the station to each zone's mean elevation
-    zone_elev = xr.DataArray(zone_elev.values, dims="zone", coords={"zone": zone_elev.index})
-    out = ds.expand_dims(zone=zone_elev.zone).copy()
-    for var in TEMPERATURE_VARS:
-        if var in out:
-            out[var] = ds[var] + lapse_by_month(lapse[var], ds) * (zone_elev - source_elev)
-    return out
-
-
 def lapse_by_month(rate, ds):
     return xr.DataArray(rate.reindex(ds.month.values).values, dims="time", coords={"time": ds.time})

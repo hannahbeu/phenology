@@ -12,18 +12,3 @@ grid,P_summer,precipitation Jun-Aug,mm,Liu et al. 2016: preseason precipitation,
 grid,P_AugSep,precipitation Aug-Sep,mm,Xie et al. 2018: heavy rainfall,True
 grid,CWB_summer,"climatic water balance P - PET (Hargreaves), Jun-Sep",mm,Bigler & Vitasse 2021: climatic water balance Jun,True
 grid,sunshine_AugSep,relative sunshine duration Aug-Sep,%,Liu et al. 2016: insolation,False
-station,T_spring,mean temperature Mar-May,°C,"Busetto et al. 2010: spring temperature, larch in the Alps",True
-station,GDD5_JanJul,"growing degree-days above 5 °C, Jan-Jul",°C d,Bigler & Vitasse 2021: growing degree-days May-Jun,True
-station,T_summer,mean temperature Jun-Aug,°C,Estrella & Menzel 2006: monthly temperatures May-Sep,True
-station,T_Sep,mean temperature Sep,°C,"Busetto et al. 2010: September temperature, larch in the Alps",True
-station,T_Oct1,mean temperature 1-15 Oct,°C,Liu et al. 2016: preseason temperature,True
-station,Tmin_Sep,mean minimum temperature Sep,°C,Wu et al. 2018: preseason minimum (night-time) temperature,True
-station,frost_days,"days with Tmin < 0 °C, 15 Aug-15 Oct",days,Bigler & Vitasse 2021: cold spells in early autumn,True
-station,CDD10_AugSep,"cold degree-days below 10 °C, Aug-Sep",°C d,Delpierre et al. 2009: cold degree-days,True
-station,P_winter,precipitation Nov-Apr (snowpack proxy),mm,"Asam et al. 2018: snow cover duration, Alps",True
-station,P_summer,precipitation Jun-Aug,mm,Liu et al. 2016: preseason precipitation,True
-station,P_AugSep,precipitation Aug-Sep,mm,Xie et al. 2018: heavy rainfall,True
-station,CWB_summer,"climatic water balance P - PET (Hargreaves), Jun-Sep",mm,Bigler & Vitasse 2021: climatic water balance Jun,True
-station,radiation_AugSep,global radiation Aug-Sep,W/m²,Liu et al. 2016: insolation,False
-station,VPD_summer,vapour pressure deficit Jul-Sep,hPa,Mariën et al. 2021: vapour pressure deficit,True
-station,ET0_summer,FAO reference evaporation Jun-Sep,mm,Mariën et al. 2021: rainfall deficit P - PET,False

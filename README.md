@@ -1,6 +1,6 @@
 # Larch autumn phenology from Sentinel-2
 
-Dates of the autumn yellowing of European larch (start, peak and end) for 2017–2026, derived from Sentinel-2 per topographic zone (elevation band × aspect) of a larch area of interest (AOI), and related to climate observations and CH2025 climate scenarios. Study area: around the MeteoSwiss station Buffalora (Val Müstair / Swiss National Park).
+Dates of the autumn yellowing of European larch (start, peak and end) for 2017–2026, derived from Sentinel-2 per topographic zone (elevation band × aspect) of a larch area of interest (AOI), and related to climate observations and CH2025 climate scenarios. Study area: the larch stands of the Swiss National Park.
 
 ## Workflow
 
@@ -10,7 +10,7 @@ The notebooks run in order. Each one reads the output of the earlier ones from `
 |---|---|---|
 | `01_download_sentinel2` | Sentinel-2 L2A from Microsoft Planetary Computer (no account needed). Splits the AOI into zones using the Copernicus DEM; NDVI, GRVI, PSRI and RCC statistics of the clear pixels per date and zone; the same for the AOI pixels around local sites (`SITE_AREAS`) | `cache/<AOI>_zones/`, `cache/<AOI>_sites/` |
 | `02_download_validation` | Larch observations (needle colouring 50 %, needle drop 50 %) near the AOI from two separate sources: MeteoSwiss stations and the local sites of `Lärchen_pheno.xlsx`; maps of the stations, sites and the Swiss National Park; checks of the larch classification against the forest-type map `Lärchen_SNP.shp` and against images | `cache/validation/<AOI>/` |
-| `03_download_climate` | MeteoSwiss gridded and station observations, CH2025 local and gridded scenarios; daily series per zone, with lapse-rate correction | `cache/climate/sources/`, `cache/climate/<AOI>/` |
+| `03_download_climate` | MeteoSwiss gridded observations and CH2025 gridded scenarios; daily series per zone, with lapse-rate correction | `cache/climate/sources/`, `cache/climate/<AOI>/` |
 | `04_phenology_metrics` | Date filtering; Whittaker and double-logistic curves; start / peak / end per zone and year; method comparison against the validation data; check against a local site's own observations; trend; topography effects | `results/<AOI>/` |
 | `05_climate_analysis` | Zone fixed-effects regression of the dates on climate features; projection with CH2025 per global warming level, compared with the trend | `results/<AOI>/climate/` |
 
@@ -66,8 +66,8 @@ Two AOIs have been processed:
 ## Data sources
 
 - Sentinel-2 L2A and Copernicus DEM GLO-30, via Microsoft Planetary Computer
-- MeteoSwiss open data: gridded observations (`ogd-surface-derived-grid`), SwissMetNet station Buffalora (`ogd-smn`) and phenology observations (`ogd-phenology`)
-- MeteoSwiss & ETH Zurich (2025): Climate CH2025 – Daily Datasets (local and gridded)
+- MeteoSwiss open data: gridded observations (`ogd-surface-derived-grid`) and phenology observations (`ogd-phenology`)
+- MeteoSwiss & ETH Zurich (2025): Climate CH2025 – Daily Datasets (gridded)
 - Local larch phenology observations (`Lärchen_pheno.xlsx`): Il Fuorn, Val Cluozza, Val Mingèr, Val Trupchun, Lü
 - Forest-type map of the Swiss National Park area (`Lärchen_SNP.shp`)
 - swisstopo: national map (grey), SWISSIMAGE, terrain height service; BAFU: Swiss National Park border
