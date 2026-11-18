@@ -29,6 +29,7 @@ CLIMATE_DIR = ROOT / "cache" / "climate" / AOI_NAME    # zone series of this AOI
 VALIDATION_DIR = ROOT / "cache" / "validation" / AOI_NAME   # MeteoSwiss larch observations (notebook 02)
 OUT_DIR = ROOT / "results" / AOI_NAME                  # phenology results (notebook 04)
 CLIMATE_OUT_DIR = OUT_DIR / "climate"                  # climate analysis results (notebook 05)
+REPORT_FIG_DIR = OUT_DIR / "report_figures"            # figures recommended for the report (04, 05; maps of 02)
 
 # ---------------------------------------------------------------- Sentinel-2 (01) and date filter (04)
 RESOLUTION = 10            # m

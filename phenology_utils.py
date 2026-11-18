@@ -9,10 +9,26 @@ import xarray as xr
 from pyproj import Transformer
 
 from config import (CACHE_DIR, END, GRID_BUFFER, MAX_SCENE_CLOUD, MAX_SCL_FRACTION, MIN_COVERED_PIXELS,
-                    MIN_VALID_FRACTION, SCL_GROUPS, SEASON_COMPLETE_DOY, START, TEMPERATURE_VARS, VALID_SHARE_OF,
-                    YEARS)
+                    MIN_VALID_FRACTION, REPORT_FIG_DIR, SCL_GROUPS, SEASON_COMPLETE_DOY, START, TEMPERATURE_VARS,
+                    VALID_SHARE_OF, YEARS)
 
 QUALITY_COLS = ["scene_cloud_cover"] + [f"scl_{g}_fraction" for g in SCL_GROUPS]
+
+
+# ---------------------------------------------------------------- figures
+DATE_TYPE_TITLES = {"start": "Start of the yellowing", "peak": "Peak of the yellowing", "end": "End of the yellowing"}
+
+
+def date_title(target):
+    # Figure title of a date type ("start" -> "Start of the yellowing"); other targets are shown as they are
+    return DATE_TYPE_TITLES.get(target, target)
+
+
+def save_report_figure(fig, name):
+    # Saves a figure recommended for the report as REPORT_FIG_DIR/<name>.png (300 dpi); name starts with its
+    # number in the report order, e.g. "11_season_dates_chosen"
+    REPORT_FIG_DIR.mkdir(parents=True, exist_ok=True)
+    fig.savefig(REPORT_FIG_DIR / f"{name}.png", dpi=300, bbox_inches="tight", facecolor="white")
 
 
 # ---------------------------------------------------------------- Sentinel-2 statistics cache

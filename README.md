@@ -52,6 +52,7 @@ cache/validation/<AOI>/         MeteoSwiss and local phenology observations, map
 cache/climate/                  climate data (not in git: too large; rebuilt by 03)
 results/<AOI>/                  season dates, method comparison, projection, topography effects
 results/<AOI>/climate/          climate effects, regression, CH2025 projections
+results/<AOI>/report_figures/   figures recommended for the report, numbered in report order (written by 04 and 05)
 ```
 
 Two AOIs have been processed:
